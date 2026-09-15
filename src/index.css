@@ -1,0 +1,189 @@
+/* Leaflet CSS must be imported for Vite bundling + map to render (must be before other statements) */
+@import "leaflet/dist/leaflet.css";
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Safety & calm base styles */
+:root {
+  --safe-bg: #f8fafc;
+  --safe-text: #1e293b;
+  --safe-accent: #0f766e;
+  --safe-teal: #14b8a6;
+}
+
+body {
+  font-family: system-ui, -apple-system,BlinkMacSystemFont,'Segoe UI',Roboto, sans-serif;
+  background-color: var(--safe-bg);
+  color: var(--safe-text);
+  line-height: 1.5;
+}
+
+html, body { overflow-x: hidden; max-width: 100vw; }
+img, video { max-width: 100%; height: auto; }
+.leaflet-container { width: 100%; }
+.atlas-marker-highlight { filter: hue-rotate(140deg) saturate(1.6); }
+
+a {
+  color: var(--safe-accent);
+}
+
+.quick-exit-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.35rem;
+  background-color: #334155;
+  color: white;
+  border: none;
+  padding: 0.4rem 0.65rem;
+  font-weight: 600;
+  font-size: 0.8rem;
+  line-height: 1;
+  border-radius: 6px;
+  cursor: pointer;
+  white-space: nowrap;
+  transition: background-color 0.1s ease;
+}
+.quick-exit-btn:hover { background-color: #1e293b; }
+.quick-exit-label { display: inline; }
+@media (max-width: 480px) {
+  .quick-exit-label { display: none; }
+  .quick-exit-btn { padding: 0.4rem 0.5rem; }
+}
+
+.language-switch select {
+  background: white;
+  border: 1px solid #cbd5e1;
+  padding: 0.35rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.875rem;
+}
+
+/* Calm cards used everywhere */
+.safe-card {
+  background: white;
+  border-radius: 12px;
+  border: 1px solid #e2e8f0;
+  padding: 1.25rem;
+  box-shadow: 0 1px 2px rgba(0,0,0,0.03);
+}
+
+/* Leaflet overrides for clean look */
+.leaflet-popup-content-wrapper {
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(15, 118, 110, 0.1);
+}
+
+.leaflet-control-container .leaflet-control-attribution {
+  display: none; /* Keep map anonymized */
+}
+
+/* Popup card next to a map marker (same component as the list card) */
+.leaflet-popup-content {
+  margin: 0;
+}
+.atlas-popup-card {
+  padding: 0.85rem;
+  border: none;
+  box-shadow: none;
+  border-radius: 8px;
+}
+
+/* Short highlight of the organisation card the user came from on the map */
+@keyframes atlasCardFlash {
+  0%   { transform: scale(1);    box-shadow: 0 0 0 0 rgba(13,148,136,0.45); }
+  25%  { transform: scale(1.03); box-shadow: 0 0 0 6px rgba(13,148,136,0.25); }
+  70%  { transform: scale(1.02); box-shadow: 0 0 0 6px rgba(13,148,136,0.18); }
+  100% { transform: scale(1);    box-shadow: 0 1px 2px rgba(0,0,0,0.03); }
+}
+.atlas-card-flash {
+  animation: atlasCardFlash 1.7s ease-in-out;
+  border-color: #0d9488;
+}
+@media (prefers-reduced-motion: reduce) {
+  .atlas-card-flash { animation: none; border-color: #0d9488; }
+}
+
+/* ---------------------------------------------------------------------------
+   Dark mode — follows the phone / system appearance automatically.
+   The layout, spacing and typography stay exactly the same; only surfaces
+   and text colours are inverted so the site is readable at night.
+--------------------------------------------------------------------------- */
+@media (prefers-color-scheme: dark) {
+  :root {
+    --safe-bg: #0f172a;
+    --safe-text: #e2e8f0;
+    --safe-accent: #2dd4bf;
+    color-scheme: dark;
+  }
+
+  body { background-color: #0f172a; color: #e2e8f0; }
+  a { color: #2dd4bf; }
+
+  /* Surfaces */
+  .safe-card,
+  .bg-white { background-color: #1e293b !important; }
+  .bg-slate-50, .bg-slate-100, .bg-gray-50, .bg-gray-100 { background-color: #1b2536 !important; }
+  .bg-teal-50 { background-color: #10362f !important; }
+  .safe-card { border-color: #334155; }
+  .bg-safe-50, .bg-safe-100, .bg-safe-200 { background-color: #223049 !important; }
+
+  /* Hover surfaces must never flash white in dark mode */
+  .hover\:bg-white:hover,
+  .hover\:bg-slate-50:hover,
+  .hover\:bg-slate-100:hover,
+  .hover\:bg-gray-50:hover,
+  .hover\:bg-gray-100:hover,
+  .hover\:bg-safe-50:hover,
+  .hover\:bg-safe-100:hover { background-color: #2b3a55 !important; color: #f1f5f9 !important; }
+  .hover\:bg-teal-50:hover { background-color: #10362f !important; }
+  .hover\:bg-safe-800:hover, .hover\:bg-slate-900:hover { background-color: #0d9488 !important; }
+  .hover\:bg-safe-800:hover *, .hover\:bg-slate-900:hover * { color: #ffffff !important; }
+  .hover\:text-white:hover { color: #ffffff !important; }
+  .hover\:border-safe-teal:hover { border-color: #2dd4bf !important; }
+
+  /* Text */
+  .text-slate-900, .text-slate-800, .text-safe-800, .text-gray-900, .text-gray-800 { color: #f1f5f9 !important; }
+  .text-slate-700, .text-slate-600, .text-gray-700, .text-gray-600 { color: #cbd5e1 !important; }
+  .text-slate-500, .text-slate-400, .text-gray-500, .text-gray-400 { color: #94a3b8 !important; }
+  .text-teal-800 { color: #5eead4 !important; }
+  .text-safe-700 { color: #cbd5e1 !important; }
+
+  /* Borders */
+  .border, .border-t, .border-b, .border-l, .border-r,
+  .border-slate-200, .border-slate-300, .border-safe-200, .border-gray-200, .border-gray-300 {
+    border-color: #334155 !important;
+  }
+  .border-teal-200 { border-color: #115e59 !important; }
+  .border-safe-800, .border-slate-900 { border-color: #64748b !important; }
+  .border-safe-teal { border-color: #2dd4bf !important; }
+  .divide-y > * + * { border-color: #334155 !important; }
+
+  /* Form controls */
+  input, textarea, select {
+    background-color: #16203a !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+  }
+  input::placeholder, textarea::placeholder { color: #7c8ba1 !important; }
+  .language-switch select { background: #16203a; border-color: #334155; color: #e2e8f0; }
+
+  /* Buttons that must stay high contrast */
+  .bg-safe-800, .bg-slate-900, .bg-teal-800 { color: #ffffff !important; }
+  .quick-exit-btn { background-color: #475569; }
+  .quick-exit-btn:hover { background-color: #64748b; }
+
+  /* Leaflet */
+  .leaflet-popup-content-wrapper, .leaflet-popup-tip {
+    background: #1e293b;
+    color: #e2e8f0;
+  }
+  .leaflet-container { background: #0f172a; }
+  .leaflet-bar a, .leaflet-control-zoom a {
+    background-color: #1e293b !important;
+    color: #e2e8f0 !important;
+    border-color: #334155 !important;
+  }
+  .leaflet-tile { filter: brightness(0.82) contrast(1.05); }
+}
