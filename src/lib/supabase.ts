@@ -1,17 +1,7 @@
-import { createClient } from '@supabase/supabase-js'
-
-const supabaseUrl = import.meta.env.VITE_SUPABASE_URL
-const supabaseAnonKey = import.meta.env.VITE_SUPABASE_ANON_KEY
-
-if (!supabaseUrl || !supabaseAnonKey) {
-  // Allow working in offline or preview states but note in console.
-  console.warn('[Atlas] Missing Supabase env vars. Using fallback client (all remote calls will fail).')
-}
-
-export const supabase = createClient(
-  supabaseUrl || 'https://example.supabase.co',
-  supabaseAnonKey || 'public-anon-key-placeholder'
-)
+// Keep the legacy /admin page on the same Supabase connection as the rest of
+// the application. The shared client also contains the production fallback
+// used when a hosting environment has not injected Vite variables yet.
+export { supabase } from '../integrations/supabase/client'
 
 // Helper types for our schema
 export type Json =
