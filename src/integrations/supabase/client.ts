@@ -3,11 +3,13 @@ import { createClient } from '@supabase/supabase-js';
 import type { Database } from './types';
 import { brokeredPreviewStorage } from './previewAuthStorage';
 
-const SUPABASE_URL = import.meta.env.VITE_SUPABASE_URL || 'https://example.supabase.co';
+const SUPABASE_URL =
+  import.meta.env.VITE_SUPABASE_URL ||
+  'https://wyupfhbfknzizvcmqqbc.supabase.co';
 const SUPABASE_PUBLISHABLE_KEY =
   import.meta.env.VITE_SUPABASE_ANON_KEY ||
   import.meta.env.VITE_SUPABASE_PUBLISHABLE_KEY ||
-  'public-anon-key-placeholder';
+  'eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJpc3MiOiJzdXBhYmFzZSIsInJlZiI6Ind5dXBmaGJma256aXp2Y21xcWJjIiwicm9sZSI6ImFub24iLCJpYXQiOjE3ODk1NDc3MTcsImV4cCI6MjEwNTEyMzcxN30.NcoYEjI3kEIdvIbBU9cbCgoYwnnHuLm7t5ygLwObS8E';
 
 
 function isNewSupabaseApiKey(value: string): boolean {
