@@ -199,6 +199,7 @@ export function MapView() {
   const [onlyOpen, setOnlyOpen] = useState(false)
   const [onlyFree, setOnlyFree] = useState(false)
   const [onlyNoDocs, setOnlyNoDocs] = useState(false)
+  const [visibleListCount, setVisibleListCount] = useState(40)
 
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const [flashId, setFlashId] = useState<string | null>(null)
@@ -245,6 +246,8 @@ export function MapView() {
         matches24 && matchesOpen && matchesFree && matchesNoDocs
     })
   }, [centers, query, filterCountry, filterCat, only24, onlyOpen, onlyFree, onlyNoDocs])
+
+  useEffect(() => setVisibleListCount(40), [query, filterCountry, filterCat, only24, onlyOpen, onlyFree, onlyNoDocs])
 
   const catLabel = (k: string) => t(`categories.${k}`, { defaultValue: k })
 
@@ -498,7 +501,7 @@ export function MapView() {
               : t('map.found', { count: filtered.length, defaultValue: `Found: ${filtered.length}` })}
           </div>
 
-          {filtered.map((c) => (
+          {filtered.slice(0, visibleListCount).map((c) => (
             <CenterCard
               key={c.id}
               c={c}
@@ -513,6 +516,16 @@ export function MapView() {
               }}
             />
           ))}
+
+          {visibleListCount < filtered.length && (
+            <button
+              type="button"
+              onClick={() => setVisibleListCount((count) => count + 40)}
+              className="border border-safe-800 text-safe-800 rounded-md px-4 py-2 text-sm bg-white hover:bg-safe-50"
+            >
+              {t('map.show_more', { defaultValue: 'Показать ещё' })}
+            </button>
+          )}
 
           {centers.length === 0 && (
             <div className="safe-card text-sm text-slate-500 bg-white">
@@ -554,14 +567,16 @@ function CenterCard({
   useEffect(() => {
     let alive = true
     setDescription(rawDescription)
-    if (!rawDescription) return
+    // Popup cards are created for every map marker. Translating all of them on
+    // page load can overwhelm mobile Safari; the full list translates lazily.
+    if (!rawDescription || compact) return
     autoTranslateCached(rawDescription, lang).then((tx) => {
       if (alive && tx) setDescription(tx)
     })
     return () => {
       alive = false
     }
-  }, [rawDescription, lang])
+  }, [rawDescription, lang, compact])
   const address = pickLocalized(c, 'address', lang) || c.address
   const city = pickLocalized(c, 'city', lang) || c.city
   const country = pickLocalized(c, 'country', lang) || c.country
