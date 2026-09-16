@@ -143,6 +143,15 @@ export function SecretAdmin() {
     )
   })
 
+  // A remembered admin session can survive a page reload. Run the migration
+  // for those sessions too, otherwise older edits remain only in this
+  // browser's localStorage and are invisible to public visitors.
+  useEffect(() => {
+    if (!authed || typeof window === 'undefined') return
+    const adminToken = window.sessionStorage.getItem(ADMIN_TOKEN_KEY)
+    if (adminToken) void migrateLocalContentToCloud(adminToken)
+  }, [authed])
+
   if (!authed) {
     return (
       <LoginGate
@@ -150,7 +159,6 @@ export function SecretAdmin() {
           window.sessionStorage.setItem(SESSION_KEY, '1')
           window.sessionStorage.setItem(ADMIN_TOKEN_KEY, adminToken)
           setAuthed(true)
-          void migrateLocalContentToCloud(adminToken)
         }}
       />
     )
