@@ -420,10 +420,10 @@ export type AdminHotline = {
   translations?: Translations
 }
 const K_HOTLINES = 'atlas:admin:hotlines:v1'
-export const getHotlines = () =>
-  readList<AdminHotline & { scope?: AdminHotline['scope'] | 'russia' }>(K_HOTLINES).map((item) =>
+export const getHotlines = (): AdminHotline[] =>
+  readList<Omit<AdminHotline, 'scope'> & { scope?: AdminHotline['scope'] | 'russia' }>(K_HOTLINES).map((item) =>
     item.scope === 'russia' ? { ...item, scope: 'eu' as const, country: 'ЕС' } : item
-  )
+  ) as AdminHotline[]
 export const addHotline = (h: Omit<AdminHotline, 'id' | 'createdAt'>) => {
   const item: AdminHotline = { ...h, id: newId(), createdAt: Date.now() }
   writeList(K_HOTLINES, [item, ...getHotlines()])
@@ -444,10 +444,10 @@ export type PendingHotline = {
   comment?: string
 }
 const K_HOTLINE_QUEUE = 'atlas:hotline-suggestions:v1'
-export const getPendingHotlines = () =>
-  readList<PendingHotline & { scope: PendingHotline['scope'] | 'russia' }>(K_HOTLINE_QUEUE).map((item) =>
+export const getPendingHotlines = (): PendingHotline[] =>
+  readList<Omit<PendingHotline, 'scope'> & { scope: PendingHotline['scope'] | 'russia' }>(K_HOTLINE_QUEUE).map((item) =>
     item.scope === 'russia' ? { ...item, scope: 'eu' as const, country: 'ЕС' } : item
-  )
+  ) as PendingHotline[]
 export function addPendingHotline(h: Omit<PendingHotline, 'id'>) {
   const item: PendingHotline = { ...h, id: Date.now() }
   writeList(K_HOTLINE_QUEUE, [item, ...getPendingHotlines()])

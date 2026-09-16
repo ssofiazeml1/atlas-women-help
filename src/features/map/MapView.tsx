@@ -167,10 +167,16 @@ export function MapView() {
       description: s.description,
       contact: s.contact_phone,
       website: s.contact_web,
+      address: s.address,
+      email: s.email,
+      hours: s.hours,
+      cost: s.cost,
+      languages: s.languages,
       lat: s.lat,
       lng: s.lng,
       category: s.category,
-      categories: s.category ? [s.category] : [],
+      categories: s.categories?.length ? s.categories : s.category ? [s.category] : [],
+      open24: s.open24,
       createdAt: 0,
     }))
     const withOverrides = applySeedTransforms<AdminCenter>('centers', seeds)

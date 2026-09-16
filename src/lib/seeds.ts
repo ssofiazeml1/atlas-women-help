@@ -5,6 +5,7 @@
 import i18n from '../i18n/config'
 import { SEED_LOCATIONS, type MapLocation } from './demoData'
 import { PUBLISHED_STORIES, type SeedStoryRaw } from '../features/stories/storiesSeed'
+import { FRENCH_CENTERS } from '../data/frenchCenters'
 
 // ---------- centers ---------------------------------------------------------
 export type SeedCenter = {
@@ -16,6 +17,13 @@ export type SeedCenter = {
   contact_phone?: string
   contact_web?: string
   description?: string
+  address?: string
+  email?: string
+  hours?: string
+  cost?: 'free' | 'partial' | 'paid' | ''
+  languages?: string
+  categories?: string[]
+  open24?: boolean
   lat?: number
   lng?: number
 }
@@ -27,7 +35,7 @@ function pickLang(rec: Record<string, string> | undefined, lang: string): string
 
 export function getSeedCenters(): SeedCenter[] {
   const lang = i18n.language || 'en'
-  return SEED_LOCATIONS.map((l: MapLocation) => ({
+  const existing = SEED_LOCATIONS.map((l: MapLocation) => ({
     id: `seed-center-${l.id}`,
     name: pickLang(l.name as any, lang),
     city: l.city,
@@ -39,6 +47,7 @@ export function getSeedCenters(): SeedCenter[] {
     lat: l.lat,
     lng: l.lng,
   }))
+  return [...FRENCH_CENTERS, ...existing]
 }
 
 // ---------- ratings (i18n safebridge.demo) ----------------------------------
