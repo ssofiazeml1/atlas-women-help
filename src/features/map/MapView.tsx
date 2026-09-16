@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup, CircleMarker, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import 'leaflet-routing-machine'
 import 'leaflet-routing-machine/dist/leaflet-routing-machine.css'
@@ -61,16 +61,6 @@ function acceptsWithoutDocs(c: AdminCenter): boolean {
   const s = `${c.description || ''} ${c.languages || ''} ${anyC.access || ''}`.toLowerCase()
   return /без документ|no documents required|sans papiers|no id required|بدون وثائق|无证件|无需证件/.test(s)
 }
-
-const highlightIcon = new L.Icon({
-  iconUrl: markerIcon,
-  iconRetinaUrl: markerIcon2x,
-  shadowUrl: markerShadow,
-
-  iconSize: [30, 46],
-  iconAnchor: [15, 46],
-  className: 'atlas-marker-highlight',
-})
 
 function normalizeCategories(c: AdminCenter): string[] {
   if (Array.isArray(c.categories) && c.categories.length) return c.categories
@@ -202,8 +192,6 @@ export function MapView() {
   const [visibleListCount, setVisibleListCount] = useState(40)
 
   const [selectedId, setSelectedId] = useState<string | null>(null)
-  const [flashId, setFlashId] = useState<string | null>(null)
-  const markerRefs = useRef<Record<string, L.Marker | null>>({})
   const cardRefs = useRef<Record<string, HTMLDivElement | null>>({})
 
   // ---- Routing state ----
@@ -255,28 +243,7 @@ export function MapView() {
     setSelectedId(c.id)
     if (typeof c.lat === 'number' && typeof c.lng === 'number') {
       setFlyTarget({ lat: c.lat, lng: c.lng, zoom: 14 })
-      setTimeout(() => {
-        markerRefs.current[c.id]?.openPopup()
-      }, 900)
     }
-  }
-
-  // Marker click: only select + open the small popup card next to the marker.
-  // The page must NOT jump to the list yet.
-  const handleSelectMarker = (c: AdminCenter) => {
-    setSelectedId(c.id)
-  }
-
-  // Click on the small popup card: go to the full card in the list below,
-  // scroll smoothly to it and highlight it briefly.
-  const goToFullCard = (c: AdminCenter) => {
-    setSelectedId(c.id)
-    markerRefs.current[c.id]?.closePopup()
-    setTimeout(() => {
-      cardRefs.current[c.id]?.scrollIntoView({ behavior: 'smooth', block: 'center' })
-      setFlashId(c.id)
-      setTimeout(() => setFlashId((cur) => (cur === c.id ? null : cur)), 1800)
-    }, 60)
   }
 
   const submitSearch = async (e: React.FormEvent) => {
@@ -450,7 +417,7 @@ export function MapView() {
       {/* Map + list */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr,380px] gap-4">
         <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100" style={{ height: 'min(70vh, 640px)' }}>
-          <MapContainer center={[20, 10]} zoom={2} scrollWheelZoom className="h-full w-full">
+          <MapContainer center={[46.5, 2.5]} zoom={5} scrollWheelZoom preferCanvas className="h-full w-full">
             <TileLayer
               attribution='&copy; OpenStreetMap contributors'
               url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
@@ -461,30 +428,19 @@ export function MapView() {
             {filtered
               .filter((c) => typeof c.lat === 'number' && typeof c.lng === 'number')
               .map((c) => (
-                <Marker
+                <CircleMarker
                   key={c.id}
-                  position={[c.lat as number, c.lng as number]}
-                  icon={selectedId === c.id ? highlightIcon : new L.Icon.Default()}
-                  ref={(ref) => {
-                    markerRefs.current[c.id] = ref
+                  center={[c.lat as number, c.lng as number]}
+                  radius={selectedId === c.id ? 7 : 4}
+                  pathOptions={{
+                    color: selectedId === c.id ? '#0f766e' : '#155e75',
+                    fillColor: selectedId === c.id ? '#14b8a6' : '#22d3ee',
+                    fillOpacity: 0.8,
+                    weight: selectedId === c.id ? 2 : 1,
                   }}
-                  eventHandlers={{ click: () => handleSelectMarker(c) }}
-                >
-                  <Popup minWidth={250} maxWidth={280} autoPan closeButton>
-                    <CenterCard
-                      c={c}
-                      lang={lang}
-                      catLabel={catLabel}
-                      selected={false}
-                      compact
-                      onSelect={() => goToFullCard(c)}
-                      onRoute={() => buildRouteTo(c)}
-                      cardRef={() => {}}
-                    />
-                  </Popup>
-                </Marker>
+                  eventHandlers={{ click: () => handleSelectCard(c) }}
+                />
               ))}
-
             {searchPin && (
               <Marker position={[searchPin.lat, searchPin.lng]}>
                 <Popup>{searchPin.label}</Popup>
@@ -508,7 +464,6 @@ export function MapView() {
               lang={lang}
               catLabel={catLabel}
               selected={selectedId === c.id}
-              flash={flashId === c.id}
               onSelect={() => handleSelectCard(c)}
               onRoute={() => buildRouteTo(c)}
               cardRef={(el) => {
