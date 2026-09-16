@@ -78,6 +78,7 @@ export function readFileAsDataUrl(file: File): Promise<string> {
 // ---------------------------------------------------------------------------
 
 const CHANGE_EVENT = 'atlas:content:changed'
+const PENDING_CLOUD_KEY = 'atlas:cloud-sync:pending:v1'
 
 const CONTENT_KEYS = [
   STORAGE_KEY,
@@ -110,14 +111,57 @@ function cacheCloudValue(key: string, value: unknown) {
   emitChange(key)
 }
 
+function readPendingCloud(): Record<string, unknown> {
+  if (typeof window === 'undefined') return {}
+  try {
+    const value = JSON.parse(window.localStorage.getItem(PENDING_CLOUD_KEY) || '{}')
+    return value && typeof value === 'object' && !Array.isArray(value) ? value : {}
+  } catch {
+    return {}
+  }
+}
+
+function queueCloudValue(key: string, value: unknown) {
+  window.localStorage.setItem(PENDING_CLOUD_KEY, JSON.stringify({ ...readPendingCloud(), [key]: value }))
+}
+
+function clearQueuedCloudValue(key: string, savedValue: unknown) {
+  const pending = readPendingCloud()
+  if (!(key in pending) || JSON.stringify(pending[key]) !== JSON.stringify(savedValue)) return
+  delete pending[key]
+  if (Object.keys(pending).length) {
+    window.localStorage.setItem(PENDING_CLOUD_KEY, JSON.stringify(pending))
+  } else {
+    window.localStorage.removeItem(PENDING_CLOUD_KEY)
+  }
+}
+
 async function persistCloud(key: string, value: unknown) {
   if (typeof window === 'undefined') return
+  queueCloudValue(key, value)
   const adminToken = window.sessionStorage.getItem(ADMIN_TOKEN_KEY)
   if (!adminToken) return
   const { error } = await supabase.functions.invoke('site-content', {
     body: { action: 'save', key, value, adminToken },
   })
-  if (error) console.error('[Atlas] Не удалось сохранить изменение в облаке', error)
+  if (error) {
+    console.error('[Atlas] Не удалось сохранить изменение в облаке', error)
+  } else {
+    clearQueuedCloudValue(key, value)
+  }
+}
+
+async function flushPendingCloud(adminToken: string) {
+  const pending = readPendingCloud()
+  for (const [key, value] of Object.entries(pending)) {
+    const { error } = await supabase.functions.invoke('site-content', {
+      body: { action: 'save', key, value, adminToken },
+    })
+    if (!error) {
+      cacheCloudValue(key, value)
+      clearQueuedCloudValue(key, value)
+    }
+  }
 }
 
 async function refreshCloudContent() {
@@ -169,6 +213,7 @@ export async function migrateLocalContentToCloud(adminToken: string) {
   for (const entry of cloudEntries) {
     if (typeof entry?.key === 'string') cacheCloudValue(entry.key, entry.value)
   }
+  await flushPendingCloud(adminToken)
 }
 
 startCloudContentSync()
