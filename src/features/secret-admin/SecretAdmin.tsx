@@ -245,6 +245,33 @@ function LoginGate({ onSuccess }: { onSuccess: (adminToken: string) => void }) {
 function AdminShell({ onLogout }: { onLogout: () => void }) {
   const [tab, setTab] = useState<TabKey>('home')
 
+  const downloadBackup = () => {
+    const entries: Record<string, unknown> = {}
+    for (let i = 0; i < window.localStorage.length; i += 1) {
+      const key = window.localStorage.key(i)
+      if (!key?.startsWith('atlas:')) continue
+      const raw = window.localStorage.getItem(key)
+      if (raw === null) continue
+      try {
+        entries[key] = JSON.parse(raw)
+      } catch {
+        entries[key] = raw
+      }
+    }
+    const blob = new Blob(
+      [JSON.stringify({ version: 1, exportedAt: new Date().toISOString(), entries }, null, 2)],
+      { type: 'application/json' },
+    )
+    const url = URL.createObjectURL(blob)
+    const link = document.createElement('a')
+    link.href = url
+    link.download = `atlas-women-backup-${new Date().toISOString().slice(0, 10)}.json`
+    document.body.appendChild(link)
+    link.click()
+    link.remove()
+    URL.revokeObjectURL(url)
+  }
+
   return (
     <main className="max-w-7xl mx-auto px-4 md:px-6 py-8">
       <div className="flex items-center justify-between mb-6">
@@ -256,12 +283,21 @@ function AdminShell({ onLogout }: { onLogout: () => void }) {
             Управляйте контентом каждого раздела сайта. Изменения сохраняются автоматически.
           </p>
         </div>
-        <button
-          onClick={onLogout}
-          className="text-sm text-slate-600 hover:text-safe-800 underline"
-        >
-          Выйти
-        </button>
+        <div className="flex flex-col sm:flex-row items-end sm:items-center gap-2">
+          <button
+            type="button"
+            onClick={downloadBackup}
+            className="text-sm rounded-md border border-safe-800 px-3 py-2 text-safe-800 bg-white"
+          >
+            Скачать резервную копию
+          </button>
+          <button
+            onClick={onLogout}
+            className="text-sm text-slate-600 hover:text-safe-800 underline"
+          >
+            Выйти
+          </button>
+        </div>
       </div>
 
       <div className="grid md:grid-cols-[240px,1fr] gap-6">
