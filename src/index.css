@@ -76,7 +76,7 @@ a {
 }
 
 .leaflet-control-container .leaflet-control-attribution {
-  display: none; /* Keep map anonymized */
+  font-size: 10px;
 }
 
 /* Popup card next to a map marker (same component as the list card) */
