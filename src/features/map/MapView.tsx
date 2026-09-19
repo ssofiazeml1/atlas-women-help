@@ -189,6 +189,16 @@ export function MapView() {
   const [onlyOpen, setOnlyOpen] = useState(false)
   const [onlyFree, setOnlyFree] = useState(false)
   const [onlyNoDocs, setOnlyNoDocs] = useState(false)
+
+  useEffect(() => {
+    if (filterCountry === 'Germany') {
+      setFlyTarget({ lat: 51.2, lng: 10.5, zoom: 6 })
+    } else if (filterCountry === 'France') {
+      setFlyTarget({ lat: 46.5, lng: 2.5, zoom: 5 })
+    } else if (!filterCountry) {
+      setFlyTarget({ lat: 49, lng: 6, zoom: 4 })
+    }
+  }, [filterCountry])
   const [visibleListCount, setVisibleListCount] = useState(40)
 
   const [selectedId, setSelectedId] = useState<string | null>(null)
@@ -234,6 +244,11 @@ export function MapView() {
         matches24 && matchesOpen && matchesFree && matchesNoDocs
     })
   }, [centers, query, filterCountry, filterCat, only24, onlyOpen, onlyFree, onlyNoDocs])
+
+  const visibleCenters = filtered.slice(0, visibleListCount)
+  const selectedOutsideList = filtered.find(
+    (center) => center.id === selectedId && !visibleCenters.some((visible) => visible.id === center.id),
+  )
 
   useEffect(() => setVisibleListCount(40), [query, filterCountry, filterCat, only24, onlyOpen, onlyFree, onlyNoDocs])
 
@@ -441,6 +456,7 @@ export function MapView() {
                   eventHandlers={{ click: () => handleSelectCard(c) }}
                 />
               ))}
+
             {searchPin && (
               <Marker position={[searchPin.lat, searchPin.lng]}>
                 <Popup>{searchPin.label}</Popup>
@@ -457,7 +473,19 @@ export function MapView() {
               : t('map.found', { count: filtered.length, defaultValue: `Found: ${filtered.length}` })}
           </div>
 
-          {filtered.slice(0, visibleListCount).map((c) => (
+          {selectedOutsideList && (
+            <CenterCard
+              c={selectedOutsideList}
+              lang={lang}
+              catLabel={catLabel}
+              selected
+              onSelect={() => handleSelectCard(selectedOutsideList)}
+              onRoute={() => buildRouteTo(selectedOutsideList)}
+              cardRef={() => {}}
+            />
+          )}
+
+          {visibleCenters.map((c) => (
             <CenterCard
               key={c.id}
               c={c}
