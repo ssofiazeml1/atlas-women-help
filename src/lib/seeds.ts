@@ -5,6 +5,7 @@
 import i18n from '../i18n/config'
 import { PUBLISHED_STORIES, type SeedStoryRaw } from '../features/stories/storiesSeed'
 import { FRENCH_CENTERS } from '../data/frenchCenters'
+import { GERMAN_CENTERS } from '../data/germanCenters'
 
 // ---------- centers ---------------------------------------------------------
 export type SeedCenter = {
@@ -33,7 +34,7 @@ function pickLang(rec: Record<string, string> | undefined, lang: string): string
 }
 
 export function getSeedCenters(): SeedCenter[] {
-  return FRENCH_CENTERS
+  return [...FRENCH_CENTERS, ...GERMAN_CENTERS]
 }
 
 // ---------- ratings (i18n safebridge.demo) ----------------------------------
