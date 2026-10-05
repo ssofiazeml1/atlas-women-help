@@ -35,26 +35,6 @@ L.Icon.Default.mergeOptions({
 
 
 
-// Best-effort "open now": true for anything explicitly 24/7, otherwise
-// look for at least one HH:MM-HH:MM range in the hours string and check
-// if the current local time falls within it.
-function isOpenNow(c: AdminCenter): boolean {
-  if (c.open24) return true
-  const s = c.hours || ''
-  if (/24\/?7|круглосуточно|24 hours|24h/i.test(s)) return true
-  const ranges = Array.from(s.matchAll(/(\d{1,2}):(\d{2})\s*[-–—]\s*(\d{1,2}):(\d{2})/g))
-  if (ranges.length === 0) return false
-  const now = new Date()
-  const nowMin = now.getHours() * 60 + now.getMinutes()
-  for (const r of ranges) {
-    const a = parseInt(r[1]) * 60 + parseInt(r[2])
-    const b = parseInt(r[3]) * 60 + parseInt(r[4])
-    if (a <= nowMin && nowMin <= b) return true
-    if (b < a && (nowMin >= a || nowMin <= b)) return true // overnight
-  }
-  return false
-}
-
 function acceptsWithoutDocs(c: AdminCenter): boolean {
   const anyC = c as any
   if (anyC.noDocsNeeded === true || anyC.no_docs === true) return true
@@ -186,7 +166,6 @@ export function MapView() {
   const [filterCountry, setFilterCountry] = useState('')
   const [filterCat, setFilterCat] = useState('')
   const [only24, setOnly24] = useState(false)
-  const [onlyOpen, setOnlyOpen] = useState(false)
   const [onlyFree, setOnlyFree] = useState(false)
   const [onlyNoDocs, setOnlyNoDocs] = useState(false)
 
@@ -237,20 +216,19 @@ export function MapView() {
         (c.country || '').trim().toLowerCase() === filterCountry.trim().toLowerCase()
       const matchesCat = !filterCat || cats.includes(filterCat)
       const matches24 = !only24 || c.open24 || /24\/?7|круглосуточно|24 hours/i.test(c.hours || '')
-      const matchesOpen = !onlyOpen || isOpenNow(c)
       const matchesFree = !onlyFree || c.cost === 'free'
       const matchesNoDocs = !onlyNoDocs || acceptsWithoutDocs(c)
       return matchesText && matchesCountry && matchesCat &&
-        matches24 && matchesOpen && matchesFree && matchesNoDocs
+        matches24 && matchesFree && matchesNoDocs
     })
-  }, [centers, query, filterCountry, filterCat, only24, onlyOpen, onlyFree, onlyNoDocs])
+  }, [centers, query, filterCountry, filterCat, only24, onlyFree, onlyNoDocs])
 
   const visibleCenters = filtered.slice(0, visibleListCount)
   const selectedOutsideList = filtered.find(
     (center) => center.id === selectedId && !visibleCenters.some((visible) => visible.id === center.id),
   )
 
-  useEffect(() => setVisibleListCount(40), [query, filterCountry, filterCat, only24, onlyOpen, onlyFree, onlyNoDocs])
+  useEffect(() => setVisibleListCount(40), [query, filterCountry, filterCat, only24, onlyFree, onlyNoDocs])
 
   const catLabel = (k: string) => t(`categories.${k}`, { defaultValue: k })
 
@@ -285,7 +263,6 @@ export function MapView() {
     setFilterCountry('')
     setFilterCat('')
     setOnly24(false)
-    setOnlyOpen(false)
     setOnlyFree(false)
     setOnlyNoDocs(false)
     setQuery('')
@@ -374,11 +351,7 @@ export function MapView() {
           </select>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-4 gap-2 text-sm">
-          <label className="flex items-center gap-2 border border-slate-200 rounded-md px-2 py-1.5 bg-white cursor-pointer">
-            <input type="checkbox" checked={onlyOpen} onChange={(e) => setOnlyOpen(e.target.checked)} />
-            <span>{t('map.only_open_now')}</span>
-          </label>
+        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm">
           <label className="flex items-center gap-2 border border-slate-200 rounded-md px-2 py-1.5 bg-white cursor-pointer">
             <input type="checkbox" checked={only24} onChange={(e) => setOnly24(e.target.checked)} />
             <span>{t('map.only_24_7', { defaultValue: '24/7' })}</span>
@@ -393,7 +366,7 @@ export function MapView() {
           </label>
         </div>
 
-        {(filterCountry || filterCat || only24 || onlyOpen || onlyFree || onlyNoDocs || query || searchPin) && (
+        {(filterCountry || filterCat || only24 || onlyFree || onlyNoDocs || query || searchPin) && (
           <button
             type="button"
             onClick={clearFilters}
