@@ -1,5 +1,5 @@
 import React, { useEffect, useState } from 'react'
-import { Routes, Route, Link, useLocation } from 'react-router-dom'
+import { Routes, Route, Link, Navigate, useLocation } from 'react-router-dom'
 import { useTranslation } from 'react-i18next'
 import { QuickExitButton } from './components/QuickExitButton'
 import { LanguageSwitcher } from './components/LanguageSwitcher'
@@ -8,7 +8,6 @@ import { Hotlines } from './features/hotlines/Hotlines'
 import { Chatbot } from './features/chat/Chatbot'
 import { Checklists } from './features/checklists/Checklists'
 import { StoriesView } from './features/stories/StoriesView'
-import { Admin } from './features/admin/Admin'
 import { DisguisedModeToggle } from './components/DisguisedMode'
 import { SuggestPage } from './features/suggest/SuggestPage'
 import { ResearchLibrary } from './features/research/ResearchLibrary'
@@ -298,7 +297,7 @@ function App() {
           <Route path="/research" element={gate('research', <ResearchLibrary />)} />
           <Route path="/diplomacy" element={gate('diplomacy', <DigitalDiplomacy />)} />
           <Route path="/about" element={gate('about', <About />)} />
-          <Route path="/admin" element={<Admin />} />
+          <Route path="/admin" element={<Navigate to="/secret-admin" replace />} />
           <Route path="/secret-admin" element={<SecretAdmin />} />
           <Route path="*" element={<div className="p-14 text-center">Not found. <Link to="/" className="underline">Return home</Link></div>} />
         </Routes>
