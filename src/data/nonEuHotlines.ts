@@ -1,4 +1,4 @@
-// Generated from Горячие_линии_Европа_вне_ЕС.xlsx. Keep stable ids so admin overrides remain attached.
+// Generated from Горячие_линии_Европа_вне_ЕС.xlsx. Russian entries are intentionally excluded pending a legal safety review. Keep stable ids so admin overrides remain attached.
 import type { AdminHotline } from '../lib/contentStore'
 
 export const NON_EU_HOTLINES: AdminHotline[] = [
@@ -416,32 +416,6 @@ export const NON_EU_HOTLINES: AdminHotline[] = [
     "hours": "Круглосуточно",
     "note": "Анонимная эмоциональная поддержка при жизненных трудностях и кризисе. Обращаться могут также близкие.",
     "website": "https://mentalhelse.no/fa-hjelp/hjelpetelefonen/",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-non-eu-33",
-    "title": "«ПОЛИНА. Кризисный центр для женщин» — телефон доверия",
-    "country": "Россия",
-    "scope": "country",
-    "phone": "+7 812 327 30 00",
-    "geography": "Телефонная помощь; организация в Санкт-Петербурге",
-    "languages": "Русский; другие уточняются",
-    "hours": "Ежедневно 11:00–18:00 МСК; Сб — юрист, остальные дни — психолог",
-    "note": "Психологическая и юридическая помощь совершеннолетним женщинам, столкнувшимся с насилием.",
-    "website": "https://crisiscenter.ru/",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-non-eu-34",
-    "title": "Центр «Сёстры» — помощь пережившим сексуализированное насилие",
-    "country": "Россия",
-    "scope": "country",
-    "phone": "+7 499 901 02 01",
-    "geography": "Телефонная помощь; организация в Москве",
-    "languages": "Русский; другие уточняются",
-    "hours": "Пн–Сб 10:00–20:00 МСК",
-    "note": "Поддержка людей, переживших сексуализированное насилие, и их близких независимо от пола и возраста.",
-    "website": "https://sisters-help.ru/",
     "createdAt": 0
   },
   {
