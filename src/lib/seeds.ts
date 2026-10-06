@@ -7,6 +7,7 @@ import { PUBLISHED_STORIES, type SeedStoryRaw } from '../features/stories/storie
 import { FRENCH_CENTERS } from '../data/frenchCenters'
 import { GERMAN_CENTERS } from '../data/germanCenters'
 import { EU_HOTLINES } from '../data/euHotlines'
+import { NON_EU_HOTLINES } from '../data/nonEuHotlines'
 
 // ---------- centers ---------------------------------------------------------
 export type SeedCenter = {
@@ -40,7 +41,7 @@ export function getSeedCenters(): SeedCenter[] {
 
 // ---------- hotlines -------------------------------------------------------
 export function getSeedHotlines() {
-  return EU_HOTLINES
+  return [...EU_HOTLINES, ...NON_EU_HOTLINES]
 }
 
 // ---------- ratings (i18n safebridge.demo) ----------------------------------
