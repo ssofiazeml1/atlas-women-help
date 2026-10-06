@@ -4,8 +4,10 @@ import { Phone, Globe, Clock, ExternalLink } from 'lucide-react'
 import {
   getHotlines,
   subscribeContent,
+  applySeedTransforms,
   type AdminHotline,
 } from '../../lib/contentStore'
+import { getSeedHotlines } from '../../lib/seeds'
 import { pickLocalized } from '../../lib/translate'
 import { localizeSchedule, localizeLanguages } from '../../lib/humanize'
 
@@ -16,8 +18,12 @@ export function Hotlines() {
   const { t, i18n } = useTranslation()
   const lang = (i18n.language || 'en').split('-')[0]
 
-  const [all, setAll] = useState<AdminHotline[]>(() => getHotlines())
-  useEffect(() => subscribeContent(() => setAll(getHotlines())), [])
+  const buildAll = () => [
+    ...getHotlines(),
+    ...applySeedTransforms<AdminHotline>('hotlines', getSeedHotlines()),
+  ]
+  const [all, setAll] = useState<AdminHotline[]>(() => buildAll())
+  useEffect(() => subscribeContent(() => setAll(buildAll())), [])
 
   const [country, setCountry] = useState('')
 
@@ -128,6 +134,7 @@ function HotlineCard({ h, lang }: { h: AdminHotline; lang: string }) {
   const note = pickLocalized(h, 'note', lang) || h.note
   const hours = localizeSchedule(pickLocalized(h, 'hours', lang) || h.hours, t)
   const languages = localizeLanguages(pickLocalized(h, 'languages', lang) || h.languages, t)
+  const websites = (h.website || '').split(/\s+/).filter((url) => /^https?:\/\//i.test(url))
   return (
     <div className="safe-card bg-white">
       <h3 className="font-semibold text-safe-800 leading-snug">{title}</h3>
@@ -145,6 +152,12 @@ function HotlineCard({ h, lang }: { h: AdminHotline; lang: string }) {
         <Phone size={16} /> {h.phone}
       </a>
       <dl className="mt-2 text-xs text-slate-700 space-y-0.5">
+        {h.geography && (
+          <div>
+            <dt className="inline text-slate-500">{t('card.coverage', { defaultValue: 'География' })}: </dt>
+            <dd className="inline">{h.geography}</dd>
+          </div>
+        )}
         {hours && (
           <div className="flex items-center gap-1.5">
             <Clock size={13} className="text-slate-500" /> {hours}
@@ -158,15 +171,20 @@ function HotlineCard({ h, lang }: { h: AdminHotline; lang: string }) {
         )}
       </dl>
       {note && <p className="text-sm text-slate-700 mt-2 leading-relaxed">{note}</p>}
-      {h.website && (
-        <a
-          href={h.website}
-          target="_blank"
-          rel="noreferrer"
-          className="mt-3 inline-flex items-center gap-1.5 border border-safe-800 text-safe-800 text-xs rounded-md px-3 py-1.5 hover:bg-safe-800 hover:text-white transition"
-        >
-          <ExternalLink size={14} /> {t('card.btn_website', { defaultValue: 'Сайт' })}
-        </a>
+      {websites.length > 0 && (
+        <div className="mt-3 flex flex-wrap gap-2">
+          {websites.map((website, index) => (
+            <a
+              key={website}
+              href={website}
+              target="_blank"
+              rel="noreferrer"
+              className="inline-flex items-center gap-1.5 border border-safe-800 text-safe-800 text-xs rounded-md px-3 py-1.5 hover:bg-safe-800 hover:text-white transition"
+            >
+              <ExternalLink size={14} /> {t('card.btn_website', { defaultValue: 'Сайт' })}{websites.length > 1 ? ` ${index + 1}` : ''}
+            </a>
+          ))}
+        </div>
       )}
     </div>
   )
