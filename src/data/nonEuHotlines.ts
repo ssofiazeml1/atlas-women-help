@@ -1,4 +1,4 @@
-// Generated from Горячие_линии_Европа_вне_ЕС.xlsx. Russian entries are intentionally excluded pending a legal safety review. Keep stable ids so admin overrides remain attached.
+// Generated from Горячие_линии_Европа_вне_ЕС.xlsx. Russian and Ukrainian entries are intentionally excluded for owner safety. Keep stable ids so admin overrides remain attached.
 import type { AdminHotline } from '../lib/contentStore'
 
 export const NON_EU_HOTLINES: AdminHotline[] = [
@@ -533,32 +533,6 @@ export const NON_EU_HOTLINES: AdminHotline[] = [
     "hours": "Информация Пн–Пт 08:00–18:00; экстренные сообщения — круглосуточно",
     "note": "Консультации о визах, проживании и международной защите. Принимает экстренные сообщения о торговле людьми и опасных ситуациях с мигрантами.",
     "website": "https://yimer.gov.tr/EN/About/90776bf3-fd30-45e9-bd26-1516853f3503",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-non-eu-44",
-    "title": "Ла Страда–Украина — национальная линия против домашнего насилия, торговли людьми и гендерной дискриминации",
-    "country": "Украина",
-    "scope": "country",
-    "phone": "0 800 500 335 — стационарные; 116 123 — мобильные",
-    "geography": "По Украине; местные бесплатные номера",
-    "languages": "Местный, уточняется",
-    "hours": "Круглосуточно",
-    "note": "Консультации и поддержка при домашнем насилии, торговле людьми и гендерной дискриминации.",
-    "website": "https://la-strada.org.ua/kontakty",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-non-eu-45",
-    "title": "Правительственный контактный центр — линия 1547",
-    "country": "Украина",
-    "scope": "country",
-    "phone": "1547; из-за рубежа +380 44 284 19 43",
-    "geography": "Украина; отдельный международный номер для граждан Украины за рубежом",
-    "languages": "Местный, уточняется",
-    "hours": "Круглосуточно",
-    "note": "Психологические и юридические консультации при насилии и торговле людьми. Регистрация обращений для передачи государственным органам.",
-    "website": "https://old.ukc.gov.ua/dovidkova-informatsiya/pro-robotu-liniyi-1547/",
     "createdAt": 0
   },
   {
