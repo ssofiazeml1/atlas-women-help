@@ -95,6 +95,7 @@ import {
   getSeedLibrary,
   getSeedStories,
   getSeedHomeCards,
+  getSeedHotlines,
   type SeedCenter,
   type SeedRating,
   type SeedChecklist,
@@ -411,6 +412,7 @@ function SectionDangerZone({ tab }: { tab: TabKey }) {
       case 'library': return getSeedLibrary().map((s) => s.id)
       case 'stories': return getSeedStories().map((s) => s.id)
       case 'cards': return getSeedHomeCards().map((s) => s.id)
+      case 'hotlines': return getSeedHotlines().map((s) => s.id)
       default: return []
     }
   }
@@ -425,6 +427,7 @@ function SectionDangerZone({ tab }: { tab: TabKey }) {
       case 'library': getLibrary().forEach((x) => deleteLibrary(x.id)); break
       case 'stories': getStories().forEach((x) => deleteStory(x.id)); break
       case 'cards': getHomeCards().forEach((x) => deleteHomeCard(x.id)); break
+      case 'hotlines': getHotlines().forEach((x) => deleteHotline(x.id)); break
       case 'home': saveHomeTexts({}); break
       case 'about': saveAboutTexts({}); break
     }
@@ -2087,6 +2090,27 @@ function HotlinesSection() {
       title="Горячие линии"
       intro="Добавьте номера телефонов. Укажите страну — линия появится при выборе этой страны. Отметьте «Международная», чтобы линия показывалась всем."
     >
+      <SeedItemsBlock
+        sectionKey="hotlines"
+        title="Встроенные линии из таблицы"
+        getSeeds={getSeedHotlines}
+        fields={[
+          { key: 'title', label: 'Название' },
+          { key: 'country', label: 'Страна' },
+          { key: 'phone', label: 'Телефон' },
+          { key: 'geography', label: 'География работы' },
+          { key: 'hours', label: 'Часы работы' },
+          { key: 'languages', label: 'Языки' },
+          { key: 'note', label: 'Описание', type: 'textarea' },
+          { key: 'website', label: 'Официальные источники', type: 'textarea' },
+        ]}
+        summary={(h) => (
+          <div>
+            <div className="font-semibold">{h.title}</div>
+            <div className="text-xs text-slate-500">{h.country} · {h.phone}</div>
+          </div>
+        )}
+      />
       <form onSubmit={submit} className="safe-card bg-white space-y-3 mb-6">
         <Field label="Название линии">
           <input
