@@ -457,6 +457,7 @@ export type AdminHotline = {
   country: string // '' for international
   scope?: 'country' | 'international' | 'eu'
   phone: string
+  geography?: string
   hours?: string
   languages?: string
   note?: string
