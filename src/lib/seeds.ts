@@ -9,6 +9,7 @@ import { GERMAN_CENTERS } from '../data/germanCenters'
 import { EU_HOTLINES } from '../data/euHotlines'
 import { NON_EU_HOTLINES } from '../data/nonEuHotlines'
 import { NORTH_AMERICA_HOTLINES } from '../data/northAmericaHotlines'
+import { SOUTH_AMERICA_HOTLINES } from '../data/southAmericaHotlines'
 
 // ---------- centers ---------------------------------------------------------
 export type SeedCenter = {
@@ -42,7 +43,12 @@ export function getSeedCenters(): SeedCenter[] {
 
 // ---------- hotlines -------------------------------------------------------
 export function getSeedHotlines() {
-  return [...EU_HOTLINES, ...NON_EU_HOTLINES, ...NORTH_AMERICA_HOTLINES]
+  return [
+    ...EU_HOTLINES,
+    ...NON_EU_HOTLINES,
+    ...NORTH_AMERICA_HOTLINES,
+    ...SOUTH_AMERICA_HOTLINES,
+  ]
 }
 
 // ---------- ratings (i18n safebridge.demo) ----------------------------------
