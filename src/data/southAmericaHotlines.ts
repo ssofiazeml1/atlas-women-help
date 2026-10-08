@@ -1,4 +1,4 @@
-// Generated from Горячие_линии_Южная_Америка.xlsx. Keep stable ids so admin overrides remain attached.
+// Generated from Горячие_линии_Южная_Америка.xlsx. High-risk direct reporting contacts are excluded. Keep stable ids so admin overrides remain attached.
 import type { AdminHotline } from '../lib/contentStore'
 
 export const SOUTH_AMERICA_HOTLINES: AdminHotline[] = [
@@ -159,19 +159,6 @@ export const SOUTH_AMERICA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-sa-13",
-    "title": "ECU 911 — экстренная помощь при насилии",
-    "country": "Эквадор",
-    "scope": "country",
-    "phone": "911",
-    "geography": "Внутри страны",
-    "languages": "Местный, уточняется",
-    "hours": "Круглосуточно",
-    "note": "Экстренная координация полиции, медицинских и других служб при насилии в отношении женщин и внутрисемейном насилии.",
-    "website": "https://www.ecu911.gob.ec/en-el-pais-el-ecu-911-coordino-la-atencion-de-65-138-emergencias-de-violencia-intrafamiliar-en-2025/",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-sa-14",
     "title": "Fiscalía General del Estado — 1800 DELITO",
     "country": "Эквадор",
@@ -276,19 +263,6 @@ export const SOUTH_AMERICA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-sa-22",
-    "title": "Korps Politie Suriname — экстренная линия полиции",
-    "country": "Суринам",
-    "scope": "country",
-    "phone": "115",
-    "geography": "Внутри страны",
-    "languages": "Местный, уточняется",
-    "hours": "Круглосуточно",
-    "note": "Экстренное обращение в полицию, в том числе при домашнем или сексуальном насилии и непосредственной угрозе.",
-    "website": "https://gov.sr/thema/politie/",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-sa-23",
     "title": "MIDES / Inmujeres — домашнее насилие",
     "country": "Уругвай",
@@ -312,19 +286,6 @@ export const SOUTH_AMERICA_HOTLINES: AdminHotline[] = [
     "hours": "Круглосуточно",
     "note": "Бесплатная профессиональная кризисная поддержка при суицидальных мыслях и тяжёлом эмоциональном состоянии.",
     "website": "https://www.gub.uy/ministerio-salud-publica/salud-mental",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-sa-25",
-    "title": "Ministerio Público — Línea 0800-FISCA-00",
-    "country": "Венесуэла",
-    "scope": "country",
-    "phone": "0800 3472200 (0800 FISCA 00)",
-    "geography": "Внутри страны",
-    "languages": "Местный, уточняется",
-    "hours": "Расписание уточняется",
-    "note": "Информация о подаче заявления и доступе к прокуратуре при насилии в отношении женщин и других преступлениях.",
-    "website": "https://venezuela.unfpa.org/sites/default/files/pub-pdf/2025-09/Digital_2GuiaViolenciaPsicologica_V3.pdf",
     "createdAt": 0
   },
   {
