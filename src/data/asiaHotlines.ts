@@ -1,4 +1,4 @@
-// Generated from Горячие_линии_Азия.xlsx. Exact country/phone duplicates already present in earlier regional datasets are omitted. Keep stable ids so admin overrides remain attached.
+// Generated from Горячие_линии_Азия.xlsx. Exact duplicates and high-risk direct reporting contacts are excluded. Keep stable ids so admin overrides remain attached.
 import type { AdminHotline } from '../lib/contentStore'
 
 export const ASIA_HOTLINES: AdminHotline[] = [
@@ -185,19 +185,6 @@ export const ASIA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-asia-20",
-    "title": "Единый экстренный номер",
-    "country": "Грузия",
-    "scope": "country",
-    "phone": "112",
-    "geography": "Только внутри страны",
-    "languages": "Грузинский; другие уточняются",
-    "hours": "Круглосуточно",
-    "note": "Экстренная полиция, скорая и спасатели при непосредственной угрозе жизни или безопасности.",
-    "website": "https://112.gov.ge/?lang=en",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-asia-21",
     "title": "Women Helpline",
     "country": "Индия",
@@ -325,32 +312,6 @@ export const ASIA_HOTLINES: AdminHotline[] = [
     "hours": "Вс–Чт 08:00–16:00",
     "note": "Информация по защите, регистрации и услугам для беженцев всех национальностей.",
     "website": "https://www.unhcr.org/jo/useful-numbers-refugees",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-asia-32",
-    "title": "Единая экстренная служба",
-    "country": "Казахстан",
-    "scope": "country",
-    "phone": "112",
-    "geography": "Только внутри страны",
-    "languages": "Казахский, Русский; другие уточняются",
-    "hours": "Круглосуточно",
-    "note": "Бесплатный номер для полиции, скорой и спасателей при непосредственной угрозе жизни или здоровью.",
-    "website": "https://www.gov.kz/situations/729/1519?lang=ru",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-asia-33",
-    "title": "Единый экстренный номер",
-    "country": "Кувейт",
-    "scope": "country",
-    "phone": "112",
-    "geography": "Только внутри страны",
-    "languages": "Арабский; другие уточняются",
-    "hours": "Круглосуточно",
-    "note": "Полиция, скорая и пожарная служба при непосредственной угрозе.",
-    "website": "https://e.gov.kw/sites/kgoenglish/Pages/Visitors/TourismInKuwait/EssintialServicesEmergencies.aspx",
     "createdAt": 0
   },
   {
@@ -679,19 +640,6 @@ export const ASIA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-asia-59",
-    "title": "Domestic Violence Reporting Center",
-    "country": "Саудовская Аравия",
-    "scope": "country",
-    "phone": "1919",
-    "geography": "Только внутри страны",
-    "languages": "Арабский, Английский",
-    "hours": "Круглосуточно",
-    "note": "Бесплатный государственный центр принимает сообщения о домашнем насилии и предоставляет социальную и психологическую поддержку.",
-    "website": "https://my.gov.sa/en/services/2776570",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-asia-60",
     "title": "Ministry of Health 937",
     "country": "Саудовская Аравия",
@@ -796,19 +744,6 @@ export const ASIA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-asia-68",
-    "title": "Полиция — экстренная помощь",
-    "country": "Таджикистан",
-    "scope": "country",
-    "phone": "102",
-    "geography": "Только внутри страны",
-    "languages": "Таджикский, Русский; другие уточняются",
-    "hours": "Круглосуточно",
-    "note": "Экстренное обращение в полицию при непосредственной угрозе жизни или насилии.",
-    "website": "https://www.mia.tj/",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-asia-69",
     "title": "Social Assistance Center",
     "country": "Таиланд",
@@ -844,19 +779,6 @@ export const ASIA_HOTLINES: AdminHotline[] = [
     "languages": "Тетум; другие уточняются",
     "hours": "Расписание уточняется",
     "note": "Комплексная помощь женщинам и детям, пострадавшим от гендерного насилия, включая консультирование и сопровождение.",
-    "website": "https://www.fokupers.org/contact/",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-asia-72",
-    "title": "Полиция — экстренная помощь при насилии",
-    "country": "Тимор-Лешти",
-    "scope": "country",
-    "phone": "7335928 (Дили); 77265721 (районы)",
-    "geography": "Региональный",
-    "languages": "Тетум; другие уточняются",
-    "hours": "Экстренно; график не опубликован",
-    "note": "Контакты полиции для срочного обращения при серьёзном насилии или угрозе безопасности.",
     "website": "https://www.fokupers.org/contact/",
     "createdAt": 0
   },
@@ -910,19 +832,6 @@ export const ASIA_HOTLINES: AdminHotline[] = [
     "hours": "Круглосуточно",
     "note": "Бесплатная правовая, социальная и психологическая помощь женщинам с направлением в службы защиты.",
     "website": "https://gov.uz/ru/advice/589/document/2348",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-asia-78",
-    "title": "МВД — сообщения о насилии над женщинами",
-    "country": "Узбекистан",
-    "scope": "country",
-    "phone": "1259",
-    "geography": "Только внутри страны",
-    "languages": "Узбекский, Русский; другие уточняются",
-    "hours": "Расписание уточняется",
-    "note": "Полицейский канал для сообщений о насилии в отношении женщин и получения дальнейших инструкций.",
-    "website": "https://www.gov.uk/government/publications/uzbekistan-information-for-victims-of-rape-and-sexual-assault/uzbekistan-information-for-victims-of-rape-and-sexual-assault",
     "createdAt": 0
   },
   {
