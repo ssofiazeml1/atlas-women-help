@@ -12,6 +12,7 @@ import { NORTH_AMERICA_HOTLINES } from '../data/northAmericaHotlines'
 import { SOUTH_AMERICA_HOTLINES } from '../data/southAmericaHotlines'
 import { ASIA_HOTLINES } from '../data/asiaHotlines'
 import { OCEANIA_HOTLINES } from '../data/oceaniaHotlines'
+import { AFRICA_HOTLINES } from '../data/africaHotlines'
 
 // ---------- centers ---------------------------------------------------------
 export type SeedCenter = {
@@ -52,6 +53,7 @@ export function getSeedHotlines() {
     ...SOUTH_AMERICA_HOTLINES,
     ...ASIA_HOTLINES,
     ...OCEANIA_HOTLINES,
+    ...AFRICA_HOTLINES,
   ]
 }
 
