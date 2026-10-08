@@ -1,4 +1,4 @@
-// Generated from Горячие_линии_Европа_вне_ЕС.xlsx. Ukrainian entries are intentionally excluded for owner safety. Keep stable ids so admin overrides remain attached.
+// Generated from Горячие_линии_Европа_вне_ЕС.xlsx. Ukrainian and high-risk direct reporting contacts are excluded. Keep stable ids so admin overrides remain attached.
 import type { AdminHotline } from '../lib/contentStore'
 
 export const NON_EU_HOTLINES: AdminHotline[] = [
@@ -39,19 +39,6 @@ export const NON_EU_HOTLINES: AdminHotline[] = [
     "hours": "Круглосуточно",
     "note": "Поддержка женщин и девушек, пострадавших от насилия, консультации и направление к профильным службам.",
     "website": "https://hotlinealbania.org/en/blog/\nhttps://wave-network.org/resource-hub/wave-data-explorer/albania/",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-non-eu-04",
-    "title": "МВД — национальная линия против торговли людьми",
-    "country": "Албания",
-    "scope": "country",
-    "phone": "116 006",
-    "geography": "По всей Албании; местный короткий номер",
-    "languages": "Местный, уточняется",
-    "hours": "График не подтверждён; уточняется",
-    "note": "Сообщения о торговле людьми и направление пострадавших к службам защиты.",
-    "website": "https://mb.gov.al/wp-content/uploads/2024/10/Raport-monitorimi-per-periudhen-2021-2023_22012024-1-1.pdf",
     "createdAt": 0
   },
   {
@@ -455,19 +442,6 @@ export const NON_EU_HOTLINES: AdminHotline[] = [
     "hours": "Круглосуточно",
     "note": "Консультации и помощь людям, столкнувшимся с насилием, с направлением к службам поддержки.",
     "website": "https://agata.sm/contatti/\nhttps://sanita.sm/pub1/SanitaSM/dettaglio_notizia.html?idItem=2edd2aac-92f6-4b3b-83e2-7298ee083405",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-non-eu-36",
-    "title": "Жандармерия — отдел гендерного насилия и преступлений против несовершеннолетних",
-    "country": "Сан-Марино",
-    "scope": "country",
-    "phone": "0549 888015",
-    "geography": "По территории Сан-Марино; местный формат номера",
-    "languages": "Местный, уточняется",
-    "hours": "График отдела не опубликован; уточняется",
-    "note": "Контакт специализированного полицейского подразделения для сообщений о гендерном насилии и насилии над детьми. Это приём обращений в правоохранительный орган.",
-    "website": "https://agata.sm/contatti/\nhttps://www.gendarmeria.sm/on-line/home/uffici/ufficio-violenza-di-genere-e-contro-minori.html",
     "createdAt": 0
   },
   {
