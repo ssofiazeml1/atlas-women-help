@@ -1,4 +1,4 @@
-// Generated from Горячие_линии_Океания.xlsx. Keep stable ids so admin overrides remain attached.
+// Generated from Горячие_линии_Океания.xlsx. High-risk direct reporting contacts are excluded. Keep stable ids so admin overrides remain attached.
 import type { AdminHotline } from '../lib/contentStore'
 
 export const OCEANIA_HOTLINES: AdminHotline[] = [
@@ -68,19 +68,6 @@ export const OCEANIA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-oceania-06",
-    "title": "Kiribati Police — насилие над детьми и домашнее насилие",
-    "country": "Кирибати",
-    "scope": "country",
-    "phone": "188",
-    "geography": "Только внутри страны",
-    "languages": "Английский, Кирибати; уточняется",
-    "hours": "Круглосуточный режим не подтверждён",
-    "note": "Специализированный полицейский номер для сообщений о насилии над детьми и домашнем насилии.",
-    "website": "https://www.itu.int/dms_pub/itu-t/opb/sp/T-SP-OB.1128-2017-OAS-PDF-E.pdf",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-oceania-07",
     "title": "Weto in Mour / WUTMI — гендерное насилие",
     "country": "Маршалловы Острова",
@@ -91,19 +78,6 @@ export const OCEANIA_HOTLINES: AdminHotline[] = [
     "hours": "Расписание уточняется",
     "note": "Бесплатная поддержка женщинам и девушкам при гендерном насилии, включая сопровождение к полиции, медицинской и юридической помощи и экстренному размещению.",
     "website": "https://mof.gov.mh/wp-content/uploads/2024/12/SEDeP-GRM-Revision-A-_180422.pdf",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-oceania-08",
-    "title": "Marshall Islands Police Department",
-    "country": "Маршалловы Острова",
-    "scope": "country",
-    "phone": "+692 625 8666; +692 625 3233",
-    "geography": "Только внутри страны",
-    "languages": "Маршалльский, Английский; уточняется",
-    "hours": "Экстренно; точный график не опубликован",
-    "note": "Полицейские контакты для обращения при непосредственной угрозе и сообщения о преступлении.",
-    "website": "https://rmiparliament.org/cms/library/communications/58-2025-nitijela-session.html?download=842%3A2025-nitijela-communication-no-48-marshall-islands-police-department-annual-report-2024&start=20",
     "createdAt": 0
   },
   {
@@ -143,19 +117,6 @@ export const OCEANIA_HOTLINES: AdminHotline[] = [
     "hours": "Расписание уточняется",
     "note": "Государственная служба помогает при домашнем насилии получить консультацию, защитный ордер и безопасное размещение.",
     "website": "https://www.nauru.gov.nr/media/124828/nauru_bulletin__09_29may2020__213_.pdf",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-oceania-12",
-    "title": "Nauru Police — экстренная помощь",
-    "country": "Науру",
-    "scope": "country",
-    "phone": "110",
-    "geography": "Только внутри страны",
-    "languages": "Науруанский, Английский; уточняется",
-    "hours": "Круглосуточно",
-    "note": "Полиция реагирует на непосредственную угрозу и принимает сообщения о домашнем насилии и других преступлениях.",
-    "website": "https://www.nauru.gov.nr/government/departments/nauru-police-force.aspx",
     "createdAt": 0
   },
   {
@@ -302,32 +263,6 @@ export const OCEANIA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-oceania-24",
-    "title": "Tonga Police Domestic Violence Unit",
-    "country": "Тонга",
-    "scope": "country",
-    "phone": "+676 740 1647; экстренно 922",
-    "geography": "Только внутри страны",
-    "languages": "Тонганский, Английский; уточняется",
-    "hours": "Пн–Пт 08:30–16:30; экстренный номер 922 круглосуточно",
-    "note": "Подразделение принимает сообщения о домашнем насилии; при непосредственной угрозе используется экстренный номер полиции.",
-    "website": "https://tonga-police.webflow.io/information-and-advice/domestic-violence",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-oceania-25",
-    "title": "Tuvalu Police / Domestic Violence Unit",
-    "country": "Тувалу",
-    "scope": "country",
-    "phone": "911; +688 20725",
-    "geography": "Только внутри страны",
-    "languages": "Тувалуанский, Английский; уточняется",
-    "hours": "Круглосуточно для 911",
-    "note": "Полиция обеспечивает срочную защиту и принимает обращения о домашнем и сексуальном насилии.",
-    "website": "https://gender.gov.tv/wp-content/uploads/2026/03/We-Care-Guideline-6_GBV-in-Disasters.pdf",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-oceania-26",
     "title": "Office of the People’s Lawyer",
     "country": "Тувалу",
@@ -351,19 +286,6 @@ export const OCEANIA_HOTLINES: AdminHotline[] = [
     "hours": "Пн–Пт 07:30–17:30; 24000 обозначен как экстренная линия",
     "note": "Кризисное консультирование, ведение случаев и направления женщинам и детям, пострадавшим от насилия.",
     "website": "https://dwa.gov.vu/index.php/gender-based-violence/gender-based-violence-directory/gender-based-violence-service-map",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-oceania-28",
-    "title": "Vanuatu Police — экстренная помощь",
-    "country": "Вануату",
-    "scope": "country",
-    "phone": "111 (Digicel); 1111 (TVL)",
-    "geography": "Только внутри страны",
-    "languages": "Бислама, Английский, Французский; уточняется",
-    "hours": "Круглосуточно",
-    "note": "Экстренное обращение в полицию при непосредственной угрозе, включая домашнее насилие.",
-    "website": "https://police.gov.vu/contact-us/3-police-emergency",
     "createdAt": 0
   }
 ]
