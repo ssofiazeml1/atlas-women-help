@@ -63,6 +63,14 @@ export function Hotlines() {
         })}
       </p>
 
+      <div className="mb-6 rounded-md border border-amber-300 bg-amber-50 px-4 py-3 text-sm text-amber-950">
+        <strong>{t('hotlines.safety_title', { defaultValue: 'Перед звонком' })}: </strong>
+        {t('hotlines.safety_notice', {
+          defaultValue:
+            'Если ваш телефон контролируют, по возможности используйте безопасное устройство. Звонок может остаться в журнале вызовов или детализации оператора. Удаляйте историю только если это не увеличит риск.',
+        })}
+      </div>
+
       <div className="safe-card bg-white mb-6">
         <label htmlFor="hotline-country" className="block text-xs font-medium text-slate-600 mb-1">
           {t('hotlines.select_country', { defaultValue: 'Страна' })}
