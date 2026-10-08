@@ -1,4 +1,4 @@
-// Generated from Горячие_линии_Северная_Америка.xlsx. Keep stable ids so admin overrides remain attached.
+// Generated from Горячие_линии_Северная_Америка.xlsx. Direct police, prosecutor and high-risk reporting contacts are excluded. Keep stable ids so admin overrides remain attached.
 import type { AdminHotline } from '../lib/contentStore'
 
 export const NORTH_AMERICA_HOTLINES: AdminHotline[] = [
@@ -42,19 +42,6 @@ export const NORTH_AMERICA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-na-04",
-    "title": "Department of Social Services — Child Abuse Hotline",
-    "country": "Багамы",
-    "scope": "country",
-    "phone": "+1 242 322 2763",
-    "geography": "Внутри страны",
-    "languages": "Местный, уточняется",
-    "hours": "Расписание уточняется",
-    "note": "Приём сообщений о насилии над детьми, в том числе от родителей и других взрослых.",
-    "website": "https://getready.gov.bs/contact-us/emergency-numbers/",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-na-05",
     "title": "Business and Professional Women’s Club — кризисная линия",
     "country": "Барбадос",
@@ -78,19 +65,6 @@ export const NORTH_AMERICA_HOTLINES: AdminHotline[] = [
     "hours": "Круглосуточно",
     "note": "Эмоциональная поддержка в кризисе, информация и направление к службам психического здоровья.",
     "website": "https://www.health.gov.bb/News/Press-Releases/Mental-Health-Hotline-A-Lifeline-F",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-na-07",
-    "title": "Police Family Violence Unit — A Way Out",
-    "country": "Белиз",
-    "scope": "country",
-    "phone": "0 800 2 929 688",
-    "geography": "Внутри страны",
-    "languages": "Местный, уточняется",
-    "hours": "Круглосуточно",
-    "note": "Помощь при домашнем насилии и связь с полицейским подразделением по семейному насилию.",
-    "website": "https://www.paho.org/sites/default/files/gbv_referral_pathway_final_update_0.pdf",
     "createdAt": 0
   },
   {
@@ -133,19 +107,6 @@ export const NORTH_AMERICA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-na-11",
-    "title": "Ministerio Público — линия помощи женщинам",
-    "country": "Гватемала",
-    "scope": "country",
-    "phone": "1572",
-    "geography": "Внутри страны",
-    "languages": "Местный, уточняется",
-    "hours": "Круглосуточно",
-    "note": "Приём обращений о насилии в отношении женщин и организация профильной помощи.",
-    "website": "https://help.unhcr.org/guatemala/violencia-de-genero/donde-buscar-ayuda-si-estoy-sufriendo-violencia/\nhttps://guatemala.gob.gt/inauguran-centro-de-apoyo-a-las-mujeres-victimas-de-violencia/",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-na-12",
     "title": "UNHCR / ODHAG — информационная линия",
     "country": "Гватемала",
@@ -156,19 +117,6 @@ export const NORTH_AMERICA_HOTLINES: AdminHotline[] = [
     "hours": "Пн–Пт 08:30–16:00",
     "note": "Консультации для беженцев и просителей убежища о доступной защите и помощи.",
     "website": "https://help.unhcr.org/guatemala/acnur-en-guatemala-2/nuestras-oficinas/guatemala/",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-na-13",
-    "title": "SEMUJER / Policía Nacional — Mujer Vivir Sin Miedo",
-    "country": "Гондурас",
-    "scope": "country",
-    "phone": "114",
-    "geography": "Внутри страны",
-    "languages": "Местный, уточняется",
-    "hours": "Круглосуточно",
-    "note": "Психологическая и юридическая поддержка женщин при насилии, приём сообщений и направление за помощью.",
-    "website": "https://semujer.gob.hn/index.php/2026/03/25/elementor-1762/",
     "createdAt": 0
   },
   {
@@ -250,19 +198,6 @@ export const NORTH_AMERICA_HOTLINES: AdminHotline[] = [
     "createdAt": 0
   },
   {
-    "id": "seed-hotline-na-20",
-    "title": "Ministerio Público — Línea Vida",
-    "country": "Доминиканская Республика",
-    "scope": "country",
-    "phone": "809 200 1202",
-    "geography": "Внутри страны",
-    "languages": "Местный, уточняется",
-    "hours": "Круглосуточный режим заявлен при запуске; текущее расписание уточняется",
-    "note": "Сообщения о домашнем, гендерном и сексуальном насилии и передача обращения в систему правосудия.",
-    "website": "https://transparencia.pgr.gob.do/Inicio/DatosAbiertos/25306\nhttps://observatoriojusticiaygenero.poderjudicial.gob.do/fiscalia-del-distrito-nacional-relanza-linea-vida-con-asistencia-24-horas-en-casos-de-violencia-genero-intrafamiliar-o-abuso-infantil/",
-    "createdAt": 0
-  },
-  {
     "id": "seed-hotline-na-21",
     "title": "Assaulted Women’s Helpline — помощь женщинам при насилии",
     "country": "Канада",
@@ -311,19 +246,6 @@ export const NORTH_AMERICA_HOTLINES: AdminHotline[] = [
     "languages": "Местный, уточняется",
     "hours": "Пн–Пт 08:00–16:00",
     "note": "Информация о правах женщин и юридические консультации по вопросам насилия.",
-    "website": "https://www.inamu.go.cr/-/noticias-servicio-9-1-1-inamu-funciona-horario-24-7",
-    "createdAt": 0
-  },
-  {
-    "id": "seed-hotline-na-25",
-    "title": "INAMU / COAVIF через 911 — помощь при насилии",
-    "country": "Коста-Рика",
-    "scope": "country",
-    "phone": "911 — сообщить о насилии и запросить помощь INAMU",
-    "geography": "Внутри страны",
-    "languages": "Местный, уточняется",
-    "hours": "Круглосуточно",
-    "note": "Специализированная помощь INAMU при насилии в отношении женщин через национальную систему экстренного реагирования.",
     "website": "https://www.inamu.go.cr/-/noticias-servicio-9-1-1-inamu-funciona-horario-24-7",
     "createdAt": 0
   },
