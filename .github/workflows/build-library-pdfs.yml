@@ -5,6 +5,7 @@ on:
     branches: [main]
     paths:
       - 'tmp/pdfs/library_translations.json'
+      - 'tmp/pdfs/detailed_guides_*.json'
       - 'tmp/pdfs/render_library_pdfs.py'
       - '.github/workflows/build-library-pdfs.yml'
   workflow_dispatch:
