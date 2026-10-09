@@ -1,6 +1,6 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { BookOpen, Download, ExternalLink } from 'lucide-react'
+import { BookOpen, Download } from 'lucide-react'
 import {
   getLibrary,
   subscribeContent,
@@ -8,15 +8,12 @@ import {
   type LibraryArticle,
 } from '../../lib/contentStore'
 import { pickLocalized } from '../../lib/translate'
+import { getSeedLibrary } from '../../lib/seeds'
 
 export function ResearchLibrary() {
   const { t, i18n } = useTranslation()
-  const lang = i18n.language
-  const placeholders = (t('research.placeholders', { returnObjects: true }) || []) as any[]
-  const visiblePlaceholders = applySeedTransforms<any>(
-    'library',
-    (Array.isArray(placeholders) ? placeholders : []).map((p, i) => ({ ...p, id: `seed-library-${i}` }))
-  )
+  const lang = (i18n.language || 'en').split('-')[0]
+  const visiblePlaceholders = applySeedTransforms('library', getSeedLibrary())
   const [admin, setAdmin] = useState<LibraryArticle[]>(() => getLibrary())
   useEffect(() => subscribeContent(() => setAdmin(getLibrary())), [])
 
@@ -65,20 +62,17 @@ export function ResearchLibrary() {
               <div className="flex gap-3 items-start">
                 <div className="mt-1 text-teal-700"><BookOpen size={18} /></div>
                 <div className="flex-1">
-                  <div className="font-semibold mb-1">{p.title}</div>
+                  <div className="font-semibold mb-1">{pickLocalized(p, 'title', lang) || p.title}</div>
                   <div className="text-xs text-slate-500 mb-2">
-                    {t('research.card.author_label')}: {p.author} • {t('research.card.date_label')}: {p.date} • {t('research.card.category_label')}: {p.cat}
+                    {t('research.card.author_label')}: {p.author} • {t('research.card.date_label')}: {p.date} • {t('research.card.category_label')}: {pickLocalized(p, 'category', lang) || p.category}
                   </div>
                   <div className="text-sm leading-relaxed mb-4 text-slate-700">
-                    {t('research.card.abstract_label')}: {p.abstract}
+                    {t('research.card.abstract_label')}: {pickLocalized(p, 'abstract', lang) || p.abstract}
                   </div>
                   <div className="flex gap-3 items-center text-sm">
-                    <button className="px-3 py-1 border rounded text-xs inline-flex items-center gap-1 hover:bg-slate-50">
-                      <ExternalLink size={14} /> {t('research.card.open')}
-                    </button>
-                    <button className="px-3 py-1 border rounded text-xs inline-flex items-center gap-1 hover:bg-slate-50">
+                    <a href={p.pdfUrls?.[lang] || p.pdfUrls?.en} target="_blank" rel="noreferrer" className="px-3 py-1 border rounded text-xs inline-flex items-center gap-1 hover:bg-slate-50">
                       <Download size={14} /> {t('research.card.pdf')}
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>

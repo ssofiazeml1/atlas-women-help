@@ -1,0 +1,504 @@
+{
+  "languages": [
+    "en",
+    "ru",
+    "fr",
+    "es",
+    "ar",
+    "zh"
+  ],
+  "items": [
+    {
+      "id": 1,
+      "title_en": "RESPECT women: Preventing violence against women",
+      "category_en": "Prevention and safety",
+      "summary_en": "A practical framework for preventing violence against women. It highlights evidence-based actions: strengthen relationship skills, improve services, reduce poverty, make public spaces safer, prevent child abuse and change harmful norms. Effective prevention combines several approaches and centres women’s rights.",
+      "author": "WHO and UN partners · English",
+      "date": "2019",
+      "source_url": "https://iris.who.int/bitstream/handle/10665/312261/WHO-RHR-18.19-eng.pdf?sequence=1",
+      "localized": {
+        "en": {
+          "title": "RESPECT women: Preventing violence against women",
+          "category": "Prevention and safety",
+          "summary": "A practical framework for preventing violence against women. It highlights evidence-based actions: strengthen relationship skills, improve services, reduce poverty, make public spaces safer, prevent child abuse and change harmful norms. Effective prevention combines several approaches and centres women’s rights."
+        },
+        "ru": {
+          "title": "УВАЖАТЬ женщин: предотвращение насилия в отношении женщин",
+          "category": "Профилактика и безопасность",
+          "summary": "Практическая основа предотвращения насилия в отношении женщин. В нем освещаются действия, основанные на фактических данных: укрепление навыков взаимоотношений, улучшение услуг, сокращение бедности, повышение безопасности в общественных местах, предотвращение жестокого обращения с детьми и изменение вредных норм. Эффективная профилактика сочетает в себе несколько подходов и сосредотачивает права женщин."
+        },
+        "fr": {
+          "title": "RESPECTER les femmes : prévenir la violence à l'égard des femmes",
+          "category": "Prévention et sécurité",
+          "summary": "Un cadre pratique pour la prévention de la violence à l'égard des femmes. Il met en évidence des actions fondées sur des données probantes : renforcer les compétences relationnelles, améliorer les services, réduire la pauvreté, rendre les espaces publics plus sûrs, prévenir la maltraitance des enfants et modifier les normes néfastes. Une prévention efficace combine plusieurs approches et centre les droits des femmes."
+        },
+        "es": {
+          "title": "RESPETAR A las mujeres: Prevenir la violencia contra las mujeres",
+          "category": "Prevención y seguridad",
+          "summary": "Un marco práctico para prevenir la violencia contra las mujeres. Destaca las acciones basadas en la evidencia: fortalecer las habilidades de relación, mejorar los servicios, reducir la pobreza, hacer que los espacios públicos sean más seguros, prevenir el abuso infantil y cambiar las normas perjudiciales. La prevención efectiva combina varios enfoques y centra los derechos de las mujeres."
+        },
+        "ar": {
+          "title": "احترام المرأة: منع العنف ضد المرأة",
+          "category": "الوقاية والسلامة",
+          "summary": "إطار عملي لمنع العنف ضد المرأة. ويسلط الضوء على الإجراءات القائمة على الأدلة: تعزيز مهارات العلاقات، وتحسين الخدمات، والحد من الفقر، وجعل الأماكن العامة أكثر أمانًا، ومنع إساءة معاملة الأطفال، وتغيير المعايير الضارة. تجمع الوقاية الفعالة بين العديد من النهج والمراكز المعنية بحقوق المرأة."
+        },
+        "zh": {
+          "title": "尊重妇女：防止暴力侵害妇女行为",
+          "category": "预防和安全",
+          "summary": "防止暴力侵害妇女行为的实用框架。 它强调以证据为基础的行动：加强关系技能、改善服务、减少贫困、使公共场所更安全、防止虐待儿童和改变有害规范。 有效的预防结合了几种方法，并以妇女权利为中心。"
+        }
+      }
+    },
+    {
+      "id": 2,
+      "title_en": "Caring for women subjected to violence: a WHO curriculum for training health-care providers",
+      "category_en": "Health care training",
+      "summary_en": "A training curriculum for health-care providers who support women subjected to violence. It focuses on respectful first-line support, privacy, listening without judgement, assessing immediate needs, documenting care safely and connecting women with services while respecting their decisions.",
+      "author": "WHO · English",
+      "date": "2019",
+      "source_url": "https://iris.who.int/bitstream/handle/10665/330084/9789241517102-eng.pdf",
+      "localized": {
+        "en": {
+          "title": "Caring for women subjected to violence: a WHO curriculum for training health-care providers",
+          "category": "Health care training",
+          "summary": "A training curriculum for health-care providers who support women subjected to violence. It focuses on respectful first-line support, privacy, listening without judgement, assessing immediate needs, documenting care safely and connecting women with services while respecting their decisions."
+        },
+        "ru": {
+          "title": "Уход за женщинами, подвергшимися насилию: учебная программа ВОЗ для подготовки медицинских работников",
+          "category": "Обучение в области здравоохранения",
+          "summary": "Учебная программа для медицинских работников, которые поддерживают женщин, подвергшихся насилию. Основное внимание уделяется уважительной поддержке первой линии, конфиденциальности, выслушиванию без суждения, оценке неотложных потребностей, безопасному документированию ухода и подключению женщин к услугам при уважении их решений."
+        },
+        "fr": {
+          "title": "Prendre soin des femmes victimes de violence : un programme de l'OMS pour la formation des prestataires de soins de santé",
+          "category": "Formation en soins de santé",
+          "summary": "Un programme de formation pour les prestataires de soins de santé qui soutiennent les femmes victimes de violence. Il se concentre sur le soutien de première ligne respectueux, la vie privée, l'écoute sans jugement, l'évaluation des besoins immédiats, la documentation des soins en toute sécurité et la mise en relation des femmes avec les services tout en respectant leurs décisions."
+        },
+        "es": {
+          "title": "Atención a las mujeres víctimas de la violencia: un plan de estudios de la OMS para la formación de profesionales de la salud",
+          "category": "Capacitación en atención médica",
+          "summary": "Un plan de estudios de capacitación para los proveedores de atención médica que apoyan a las mujeres sometidas a violencia. Se centra en el apoyo respetuoso de primera línea, la privacidad, escuchar sin juzgar, evaluar las necesidades inmediatas, documentar la atención de manera segura y conectar a las mujeres con los servicios respetando sus decisiones."
+        },
+        "ar": {
+          "title": "رعاية النساء المعرضات للعنف: منهج منظمة الصحة العالمية لتدريب مقدمي الرعاية الصحية",
+          "category": "التدريب على الرعاية الصحية",
+          "summary": "منهج تدريبي لمقدمي الرعاية الصحية الذين يدعمون النساء اللواتي يتعرضن للعنف. ويركز على دعم الخط الأول المحترم، والخصوصية، والاستماع دون حكم، وتقييم الاحتياجات الفورية، وتوثيق الرعاية بأمان وربط النساء بالخدمات مع احترام قراراتهن."
+        },
+        "zh": {
+          "title": "照顾遭受暴力侵害的妇女： a世卫组织培训卫生保健提供者的课程",
+          "category": "医疗保健培训",
+          "summary": "为支持受暴力侵害妇女的卫生保健提供者提供培训课程。 它侧重于尊重一线支持、隐私、不加判断地倾听、评估眼前需求、安全记录护理以及在尊重女性决策的同时将女性与服务联系起来。"
+        }
+      }
+    },
+    {
+      "id": 3,
+      "title_en": "Clinical management of rape and intimate partner violence survivors",
+      "category_en": "Clinical care",
+      "summary_en": "Clinical guidance for caring for survivors of rape and intimate partner violence. Priorities include safety, informed consent, compassionate first-line support, timely medical care, confidential documentation and follow-up. Local protocols and trained clinicians must guide any examination or treatment.",
+      "author": "WHO, UNFPA and UNHCR · English",
+      "date": "2020",
+      "source_url": "https://iris.who.int/bitstream/handle/10665/331535/9789240001411-eng.pdf",
+      "localized": {
+        "en": {
+          "title": "Clinical management of rape and intimate partner violence survivors",
+          "category": "Clinical care",
+          "summary": "Clinical guidance for caring for survivors of rape and intimate partner violence. Priorities include safety, informed consent, compassionate first-line support, timely medical care, confidential documentation and follow-up. Local protocols and trained clinicians must guide any examination or treatment."
+        },
+        "ru": {
+          "title": "Клиническое ведение жертв изнасилования и насилия со стороны интимного партнера",
+          "category": "Клиническая помощь",
+          "summary": "Клиническое руководство по уходу за жертвами изнасилования и насилия со стороны интимного партнера. Приоритеты включают безопасность, информированное согласие, сострадательную поддержку первой линии, своевременное медицинское обслуживание, конфиденциальную документацию и последующее наблюдение. Местные протоколы и обученные клиницисты должны направлять любое обследование или лечение."
+        },
+        "fr": {
+          "title": "Prise en charge clinique des victimes de viol et de violence entre partenaires intimes",
+          "category": "Soins cliniques",
+          "summary": "Conseils cliniques pour prendre soin des victimes de viol et de violence entre partenaires intimes. Les priorités comprennent la sécurité, le consentement éclairé, le soutien de première ligne compatissant, les soins médicaux en temps opportun, la documentation confidentielle et le suivi. Les protocoles locaux et les cliniciens formés doivent guider tout examen ou traitement."
+        },
+        "es": {
+          "title": "Manejo clínico de sobrevivientes de violación y violencia de pareja",
+          "category": "Atención clínica",
+          "summary": "Orientación clínica para el cuidado de sobrevivientes de violación y violencia de pareja. Las prioridades incluyen la seguridad, el consentimiento informado, el apoyo compasivo de primera línea, la atención médica oportuna, la documentación confidencial y el seguimiento. Los protocolos locales y los médicos capacitados deben guiar cualquier examen o tratamiento."
+        },
+        "ar": {
+          "title": "الإدارة السريرية للاغتصاب والناجين من عنف الشريك الحميم",
+          "category": "الرعاية السريرية",
+          "summary": "إرشادات سريرية لرعاية الناجين من الاغتصاب وعنف الشريك الحميم. وتشمل الأولويات السلامة، والموافقة المستنيرة، ودعم الخط الأول الرحيم، والرعاية الطبية في الوقت المناسب، والتوثيق السري والمتابعة. يجب على البروتوكولات المحلية والأطباء المدربين توجيه أي فحص أو علاج."
+        },
+        "zh": {
+          "title": "强奸和亲密伴侣暴力幸存者的临床管理",
+          "category": "临床护理",
+          "summary": "护理强奸和亲密伴侣暴力幸存者的临床指南。 优先事项包括安全、知情同意、富有同情心的一线支持、及时的医疗护理、机密文件和随访。 当地方案和训练有素的临床医生必须指导任何检查或治疗。"
+        }
+      }
+    },
+    {
+      "id": 4,
+      "title_en": "Strengthening Health System Responses to Gender-based Violence in Eastern Europe and Central Asia",
+      "category_en": "Health-system response",
+      "summary_en": "A resource package for strengthening health-system responses to gender-based violence in Eastern Europe and Central Asia. It covers survivor-centred care, staff training, safe identification, documentation, referral pathways, risk assessment and coordination between health and support services.",
+      "author": "UNFPA and WAVE · English",
+      "date": "2014",
+      "source_url": "https://eeca.unfpa.org/sites/default/files/pub-pdf/WAVE-UNFPA-Report-EN.pdf",
+      "localized": {
+        "en": {
+          "title": "Strengthening Health System Responses to Gender-based Violence in Eastern Europe and Central Asia",
+          "category": "Health-system response",
+          "summary": "A resource package for strengthening health-system responses to gender-based violence in Eastern Europe and Central Asia. It covers survivor-centred care, staff training, safe identification, documentation, referral pathways, risk assessment and coordination between health and support services."
+        },
+        "ru": {
+          "title": "Укрепление мер реагирования системы здравоохранения на гендерное насилие в Восточной Европе и Центральной Азии",
+          "category": "Реакция системы здравоохранения",
+          "summary": "Ресурсный пакет для усиления мер реагирования системы здравоохранения на гендерное насилие в Восточной Европе и Центральной Азии. Он охватывает уход, ориентированный на выживших, обучение персонала, безопасную идентификацию, документацию, пути направления, оценку рисков и координацию между службами здравоохранения и поддержки."
+        },
+        "fr": {
+          "title": "Renforcer les réponses du système de santé à la violence sexiste en Europe de l'Est et en Asie centrale",
+          "category": "Réponse du système de santé",
+          "summary": "Un ensemble de ressources pour renforcer les réponses du système de santé à la violence sexiste en Europe de l'Est et en Asie centrale. Il couvre les soins centrés sur les survivants, la formation du personnel, l'identification sûre, la documentation, les voies d'orientation, l'évaluation des risques et la coordination entre les services de santé et de soutien."
+        },
+        "es": {
+          "title": "Fortalecimiento de las respuestas del sistema de salud a la violencia de género en Europa del Este y Asia Central",
+          "category": "Respuesta del sistema de salud",
+          "summary": "Un paquete de recursos para fortalecer las respuestas del sistema de salud a la violencia de género en Europa Oriental y Asia Central. Cubre la atención centrada en el sobreviviente, la capacitación del personal, la identificación segura, la documentación, las vías de referencia, la evaluación de riesgos y la coordinación entre los servicios de salud y de apoyo."
+        },
+        "ar": {
+          "title": "تعزيز استجابات النظام الصحي للعنف القائم على النوع الاجتماعي في أوروبا الشرقية وآسيا الوسطى",
+          "category": "استجابة النظام الصحي",
+          "summary": "حزمة موارد لتعزيز استجابات النظام الصحي للعنف القائم على النوع الاجتماعي في أوروبا الشرقية وآسيا الوسطى. وهو يغطي الرعاية التي تركز على الناجين، وتدريب الموظفين، وتحديد الهوية الآمنة، والتوثيق، ومسارات الإحالة، وتقييم المخاطر والتنسيق بين الخدمات الصحية وخدمات الدعم."
+        },
+        "zh": {
+          "title": "加强东欧和中亚应对性别暴力的卫生系统",
+          "category": "卫生系统响应",
+          "summary": "东欧和中亚加强卫生系统应对基于性别的暴力的资源包。 它涵盖以幸存者为中心的护理、员工培训、安全识别、文件、转诊途径、风险评估以及卫生和支持服务之间的协调。"
+        }
+      }
+    },
+    {
+      "id": 5,
+      "title_en": "Gender-Based Violence in Emergencies: Operational Guide",
+      "category_en": "Emergencies",
+      "summary_en": "Guidance for reducing gender-based violence risks in humanitarian emergencies. Services should be accessible, confidential and shaped with women and girls; assistance must never depend on disclosing violence.",
+      "author": "UNICEF · English",
+      "date": "2019",
+      "source_url": "https://www.unicef.org/sites/default/files/2020-05/Gender-Based-Violence-in-Emergencies-Operational-Guide-May-2019.pdf",
+      "localized": {
+        "en": {
+          "title": "Gender-Based Violence in Emergencies: Operational Guide",
+          "category": "Emergencies",
+          "summary": "Guidance for reducing gender-based violence risks in humanitarian emergencies. Services should be accessible, confidential and shaped with women and girls; assistance must never depend on disclosing violence."
+        },
+        "ru": {
+          "title": "Гендерное насилие в чрезвычайных ситуациях: оперативное руководство",
+          "category": "Чрезвычайные ситуации",
+          "summary": "Руководство по снижению риска гендерного насилия во время гуманитарных кризисов. Помощь должна быть доступной и конфиденциальной, учитывать мнение женщин и девочек и не зависеть от раскрытия факта насилия."
+        },
+        "fr": {
+          "title": "Violence fondée sur le genre en situation d’urgence : guide opérationnel",
+          "category": "Situations d’urgence",
+          "summary": "Guide pour réduire les risques de violence fondée sur le genre pendant les crises humanitaires. Les services doivent être accessibles, confidentiels et conçus avec les femmes et les filles ; l’aide ne doit jamais dépendre de la révélation de violences."
+        },
+        "es": {
+          "title": "Violencia de género en emergencias: guía operativa",
+          "category": "Emergencias",
+          "summary": "Guía para reducir los riesgos de violencia de género durante crisis humanitarias. Los servicios deben ser accesibles, confidenciales y diseñados con mujeres y niñas; la ayuda nunca debe depender de revelar la violencia."
+        },
+        "ar": {
+          "title": "العنف القائم على النوع الاجتماعي في حالات الطوارئ: دليل تشغيلي",
+          "category": "حالات الطوارئ",
+          "summary": "دليل للحد من مخاطر العنف القائم على النوع الاجتماعي أثناء الأزمات الإنسانية. يجب أن تكون الخدمات متاحة وسرية وأن تُصمَّم بمشاركة النساء والفتيات، وألا تعتمد المساعدة أبداً على الإفصاح عن العنف."
+        },
+        "zh": {
+          "title": "紧急情况下的性别暴力：行动指南",
+          "category": "紧急情况",
+          "summary": "本指南说明如何在人道危机中降低性别暴力风险。服务应当便捷、保密，并让妇女和女童参与设计；获得援助绝不能以披露暴力经历为条件。"
+        }
+      }
+    },
+    {
+      "id": 6,
+      "title_en": "Essential Services Package for Women and Girls Subject to Violence",
+      "category_en": "Essential services",
+      "summary_en": "A framework for coordinated health, social, police and justice services. Quality support should be accessible, confidential and survivor-centred, protect dignity and choice, and use clear referral and accountability arrangements.",
+      "author": "UN Women, UNFPA, WHO, UNDP and UNODC · English",
+      "date": "2015",
+      "source_url": "https://www.unwomen.org/sites/default/files/Headquarters/Attachments/Sections/Library/Publications/2015/Essential-Services-Package-en.pdf",
+      "localized": {
+        "en": {
+          "title": "Essential Services Package for Women and Girls Subject to Violence",
+          "category": "Essential services",
+          "summary": "A framework for coordinated health, social, police and justice services. Quality support should be accessible, confidential and survivor-centred, protect dignity and choice, and use clear referral and accountability arrangements."
+        },
+        "ru": {
+          "title": "Пакет основных услуг для женщин и девочек, переживших насилие",
+          "category": "Основные услуги",
+          "summary": "Система согласованной работы медицинских, социальных, полицейских и судебных служб. Качественная помощь должна быть доступной, конфиденциальной и ориентированной на пострадавшую, защищать её достоинство и выбор."
+        },
+        "fr": {
+          "title": "Ensemble de services essentiels pour les femmes et les filles victimes de violence",
+          "category": "Services essentiels",
+          "summary": "Cadre de coordination des services de santé, sociaux, policiers et judiciaires. Une aide de qualité doit être accessible, confidentielle et centrée sur la survivante, tout en protégeant sa dignité et ses choix."
+        },
+        "es": {
+          "title": "Paquete de servicios esenciales para mujeres y niñas que sufren violencia",
+          "category": "Servicios esenciales",
+          "summary": "Marco de coordinación de los servicios sanitarios, sociales, policiales y judiciales. La atención de calidad debe ser accesible, confidencial y centrada en la sobreviviente, protegiendo su dignidad y sus decisiones."
+        },
+        "ar": {
+          "title": "حزمة الخدمات الأساسية للنساء والفتيات اللواتي يتعرضن للعنف",
+          "category": "الخدمات الأساسية",
+          "summary": "إطار لتنسيق الخدمات الصحية والاجتماعية والشرطية والقضائية. يجب أن يكون الدعم الجيد متاحاً وسرياً ومتمحوراً حول الناجية، وأن يحمي كرامتها وخياراتها."
+        },
+        "zh": {
+          "title": "面向遭受暴力妇女和女童的基本服务包",
+          "category": "基本服务",
+          "summary": "用于协调医疗、社会、警务和司法服务的框架。高质量支持应当便捷、保密、以幸存者为中心，并保护其尊严与自主选择。"
+        }
+      }
+    },
+    {
+      "id": 7,
+      "title_en": "Intensifying efforts to eliminate violence against women and girls",
+      "category_en": "Global policy",
+      "summary_en": "A United Nations review of progress and continuing gaps. It calls for stronger prevention, laws, survivor services, reliable data, sustainable financing and accountability, with attention to women facing multiple forms of discrimination.",
+      "author": "UN Secretary-General · English",
+      "date": "2024",
+      "source_url": "https://knowledge.unwomen.org/sites/default/files/2024-10/a-79-500-sg-report-ending-violence-against-women-and-girls-2024-en.pdf",
+      "localized": {
+        "en": {
+          "title": "Intensifying efforts to eliminate violence against women and girls",
+          "category": "Global policy",
+          "summary": "A United Nations review of progress and continuing gaps. It calls for stronger prevention, laws, survivor services, reliable data, sustainable financing and accountability, with attention to women facing multiple forms of discrimination."
+        },
+        "ru": {
+          "title": "Усиление мер по искоренению насилия в отношении женщин и девочек",
+          "category": "Глобальная политика",
+          "summary": "Обзор ООН достигнутого прогресса и сохраняющихся пробелов. Необходимы более сильная профилактика, законы, услуги для пострадавших, достоверные данные, устойчивое финансирование и ответственность с учётом множественной дискриминации."
+        },
+        "fr": {
+          "title": "Intensifier les efforts pour éliminer la violence à l’égard des femmes et des filles",
+          "category": "Politique mondiale",
+          "summary": "Examen des Nations Unies sur les progrès et les lacunes persistantes. Il appelle à renforcer la prévention, les lois, les services aux survivantes, les données fiables, le financement durable et la responsabilité."
+        },
+        "es": {
+          "title": "Intensificación de los esfuerzos para eliminar la violencia contra las mujeres y las niñas",
+          "category": "Política mundial",
+          "summary": "Revisión de las Naciones Unidas sobre los avances y las brechas persistentes. Pide reforzar la prevención, las leyes, los servicios para sobrevivientes, los datos fiables, la financiación sostenible y la rendición de cuentas."
+        },
+        "ar": {
+          "title": "تكثيف الجهود للقضاء على جميع أشكال العنف ضد النساء والفتيات",
+          "category": "السياسة العالمية",
+          "summary": "استعراض للأمم المتحدة للتقدم المحرز والفجوات المستمرة. يدعو إلى تعزيز الوقاية والقوانين وخدمات الناجيات والبيانات الموثوقة والتمويل المستدام والمساءلة."
+        },
+        "zh": {
+          "title": "加大力度消除一切形式的暴力侵害妇女和女童行为",
+          "category": "全球政策",
+          "summary": "联合国对现有进展和持续缺口的审查。报告呼吁加强预防、法律、幸存者服务、可靠数据、可持续资金和问责，并关注遭受多重歧视的妇女。"
+        }
+      }
+    },
+    {
+      "id": 8,
+      "title_en": "General recommendation No. 35 on gender-based violence against women",
+      "category_en": "Human rights",
+      "summary_en": "CEDAW explains gender-based violence as discrimination and a human-rights violation. States should prevent violence, protect and support survivors, investigate violations, provide remedies and address harmful stereotypes and structural inequality.",
+      "author": "UN Committee on the Elimination of Discrimination against Women · English",
+      "date": "2017",
+      "source_url": "https://docstore.ohchr.org/SelfServices/FilesHandler.ashx?enc=kLFc7rxtnu51TFh%2BKGEprdNPKFxWmTuNtgahYpRIGhiOW39gItQasN4QdLL0ya1ZR8dOUp%2FDeeRwbA%2FnkwVcsg%3D%3D",
+      "localized": {
+        "en": {
+          "title": "General recommendation No. 35 on gender-based violence against women",
+          "category": "Human rights",
+          "summary": "CEDAW explains gender-based violence as discrimination and a human-rights violation. States should prevent violence, protect and support survivors, investigate violations, provide remedies and address harmful stereotypes and structural inequality."
+        },
+        "ru": {
+          "title": "Общая рекомендация № 35 о гендерном насилии в отношении женщин",
+          "category": "Права человека",
+          "summary": "Комитет CEDAW рассматривает гендерное насилие как дискриминацию и нарушение прав человека. Государства должны предотвращать насилие, защищать пострадавших, расследовать нарушения и устранять вредные стереотипы."
+        },
+        "fr": {
+          "title": "Recommandation générale no 35 sur la violence fondée sur le genre à l’égard des femmes",
+          "category": "Droits humains",
+          "summary": "Le Comité CEDAW qualifie la violence fondée sur le genre de discrimination et de violation des droits humains. Les États doivent prévenir la violence, protéger les survivantes, enquêter et combattre les stéréotypes nuisibles."
+        },
+        "es": {
+          "title": "Recomendación general núm. 35 sobre la violencia de género contra la mujer",
+          "category": "Derechos humanos",
+          "summary": "El Comité CEDAW considera la violencia de género una forma de discriminación y una violación de derechos humanos. Los Estados deben prevenirla, proteger a las sobrevivientes, investigar y combatir los estereotipos dañinos."
+        },
+        "ar": {
+          "title": "التوصية العامة رقم 35 بشأن العنف القائم على النوع الاجتماعي ضد المرأة",
+          "category": "حقوق الإنسان",
+          "summary": "تعتبر لجنة سيداو العنف القائم على النوع الاجتماعي شكلاً من أشكال التمييز وانتهاكاً لحقوق الإنسان. على الدول منع العنف وحماية الناجيات والتحقيق في الانتهاكات ومعالجة القوالب النمطية الضارة."
+        },
+        "zh": {
+          "title": "关于基于性别的暴力侵害妇女行为的第35号一般性建议",
+          "category": "人权",
+          "summary": "消除对妇女歧视委员会将性别暴力视为歧视和侵犯人权。国家应预防暴力、保护和支持幸存者、调查侵害、提供补救并消除有害刻板印象。"
+        }
+      }
+    },
+    {
+      "id": 9,
+      "title_en": "How to support survivors when a specialist is unavailable",
+      "category_en": "Supporting survivors",
+      "summary_en": "Listen without pressure, believe the survivor, protect privacy, ask what she needs and share accurate options. Do not investigate, demand details, promise secrecy you cannot keep or refer her to a service that may increase danger.",
+      "author": "UNICEF and IASC partners · English",
+      "date": "2018",
+      "source_url": "https://www.unicef.org/ukraine/media/22126/file/GBV_PocketGuide021718.pdf",
+      "localized": {
+        "en": {
+          "title": "How to support survivors when a specialist is unavailable",
+          "category": "Supporting survivors",
+          "summary": "Listen without pressure, believe the survivor, protect privacy, ask what she needs and share accurate options. Do not investigate, demand details, promise secrecy you cannot keep or refer her to a service that may increase danger."
+        },
+        "ru": {
+          "title": "Как поддержать пострадавшую, если рядом нет специалиста",
+          "category": "Поддержка пострадавших",
+          "summary": "Слушайте без давления, верьте женщине, защищайте её конфиденциальность, спросите, что ей нужно, и предложите точные варианты помощи. Не расследуйте случившееся, не требуйте подробностей и не направляйте туда, где риск может возрасти."
+        },
+        "fr": {
+          "title": "Soutenir une survivante lorsqu’aucun spécialiste n’est disponible",
+          "category": "Soutien aux survivantes",
+          "summary": "Écoutez sans pression, croyez la survivante, protégez sa vie privée, demandez-lui ce dont elle a besoin et présentez des options fiables. N’enquêtez pas, n’exigez pas de détails et ne l’orientez pas vers un service susceptible d’accroître le danger."
+        },
+        "es": {
+          "title": "Cómo apoyar a una sobreviviente cuando no hay especialistas disponibles",
+          "category": "Apoyo a sobrevivientes",
+          "summary": "Escuche sin presionar, crea a la sobreviviente, proteja su privacidad, pregunte qué necesita y comparta opciones fiables. No investigue, no exija detalles ni la derive a servicios que puedan aumentar el peligro."
+        },
+        "ar": {
+          "title": "كيفية دعم الناجيات عند عدم توفر مختص",
+          "category": "دعم الناجيات",
+          "summary": "استمع من دون ضغط، وصدّق الناجية، واحمِ خصوصيتها، واسأل عما تحتاج إليه وقدّم خيارات دقيقة. لا تحقق في الواقعة، ولا تطلب التفاصيل، ولا تحلها إلى خدمة قد تزيد الخطر."
+        },
+        "zh": {
+          "title": "在没有专业人员时如何支持幸存者",
+          "category": "支持幸存者",
+          "summary": "倾听但不要施压，相信幸存者，保护隐私，询问她需要什么，并提供准确选项。不要自行调查、索要细节、作出无法兑现的保密承诺，也不要转介到可能增加危险的服务。"
+        }
+      }
+    },
+    {
+      "id": 10,
+      "title_en": "Innovative approaches to GBV service provision in emergencies",
+      "category_en": "Emergency services",
+      "summary_en": "Examples of adapting gender-based violence services during emergencies and movement restrictions. Remote support, discreet referrals and outreach can help, but every approach must assess digital risks, confidentiality, accessibility and survivor consent.",
+      "author": "UNICEF · English",
+      "date": "2020",
+      "source_url": "https://www.unicef.org/media/83381/file/Innovative-GBV-Service-Provision-Emergencies%20.pdf",
+      "localized": {
+        "en": {
+          "title": "Innovative approaches to GBV service provision in emergencies",
+          "category": "Emergency services",
+          "summary": "Examples of adapting gender-based violence services during emergencies and movement restrictions. Remote support, discreet referrals and outreach can help, but every approach must assess digital risks, confidentiality, accessibility and survivor consent."
+        },
+        "ru": {
+          "title": "Новые подходы к помощи при гендерном насилии в чрезвычайных ситуациях",
+          "category": "Экстренные услуги",
+          "summary": "Примеры адаптации помощи во время кризисов и ограничений передвижения. Дистанционная поддержка и незаметное направление к службам могут помочь, но необходимо оценивать цифровые риски, конфиденциальность, доступность и согласие пострадавшей."
+        },
+        "fr": {
+          "title": "Approches innovantes des services liés à la violence fondée sur le genre en situation d’urgence",
+          "category": "Services d’urgence",
+          "summary": "Exemples d’adaptation des services pendant les crises et les restrictions de déplacement. Le soutien à distance et les orientations discrètes peuvent aider, mais il faut évaluer les risques numériques, la confidentialité, l’accessibilité et le consentement."
+        },
+        "es": {
+          "title": "Enfoques innovadores para prestar servicios sobre violencia de género en emergencias",
+          "category": "Servicios de emergencia",
+          "summary": "Ejemplos de adaptación de servicios durante crisis y restricciones de movimiento. El apoyo remoto y las derivaciones discretas pueden ayudar, pero deben evaluarse los riesgos digitales, la confidencialidad, la accesibilidad y el consentimiento."
+        },
+        "ar": {
+          "title": "أساليب مبتكرة لتقديم خدمات العنف القائم على النوع الاجتماعي في الطوارئ",
+          "category": "خدمات الطوارئ",
+          "summary": "أمثلة على تكييف الخدمات أثناء الأزمات وقيود الحركة. قد يفيد الدعم عن بُعد والإحالات السرية، لكن يجب تقييم المخاطر الرقمية والسرية وإمكانية الوصول وموافقة الناجية."
+        },
+        "zh": {
+          "title": "紧急情况下提供性别暴力服务的创新方法",
+          "category": "紧急服务",
+          "summary": "介绍在危机和出行受限期间调整服务的实例。远程支持和谨慎转介可能有帮助，但必须评估数字风险、保密性、可及性和幸存者同意。"
+        }
+      }
+    },
+    {
+      "id": 11,
+      "title_en": "Virtual safe spaces for women and girls",
+      "category_en": "Digital safety",
+      "summary_en": "Virtual safe spaces can provide information, peer connection and referrals when physical services are limited. They should minimise data collection, protect identity, offer safe-exit options and account for device monitoring and unequal internet access.",
+      "author": "UNICEF · English",
+      "date": "2023",
+      "source_url": "https://www.unicef.org/media/149576/file/Laaha_Infographic.pdf",
+      "localized": {
+        "en": {
+          "title": "Virtual safe spaces for women and girls",
+          "category": "Digital safety",
+          "summary": "Virtual safe spaces can provide information, peer connection and referrals when physical services are limited. They should minimise data collection, protect identity, offer safe-exit options and account for device monitoring and unequal internet access."
+        },
+        "ru": {
+          "title": "Виртуальные безопасные пространства для женщин и девочек",
+          "category": "Цифровая безопасность",
+          "summary": "Виртуальные пространства дают информацию, связь с другими женщинами и направление к службам, когда очная помощь ограничена. Они должны собирать минимум данных, защищать личность, иметь безопасный выход и учитывать контроль устройств."
+        },
+        "fr": {
+          "title": "Espaces sûrs virtuels pour les femmes et les filles",
+          "category": "Sécurité numérique",
+          "summary": "Les espaces virtuels peuvent offrir information, soutien entre pairs et orientations lorsque les services en personne sont limités. Ils doivent limiter la collecte de données, protéger l’identité, proposer une sortie sûre et tenir compte de la surveillance des appareils."
+        },
+        "es": {
+          "title": "Espacios seguros virtuales para mujeres y niñas",
+          "category": "Seguridad digital",
+          "summary": "Los espacios virtuales pueden ofrecer información, apoyo entre pares y derivaciones cuando los servicios presenciales son limitados. Deben recopilar pocos datos, proteger la identidad, ofrecer una salida segura y considerar la vigilancia de los dispositivos."
+        },
+        "ar": {
+          "title": "مساحات آمنة افتراضية للنساء والفتيات",
+          "category": "السلامة الرقمية",
+          "summary": "يمكن للمساحات الافتراضية توفير المعلومات والتواصل والإحالات عندما تكون الخدمات الحضورية محدودة. ينبغي تقليل جمع البيانات وحماية الهوية وتوفير خروج آمن ومراعاة مراقبة الأجهزة وعدم تكافؤ الوصول إلى الإنترنت."
+        },
+        "zh": {
+          "title": "妇女和女童的虚拟安全空间",
+          "category": "数字安全",
+          "summary": "当线下服务受限时，虚拟安全空间可提供信息、同伴联系和转介。设计应尽量少收集数据、保护身份、提供安全退出，并考虑设备监控和互联网接入不平等。"
+        }
+      }
+    },
+    {
+      "id": 12,
+      "title_en": "Istanbul Convention: Questions and Answers",
+      "category_en": "Legal framework",
+      "summary_en": "The treaty aims to prevent violence, protect survivors, prosecute perpetrators and coordinate policy. It recognises violence against women as a human-rights issue and requires support without discrimination, while allowing services for all victims of domestic violence.",
+      "author": "Council of Europe · English",
+      "date": "2019",
+      "source_url": "https://rm.coe.int/questions-answers-on-istanbul-convention-eng/16809e40cd",
+      "localized": {
+        "en": {
+          "title": "Istanbul Convention: Questions and Answers",
+          "category": "Legal framework",
+          "summary": "The treaty aims to prevent violence, protect survivors, prosecute perpetrators and coordinate policy. It recognises violence against women as a human-rights issue and requires support without discrimination, while allowing services for all victims of domestic violence."
+        },
+        "ru": {
+          "title": "Стамбульская конвенция: вопросы и ответы",
+          "category": "Правовая основа",
+          "summary": "Конвенция направлена на предотвращение насилия, защиту пострадавших, преследование виновных и согласование государственной политики. Она признаёт насилие в отношении женщин нарушением прав человека и требует недискриминационной помощи."
+        },
+        "fr": {
+          "title": "Convention d’Istanbul : questions et réponses",
+          "category": "Cadre juridique",
+          "summary": "La convention vise à prévenir la violence, protéger les survivantes, poursuivre les auteurs et coordonner les politiques. Elle reconnaît la violence à l’égard des femmes comme une question de droits humains et exige une aide sans discrimination."
+        },
+        "es": {
+          "title": "Convenio de Estambul: preguntas y respuestas",
+          "category": "Marco jurídico",
+          "summary": "El convenio busca prevenir la violencia, proteger a las sobrevivientes, enjuiciar a los agresores y coordinar las políticas. Reconoce la violencia contra las mujeres como una cuestión de derechos humanos y exige apoyo sin discriminación."
+        },
+        "ar": {
+          "title": "اتفاقية إسطنبول: أسئلة وأجوبة",
+          "category": "الإطار القانوني",
+          "summary": "تهدف الاتفاقية إلى منع العنف وحماية الناجيات وملاحقة الجناة وتنسيق السياسات. وتعتبر العنف ضد المرأة قضية حقوق إنسان، وتلزم بتقديم الدعم من دون تمييز."
+        },
+        "zh": {
+          "title": "《伊斯坦布尔公约》：问答",
+          "category": "法律框架",
+          "summary": "该公约旨在预防暴力、保护幸存者、追究施暴者责任并协调政策。它将暴力侵害妇女视为人权问题，并要求提供不受歧视的支持。"
+        }
+      }
+    }
+  ]
+}

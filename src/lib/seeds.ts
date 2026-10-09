@@ -13,6 +13,7 @@ import { SOUTH_AMERICA_HOTLINES } from '../data/southAmericaHotlines'
 import { ASIA_HOTLINES } from '../data/asiaHotlines'
 import { OCEANIA_HOTLINES } from '../data/oceaniaHotlines'
 import { AFRICA_HOTLINES } from '../data/africaHotlines'
+import { LIBRARY_ARTICLES, type LibrarySeedItem } from '../data/libraryArticles'
 
 // ---------- centers ---------------------------------------------------------
 export type SeedCenter = {
@@ -110,25 +111,10 @@ export function getSeedChecklists(): SeedChecklist[] {
 }
 
 // ---------- library placeholders --------------------------------------------
-export type SeedLibrary = {
-  id: string
-  title: string
-  author?: string
-  date?: string
-  category?: string
-  abstract?: string
-}
+export type SeedLibrary = LibrarySeedItem
 
 export function getSeedLibrary(): SeedLibrary[] {
-  const rows = (i18n.t('research.placeholders', { returnObjects: true }) as any[]) || []
-  return (Array.isArray(rows) ? rows : []).map((r, i) => ({
-    id: `seed-library-${i}`,
-    title: String(r.title ?? ''),
-    author: r.author,
-    date: r.date,
-    category: r.cat,
-    abstract: r.abstract,
-  }))
+  return LIBRARY_ARTICLES
 }
 
 // ---------- stories ---------------------------------------------------------

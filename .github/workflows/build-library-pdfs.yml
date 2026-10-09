@@ -1,0 +1,30 @@
+name: Build localized library PDFs
+
+on:
+  push:
+    branches: [main]
+    paths:
+      - 'tmp/pdfs/library_translations.json'
+      - 'tmp/pdfs/render_library_pdfs.py'
+      - '.github/workflows/build-library-pdfs.yml'
+  workflow_dispatch:
+
+permissions:
+  contents: write
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+      - name: Install multilingual fonts
+        run: sudo apt-get update && sudo apt-get install -y fonts-noto-core fonts-noto-cjk
+      - name: Create PDFs
+        run: python3 tmp/pdfs/render_library_pdfs.py
+      - name: Commit PDFs
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add public/library
+          git diff --cached --quiet || git commit -m "Generate localized library PDFs"
+          git push
