@@ -55,8 +55,20 @@ async function geocode(city: string, country: string) {
     const response = await fetch(`https://nominatim.openstreetmap.org/search?format=json&limit=1&q=${encodeURIComponent(q)}`, {
       headers: { 'User-Agent': 'AtlasWomenHelp/1.0 (admin verification)' },
     })
-    const rows = await response.json()
-    const lat = Number(rows?.[0]?.lat), lng = Number(rows?.[0]?.lon)
+    if (response.ok) {
+      const rows = await response.json()
+      const lat = Number(rows?.[0]?.lat), lng = Number(rows?.[0]?.lon)
+      if (Number.isFinite(lat) && Number.isFinite(lng)) return { lat, lng }
+    }
+  } catch { /* try the fallback geocoder */ }
+  try {
+    const response = await fetch(`https://photon.komoot.io/api/?limit=1&q=${encodeURIComponent(q)}`, {
+      headers: { 'User-Agent': 'AtlasWomenHelp/1.0 (admin verification)' },
+    })
+    if (!response.ok) return undefined
+    const result = await response.json()
+    const coordinates = result?.features?.[0]?.geometry?.coordinates
+    const lng = Number(coordinates?.[0]), lat = Number(coordinates?.[1])
     return Number.isFinite(lat) && Number.isFinite(lng) ? { lat, lng } : undefined
   } catch { return undefined }
 }
@@ -79,7 +91,7 @@ function inferCategories(text: string) {
 }
 async function aiReview(payload: Record<string, any>) {
   const city = safeText(payload.city, 200), country = safeText(payload.country, 200)
-  const website = safeText(payload.contactWeb || payload.web, 500)
+  const website = safeText(payload.contactWeb || payload.web || payload.website, 500)
   const coordinates = await geocode(city, country)
   let websiteReachable = false, websiteText = ''
   if (/^https?:\/\//i.test(website)) {
@@ -89,7 +101,8 @@ async function aiReview(payload: Record<string, any>) {
       if (response.ok) websiteText = (await response.text()).replace(/<script[\s\S]*?<\/script>/gi, ' ').replace(/<style[\s\S]*?<\/style>/gi, ' ').replace(/<[^>]+>/g, ' ').replace(/\s+/g, ' ').slice(0, 30000)
     } catch { /* marked unreachable */ }
   }
-  const submitted = Array.isArray(payload.category) ? payload.category.filter((x: string) => ALLOWED_CATEGORIES.includes(x)) : []
+  const rawCategories = Array.isArray(payload.category) ? payload.category : Array.isArray(payload.categories) ? payload.categories : []
+  const submitted = rawCategories.filter((x: string) => ALLOWED_CATEGORIES.includes(x))
   let suggestedCategories = [...new Set([...submitted, ...inferCategories(`${payload.message || ''} ${websiteText}`)])]
   const notes: string[] = []
   if (!coordinates) notes.push('Координаты не найдены автоматически — проверьте адрес вручную.')
