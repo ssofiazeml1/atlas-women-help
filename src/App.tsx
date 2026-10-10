@@ -25,6 +25,7 @@ import {
   type SiteSectionKey,
 } from './lib/contentStore'
 import { pickLocalized } from './lib/translate'
+import { startVisitTracking } from './lib/publicApi'
 
 // Live section visibility (admin controlled) — hidden sections disappear from
 // the navigation, the home page and the router.
@@ -273,6 +274,7 @@ function Home() {
 function App() {
   const { t } = useTranslation()
   const vis = useSectionVisibility()
+  useEffect(() => startVisitTracking(), [])
   const hiddenNotice = (
     <div className="p-14 text-center text-slate-600">
       {t('section_hidden', { defaultValue: 'This section is temporarily unavailable.' })}{' '}

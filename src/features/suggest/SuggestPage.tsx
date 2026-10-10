@@ -1,7 +1,6 @@
 import { useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { addPendingSuggestion, addPendingCase } from '../../lib/demoData'
-import { addPendingHotline } from '../../lib/contentStore'
+import { submitPublic } from '../../lib/publicApi'
 
 type Tab = 'center' | 'story' | 'hotline'
 
@@ -36,13 +35,14 @@ export function SuggestPage() {
     e.preventDefault()
     setSubmitting(true)
     try {
-      addPendingHotline({
+      const payload = {
         title: hotlineForm.title || undefined,
         scope: hotlineForm.scope,
         country: hotlineForm.scope === 'international' ? '' : hotlineForm.scope === 'eu' ? 'ЕС' : hotlineForm.country,
         phone: hotlineForm.phone,
         comment: hotlineForm.comment || undefined,
-      })
+      }
+      await submitPublic('hotline', payload)
     } catch {
       /* stored locally for moderation */
     }
@@ -58,7 +58,7 @@ export function SuggestPage() {
     e.preventDefault()
     setSubmitting(true)
     try {
-      await addPendingSuggestion({
+      const payload = {
         proposedName: {
           en: centerForm.name,
           fr: centerForm.name,
@@ -73,7 +73,8 @@ export function SuggestPage() {
         message: centerForm.desc,
         lat: undefined,
         lng: undefined,
-      })
+      }
+      await submitPublic('center', payload)
     } catch {
       /* stored locally for moderation */
     }
@@ -88,12 +89,13 @@ export function SuggestPage() {
     setSubmitting(true)
     const all = (v: string) => ({ en: v, ru: v, fr: v, ar: v })
     try {
-      await addPendingCase({
+      const payload = {
         title: all(storyForm.title || t('stories_page.default_title')),
         situation: all(storyForm.situation),
         actions: all(storyForm.actions),
         outcome: all(storyForm.outcome),
-      })
+      }
+      await submitPublic('story', payload)
     } catch {
       /* stored locally for moderation */
     }

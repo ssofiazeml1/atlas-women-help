@@ -3,6 +3,13 @@ import { geocodeAddress, translateFields } from '../../lib/translate'
 import { CATEGORY_KEYS, CATEGORY_LABELS_RU } from '../../lib/categories'
 import { supabase } from '../../integrations/supabase/client'
 import {
+  getAdminDashboard,
+  updateSubmission,
+  recheckCenter,
+  type PublicSubmission,
+  type AnalyticsSummary,
+} from '../../lib/publicApi'
+import {
   getPendingSuggestions,
   removePendingSuggestion,
   getPendingCases,
@@ -107,6 +114,7 @@ import {
 const SESSION_KEY = 'atlas:secret-admin:authed'
 
 type TabKey =
+  | 'statistics'
   | 'home'
   | 'inbox'
   | 'hotlines'
@@ -121,6 +129,7 @@ type TabKey =
   | 'cards'
 
 const TABS: { key: TabKey; label: string }[] = [
+  { key: 'statistics', label: 'Статистика посещений' },
   { key: 'home', label: 'Главная — общие тексты' },
   { key: 'inbox', label: 'Входящие заявки' },
   { key: 'hotlines', label: 'Горячие линии' },
@@ -319,6 +328,7 @@ function AdminShell({ onLogout }: { onLogout: () => void }) {
         </aside>
 
         <section className="min-w-0">
+          {tab === 'statistics' && <StatisticsSection />}
           {tab === 'home' && <HomeTextsSection />}
           {tab === 'inbox' && <InboxSection />}
           {tab === 'hotlines' && <HotlinesSection />}
@@ -331,7 +341,7 @@ function AdminShell({ onLogout }: { onLogout: () => void }) {
           {tab === 'library' && <LibrarySection />}
           {tab === 'stories' && <StoriesSection />}
           {tab === 'cards' && <HomeCardsSection />}
-          {tab !== 'sections' && tab !== 'inbox' && <SectionDangerZone tab={tab} />}
+          {tab !== 'statistics' && tab !== 'sections' && tab !== 'inbox' && <SectionDangerZone tab={tab} />}
         </section>
       </div>
     </main>
@@ -1863,6 +1873,97 @@ function HomeCardsSection() {
 
 // === ВХОДЯЩИЕ ЗАЯВКИ =======================================================
 // Всё, что присылают посетители сайта: предложенные центры помощи и истории.
+function StatisticsSection() {
+  const [stats, setStats] = useState<AnalyticsSummary | null>(null)
+  const [error, setError] = useState('')
+  const load = async () => {
+    try {
+      const data = await getAdminDashboard()
+      setStats(data.analytics)
+      setError('')
+    } catch {
+      setError('Не удалось загрузить статистику. Обновите страницу или войдите заново.')
+    }
+  }
+  useEffect(() => {
+    void load()
+    const timer = window.setInterval(load, 30_000)
+    return () => clearInterval(timer)
+  }, [])
+  const max = Math.max(1, ...(stats?.daily || []).map((d) => d.visits))
+  return (
+    <SectionShell title="Статистика посещений" intro="Данные обновляются каждые 30 секунд. «Сейчас на сайте» — посетители, активные в течение последних пяти минут.">
+      {error && <div className="mb-4 rounded border border-red-200 bg-red-50 p-3 text-sm text-red-700">{error}</div>}
+      <div className="grid sm:grid-cols-3 gap-4 mb-7">
+        <div className="safe-card bg-white"><div className="text-xs text-slate-500">Сейчас на сайте</div><div className="text-3xl font-semibold text-safe-800 mt-1">{stats?.activeNow ?? '—'}</div></div>
+        <div className="safe-card bg-white"><div className="text-xs text-slate-500">Посещений сегодня</div><div className="text-3xl font-semibold text-safe-800 mt-1">{stats?.today ?? '—'}</div></div>
+        <div className="safe-card bg-white"><div className="text-xs text-slate-500">За всё время</div><div className="text-3xl font-semibold text-safe-800 mt-1">{stats?.total ?? '—'}</div></div>
+      </div>
+      <div className="safe-card bg-white">
+        <div className="font-semibold mb-4">Посещения за последние 30 дней</div>
+        {!stats?.daily?.length ? <p className="text-sm text-slate-500">Статистика начнёт заполняться после публикации обновления.</p> : (
+          <div className="space-y-2">
+            {stats.daily.map((d) => <div key={d.date} className="grid grid-cols-[90px,1fr,45px] gap-3 items-center text-xs"><span>{new Date(`${d.date}T12:00:00`).toLocaleDateString('ru-RU')}</span><div className="h-3 bg-slate-100 rounded overflow-hidden"><div className="h-full bg-teal-700" style={{ width: `${Math.max(2, d.visits / max * 100)}%` }} /></div><span className="text-right font-medium">{d.visits}</span></div>)}
+          </div>
+        )}
+      </div>
+      <button onClick={() => void load()} className="mt-4 text-xs text-safe-800 underline">Обновить сейчас</button>
+    </SectionShell>
+  )
+}
+
+function CloudInbox() {
+  const [items, setItems] = useState<PublicSubmission[]>([])
+  const [busy, setBusy] = useState<string | null>(null)
+  const [error, setError] = useState('')
+  const load = async () => {
+    try {
+      const data = await getAdminDashboard()
+      setItems(data.submissions.filter((x) => x.status === 'pending'))
+      setError('')
+    } catch { setError('Не удалось загрузить общую очередь Supabase.') }
+  }
+  useEffect(() => { void load() }, [])
+  const text = (v: any) => typeof v === 'string' ? v : v?.ru || v?.en || Object.values(v || {})[0] || ''
+  const publish = async (item: PublicSubmission) => {
+    setBusy(item.id)
+    try {
+      const p = item.payload
+      if (item.type === 'center') {
+        const review = item.autoReview
+        const categories = review?.suggestedCategories?.length ? review.suggestedCategories : (p.category || [])
+        const name = text(p.proposedName || p.name)
+        const description = p.message || p.desc || ''
+        const translations = description ? await translateFields({ description }, ['description']) : undefined
+        addCenter({ name, city: p.city || '', country: p.country || '', description, contact: p.contactPhone || p.phone || '', website: p.contactWeb || p.web || '', lat: review?.coordinates?.lat ?? p.lat, lng: review?.coordinates?.lng ?? p.lng, categories, category: categories[0] || '', translations })
+      } else if (item.type === 'story') {
+        const title = text(p.title) || 'Без названия'
+        const body = [text(p.situation), text(p.actions), text(p.outcome)].filter(Boolean).join('\n\n')
+        const translations = await translateFields({ title, text: body }, ['title', 'text'])
+        addStory({ name: 'Анонимно', title, text: body, translations })
+      } else {
+        addHotline({ title: p.title || 'Горячая линия', country: p.country || '', scope: p.scope || 'country', phone: p.phone || '', note: p.comment || '' })
+      }
+      await updateSubmission(item.id, 'published')
+      await load()
+    } finally { setBusy(null) }
+  }
+  if (error) return <div className="mb-6 rounded border border-red-200 bg-red-50 p-3 text-sm text-red-700">{error}</div>
+  return <div className="mb-10">
+    <div className="flex items-center justify-between mb-3"><h3 className="font-semibold">Общая очередь Supabase ({items.length})</h3><button onClick={() => void load()} className="text-xs underline">Обновить</button></div>
+    {!items.length ? <p className="text-sm text-slate-500">Новых заявок нет.</p> : <div className="grid gap-4">{items.map((item) => {
+      const p = item.payload, review = item.autoReview
+      return <div key={item.id} className="safe-card bg-white">
+        <div className="flex justify-between gap-3"><div><div className="font-semibold">{item.type === 'center' ? text(p.proposedName || p.name) : item.type === 'story' ? text(p.title) || 'История без названия' : p.title || 'Горячая линия'}</div><div className="text-xs text-slate-500">{item.type === 'center' ? 'Центр помощи' : item.type === 'story' ? 'История' : 'Горячая линия'} · {new Date(item.createdAt).toLocaleString('ru-RU')}</div></div>{review && <span className={`text-xs rounded-full px-2 py-1 h-fit ${review.status === 'verified' ? 'bg-green-100 text-green-800' : 'bg-amber-100 text-amber-800'}`}>{review.status === 'verified' ? 'Автопроверка пройдена' : 'Нужна проверка'}</span>}</div>
+        {item.type === 'center' && <><p className="text-sm mt-2">{[p.city,p.country].filter(Boolean).join(', ')}{p.message ? ` — ${p.message}` : ''}</p>{review?.coordinates && <div className="text-xs mt-2">Координаты: {review.coordinates.lat.toFixed(5)}, {review.coordinates.lng.toFixed(5)}</div>}{review?.suggestedCategories?.length ? <div className="mt-2 flex flex-wrap gap-1">{review.suggestedCategories.map((x) => <span key={x} className="text-xs bg-teal-50 text-teal-800 rounded px-2 py-0.5">{(CATEGORY_LABELS_RU as Record<string, string>)[x] || x}</span>)}</div> : null}{review?.notes?.map((n) => <div key={n} className="text-xs text-slate-600 mt-1">• {n}</div>)}</>}
+        {item.type === 'story' && <p className="text-sm mt-2 whitespace-pre-wrap">{text(p.situation)}</p>}
+        {item.type === 'hotline' && <p className="text-sm mt-2">{p.phone} · {p.country}</p>}
+        <div className="flex flex-wrap gap-3 mt-3"><button disabled={busy===item.id} onClick={() => void publish(item)} className="text-xs bg-safe-800 text-white px-3 py-1.5 rounded disabled:opacity-60">{busy===item.id ? 'Обрабатываю…' : 'Опубликовать'}</button>{item.type === 'center' && <button disabled={busy===item.id} onClick={async()=>{setBusy(item.id);try{await recheckCenter(item.id);await load()}finally{setBusy(null)}}} className="text-xs border px-3 py-1.5 rounded">Проверить заново</button>}<button onClick={async()=>{if(confirm('Отклонить заявку?')){await updateSubmission(item.id,'rejected');await load()}}} className="text-xs text-red-700 underline">Отклонить</button></div>
+      </div>
+    })}</div>}
+  </div>
+}
+
 function InboxSection() {
   const [suggestions, setSuggestions] = useState<LocationSuggestion[]>([])
   const [cases, setCases] = useState<CaseSubmission[]>([])
@@ -1934,6 +2035,7 @@ function InboxSection() {
       title="Входящие заявки"
       intro="Здесь появляются истории и центры помощи, которые присылают посетители сайта. Нажмите «Опубликовать», чтобы добавить их на сайт, или «Удалить», чтобы отклонить."
     >
+      <CloudInbox />
       <div className="flex justify-end mb-3">
         <button onClick={reload} className="text-xs text-safe-800 underline">
           Обновить список
