@@ -205,9 +205,9 @@ function Home() {
 
       <div className="grid md:grid-cols-2 gap-6">
         {seedNavCards.map((c) => (
-          <Link key={c.id} to={c.link} className="safe-card hover:border-safe-teal hover:shadow transition-all">
+          <Link key={c.id} to={c.link} className="safe-card h-40 overflow-hidden hover:border-safe-teal hover:shadow transition-all">
             <h3 className="font-semibold text-lg mb-1">{c.title}</h3>
-            <p className="text-slate-600 text-sm">{c.description}</p>
+            <p className="text-slate-600 text-sm line-clamp-4">{c.description}</p>
           </Link>
         ))}
       </div>
