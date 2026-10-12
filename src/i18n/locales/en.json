@@ -626,7 +626,8 @@
     "emergency": "Emergency help",
     "medical": "Medical help",
     "hotline": "Hotline",
-    "crisis": "Crisis centre"
+    "crisis": "Crisis centre",
+    "immigration": "Immigration support"
   },
   "card": {
     "languages": "Languages",

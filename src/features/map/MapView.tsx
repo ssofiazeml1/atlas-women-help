@@ -21,8 +21,9 @@ import markerIcon from 'leaflet/dist/images/marker-icon.png'
 import markerIcon2x from 'leaflet/dist/images/marker-icon-2x.png'
 import markerShadow from 'leaflet/dist/images/marker-shadow.png'
 import { CATEGORY_KEYS } from '../../lib/categories'
-import { autoTranslateCached } from '../../lib/translate'
 import { localizeSchedule, localizeLanguages } from '../../lib/humanize'
+import { localizeCountry } from '../../lib/countries'
+import { localizePublicDescription } from '../../lib/publicLocalization'
 
 // @ts-ignore
 delete L.Icon.Default.prototype._getIconUrl
@@ -34,13 +35,6 @@ L.Icon.Default.mergeOptions({
 
 
 
-
-function acceptsWithoutDocs(c: AdminCenter): boolean {
-  const anyC = c as any
-  if (anyC.noDocsNeeded === true || anyC.no_docs === true) return true
-  const s = `${c.description || ''} ${c.languages || ''} ${anyC.access || ''}`.toLowerCase()
-  return /без документ|no documents required|sans papiers|no id required|بدون وثائق|无证件|无需证件/.test(s)
-}
 
 function normalizeCategories(c: AdminCenter): string[] {
   if (Array.isArray(c.categories) && c.categories.length) return c.categories
@@ -167,7 +161,6 @@ export function MapView() {
   const [filterCat, setFilterCat] = useState('')
   const [only24, setOnly24] = useState(false)
   const [onlyFree, setOnlyFree] = useState(false)
-  const [onlyNoDocs, setOnlyNoDocs] = useState(false)
 
   useEffect(() => {
     if (filterCountry === 'Germany') {
@@ -208,7 +201,7 @@ export function MapView() {
       const cats = normalizeCategories(c)
       const matchesText =
         !q ||
-        [c.name, c.city, c.country, c.address, c.description]
+        [c.name, c.city, c.country, localizeCountry(c.country, lang), c.address, c.description]
           .filter(Boolean)
           .some((v) => String(v).toLowerCase().includes(q))
       const matchesCountry =
@@ -217,18 +210,17 @@ export function MapView() {
       const matchesCat = !filterCat || cats.includes(filterCat)
       const matches24 = !only24 || c.open24 || /24\/?7|круглосуточно|24 hours/i.test(c.hours || '')
       const matchesFree = !onlyFree || c.cost === 'free'
-      const matchesNoDocs = !onlyNoDocs || acceptsWithoutDocs(c)
       return matchesText && matchesCountry && matchesCat &&
-        matches24 && matchesFree && matchesNoDocs
+        matches24 && matchesFree
     })
-  }, [centers, query, filterCountry, filterCat, only24, onlyFree, onlyNoDocs])
+  }, [centers, query, filterCountry, filterCat, only24, onlyFree, lang])
 
   const visibleCenters = filtered.slice(0, visibleListCount)
   const selectedOutsideList = filtered.find(
     (center) => center.id === selectedId && !visibleCenters.some((visible) => visible.id === center.id),
   )
 
-  useEffect(() => setVisibleListCount(40), [query, filterCountry, filterCat, only24, onlyFree, onlyNoDocs])
+  useEffect(() => setVisibleListCount(40), [query, filterCountry, filterCat, only24, onlyFree])
 
   const catLabel = (k: string) => t(`categories.${k}`, { defaultValue: k })
 
@@ -264,7 +256,6 @@ export function MapView() {
     setFilterCat('')
     setOnly24(false)
     setOnlyFree(false)
-    setOnlyNoDocs(false)
     setQuery('')
     setSearchPin(null)
   }
@@ -338,7 +329,7 @@ export function MapView() {
             className="border border-slate-200 rounded-md px-2 py-1.5 bg-white min-w-0"
           >
             <option value="">{t('map.all_countries', { defaultValue: 'All countries' })}</option>
-            {countries.map((c) => <option key={c} value={c}>{c}</option>)}
+            {countries.map((c) => <option key={c} value={c}>{localizeCountry(c, lang)}</option>)}
           </select>
           <select
             value={filterCat}
@@ -351,7 +342,7 @@ export function MapView() {
           </select>
         </div>
 
-        <div className="grid grid-cols-2 md:grid-cols-3 gap-2 text-sm">
+        <div className="grid grid-cols-2 gap-2 text-sm">
           <label className="flex items-center gap-2 border border-slate-200 rounded-md px-2 py-1.5 bg-white cursor-pointer">
             <input type="checkbox" checked={only24} onChange={(e) => setOnly24(e.target.checked)} />
             <span>{t('map.only_24_7', { defaultValue: '24/7' })}</span>
@@ -360,13 +351,9 @@ export function MapView() {
             <input type="checkbox" checked={onlyFree} onChange={(e) => setOnlyFree(e.target.checked)} />
             <span>{t('map.only_free', { defaultValue: 'Free' })}</span>
           </label>
-          <label className="flex items-center gap-2 border border-slate-200 rounded-md px-2 py-1.5 bg-white cursor-pointer">
-            <input type="checkbox" checked={onlyNoDocs} onChange={(e) => setOnlyNoDocs(e.target.checked)} />
-            <span>{t('map.only_no_docs')}</span>
-          </label>
         </div>
 
-        {(filterCountry || filterCat || only24 || onlyFree || onlyNoDocs || query || searchPin) && (
+        {(filterCountry || filterCat || only24 || onlyFree || query || searchPin) && (
           <button
             type="button"
             onClick={clearFilters}
@@ -517,25 +504,10 @@ function CenterCard({
 }) {
   const { t } = useTranslation()
   const rawDescription = pickLocalized(c, 'description', lang) || c.description || ''
-  // Built-in (seed) texts have no stored translation — translate them once on
-  // demand and cache the result, so every card reads in the chosen language.
-  const [description, setDescription] = useState(rawDescription)
-  useEffect(() => {
-    let alive = true
-    setDescription(rawDescription)
-    // Popup cards are created for every map marker. Translating all of them on
-    // page load can overwhelm mobile Safari; the full list translates lazily.
-    if (!rawDescription || compact) return
-    autoTranslateCached(rawDescription, lang).then((tx) => {
-      if (alive && tx) setDescription(tx)
-    })
-    return () => {
-      alive = false
-    }
-  }, [rawDescription, lang, compact])
+  const description = localizePublicDescription(rawDescription, lang)
   const address = pickLocalized(c, 'address', lang) || c.address
   const city = pickLocalized(c, 'city', lang) || c.city
-  const country = pickLocalized(c, 'country', lang) || c.country
+  const country = localizeCountry(pickLocalized(c, 'country', lang) || c.country, lang)
   const cats = normalizeCategories(c)
   const costLabel =
     c.cost === 'free' ? t('card.cost_free')
@@ -622,9 +594,6 @@ function CenterCard({
         )}
         {c.email && (
           <div className="min-w-0"><dt className="inline text-slate-500">{t('card.email')}: </dt><dd className="inline"><a href={`mailto:${c.email}`} className="text-teal-700 break-all" onClick={(e) => e.stopPropagation()}>{c.email}</a></dd></div>
-        )}
-        {acceptsWithoutDocs(c) && (
-          <div className="text-safe-teal">{t('card.no_docs_needed')}</div>
         )}
       </dl>
 

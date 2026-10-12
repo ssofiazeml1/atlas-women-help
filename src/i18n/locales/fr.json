@@ -291,7 +291,8 @@
     "emergency": "Aide d’urgence",
     "medical": "Aide médicale",
     "hotline": "Ligne d’écoute",
-    "crisis": "Centre de crise"
+    "crisis": "Centre de crise",
+    "immigration": "Soutien à l’immigration"
   },
   "card": {
     "languages": "Langues",

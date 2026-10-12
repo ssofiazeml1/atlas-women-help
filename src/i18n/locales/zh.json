@@ -626,7 +626,8 @@
     "emergency": "紧急援助",
     "medical": "医疗援助",
     "hotline": "热线电话",
-    "crisis": "危机中心"
+    "crisis": "危机中心",
+    "immigration": "移民援助"
   },
   "card": {
     "languages": "语言",

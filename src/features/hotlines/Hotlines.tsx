@@ -10,6 +10,8 @@ import {
 import { getSeedHotlines } from '../../lib/seeds'
 import { autoTranslateCached, pickLocalized } from '../../lib/translate'
 import { localizeSchedule, localizeLanguages } from '../../lib/humanize'
+import { localizeCountry } from '../../lib/countries'
+import { localizePublicDescription } from '../../lib/publicLocalization'
 
 const isInternational = (h: AdminHotline) =>
   h.scope === 'international' || (h.scope !== 'eu' && (!h.country || !h.country.trim()))
@@ -26,7 +28,6 @@ export function Hotlines() {
   useEffect(() => subscribeContent(() => setAll(buildAll())), [])
 
   const [country, setCountry] = useState('')
-  const [countryLabels, setCountryLabels] = useState<Record<string, string>>({})
 
   // Countries are derived from the data, so every new hotline country shows
   // up in the selector automatically.
@@ -39,7 +40,9 @@ export function Hotlines() {
       const key = raw.toLowerCase()
       if (!map.has(key)) map.set(key, raw)
     }
-    return Array.from(map.values()).sort((a, b) => a.localeCompare(b, lang))
+    return Array.from(map.values()).sort((a, b) =>
+      localizeCountry(a, lang).localeCompare(localizeCountry(b, lang), lang)
+    )
   }, [all, lang])
 
   const international = useMemo(() => all.filter(isInternational), [all])
@@ -52,13 +55,6 @@ export function Hotlines() {
         : [],
     [all, country]
   )
-
-  useEffect(() => {
-    let active = true
-    Promise.all(countries.map(async (name) => [name, await autoTranslateCached(name, lang)] as const))
-      .then((pairs) => active && setCountryLabels(Object.fromEntries(pairs)))
-    return () => { active = false }
-  }, [countries, lang])
 
   return (
     <main className="max-w-4xl mx-auto px-5 py-10">
@@ -94,7 +90,7 @@ export function Hotlines() {
           </option>
           {countries.map((c) => (
             <option key={c} value={c}>
-              {countryLabels[c] || c}
+              {localizeCountry(c, lang)}
             </option>
           ))}
         </select>
@@ -108,7 +104,7 @@ export function Hotlines() {
       {country && (
         <section className="mb-8">
           <h2 className="text-lg font-semibold text-safe-800 mb-3">
-            {t('hotlines.local_title', { defaultValue: 'Номера в стране' })}: {countryLabels[country] || country}
+            {t('hotlines.local_title', { defaultValue: 'Номера в стране' })}: {localizeCountry(country, lang)}
           </h2>
           {local.length === 0 ? (
             <p className="text-sm text-slate-500">
@@ -152,16 +148,16 @@ function HotlineCard({ h, lang }: { h: AdminHotline; lang: string }) {
   const rawNote = pickLocalized(h, 'note', lang) || h.note || ''
   const rawHours = pickLocalized(h, 'hours', lang) || h.hours || ''
   const rawLanguages = pickLocalized(h, 'languages', lang) || h.languages || ''
-  const [translated, setTranslated] = useState({ country: rawCountry, geography: rawGeography, note: rawNote, hours: rawHours, languages: rawLanguages })
+  const [translated, setTranslated] = useState({ country: localizeCountry(rawCountry, lang), geography: rawGeography, hours: rawHours, languages: rawLanguages })
   useEffect(() => {
     let active = true
-    Promise.all([rawCountry, rawGeography, rawNote, rawHours, rawLanguages].map((value) => autoTranslateCached(value, lang)))
-      .then(([country, geography, note, hours, languages]) => {
-        if (active) setTranslated({ country, geography, note, hours, languages })
+    Promise.all([rawGeography, rawHours, rawLanguages].map((value) => autoTranslateCached(value, lang)))
+      .then(([geography, hours, languages]) => {
+        if (active) setTranslated({ country: localizeCountry(rawCountry, lang), geography, hours, languages })
       })
     return () => { active = false }
-  }, [rawCountry, rawGeography, rawNote, rawHours, rawLanguages, lang])
-  const note = translated.note
+  }, [rawCountry, rawGeography, rawHours, rawLanguages, lang])
+  const note = localizePublicDescription(rawNote, lang)
   const hours = localizeSchedule(translated.hours, t)
   const languages = localizeLanguages(translated.languages, t)
   const websites = (h.website || '').split(/\s+/).filter((url) => /^https?:\/\//i.test(url))
