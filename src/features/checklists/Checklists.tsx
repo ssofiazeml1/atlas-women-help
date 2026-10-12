@@ -14,10 +14,10 @@ function toItems(arr: string[]): ChecklistItem[] {
   return (arr || []).map((t, i) => ({ id: 'i' + i, text: t }))
 }
 
-function exportAsTxt(name: string, items: ChecklistItem[], checked: Record<string, boolean>) {
+function exportAsTxt(name: string, items: ChecklistItem[], checked: Record<string, boolean>, footer: string) {
   const content = `${name}\n\n` +
     items.map(item => `[${checked[item.id] ? 'x' : ' '}] ${item.text}`).join('\n') +
-    '\n\nGenerated privately. For your safety only.'
+    `\n\n${footer}`
 
   const blob = new Blob([content], { type: 'text/plain;charset=utf-8' })
   const url = URL.createObjectURL(blob)
@@ -28,7 +28,7 @@ function exportAsTxt(name: string, items: ChecklistItem[], checked: Record<strin
   URL.revokeObjectURL(url)
 }
 
-function printPDF(name: string, items: ChecklistItem[], checked: Record<string, boolean>) {
+function printPDF(name: string, items: ChecklistItem[], checked: Record<string, boolean>, privateCopy: string, noIdentifiers: string) {
   const win = window.open('', '_blank')
   if (!win) return
 
@@ -44,9 +44,9 @@ function printPDF(name: string, items: ChecklistItem[], checked: Record<string, 
     </style></head>
     <body>
       <h1>${name}</h1>
-      <p>Private copy. Generated for your use only. Keep safe.</p>
+      <p>${privateCopy}</p>
       <ul>${items.map(i => `<li class="${checked[i.id] ? 'checked' : 'unchecked'}">${i.text}</li>`).join('')}</ul>
-      <div class="note">This document does not contain any personal identifiers.</div>
+      <div class="note">${noIdentifiers}</div>
     </body></html>
   `
   win.document.write(html)
@@ -57,6 +57,7 @@ function printPDF(name: string, items: ChecklistItem[], checked: Record<string, 
 }
 
 function Checklist({ title, items }: { title: string; items: ChecklistItem[] }) {
+  const { t } = useTranslation()
   const [checked, setChecked] = useState<Record<string, boolean>>({})
 
   const toggle = (id: string) => setChecked(prev => ({ ...prev, [id]: !prev[id] }))
@@ -70,7 +71,7 @@ function Checklist({ title, items }: { title: string; items: ChecklistItem[] }) 
     <div className="safe-card mb-8">
       <div className="flex items-baseline justify-between mb-2">
         <div className="font-semibold text-xl">{title}</div>
-        <div className="text-xs text-teal-600">{pct}% complete</div>
+        <div className="text-xs text-teal-600">{t('checklists.complete', { percent: pct })}</div>
       </div>
 
       <div className="h-1 bg-slate-100 mb-4 rounded">
@@ -97,12 +98,12 @@ function Checklist({ title, items }: { title: string; items: ChecklistItem[] }) 
       </ul>
 
       <div className="mt-4 flex gap-2 text-sm">
-        <button onClick={() => exportAsTxt(title, items, checked)} className="px-3 py-1 border rounded text-sm">Download .txt</button>
-        <button onClick={() => printPDF(title, items, checked)} className="px-3 py-1 border rounded text-sm">Print / Save PDF</button>
-        <button onClick={reset} className="px-3 py-1 text-sm text-slate-600 underline">Reset</button>
+        <button onClick={() => exportAsTxt(title, items, checked, t('checklists.generated_private'))} className="px-3 py-1 border rounded text-sm">{t('checklists.download_txt')}</button>
+        <button onClick={() => printPDF(title, items, checked, t('checklists.private_copy'), t('checklists.no_identifiers'))} className="px-3 py-1 border rounded text-sm">{t('checklists.print_pdf')}</button>
+        <button onClick={reset} className="px-3 py-1 text-sm text-slate-600 underline">{t('checklists.reset')}</button>
       </div>
 
-      <p className="text-xs text-slate-500 mt-2">Checkboxes are private to your browser. All data cleared when you close the tab.</p>
+      <p className="text-xs text-slate-500 mt-2">{t('checklists.browser_private')}</p>
     </div>
   )
 }

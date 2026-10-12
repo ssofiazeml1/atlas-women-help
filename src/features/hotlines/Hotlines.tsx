@@ -8,7 +8,7 @@ import {
   type AdminHotline,
 } from '../../lib/contentStore'
 import { getSeedHotlines } from '../../lib/seeds'
-import { pickLocalized } from '../../lib/translate'
+import { autoTranslateCached, pickLocalized } from '../../lib/translate'
 import { localizeSchedule, localizeLanguages } from '../../lib/humanize'
 
 const isInternational = (h: AdminHotline) =>
@@ -26,6 +26,7 @@ export function Hotlines() {
   useEffect(() => subscribeContent(() => setAll(buildAll())), [])
 
   const [country, setCountry] = useState('')
+  const [countryLabels, setCountryLabels] = useState<Record<string, string>>({})
 
   // Countries are derived from the data, so every new hotline country shows
   // up in the selector automatically.
@@ -51,6 +52,13 @@ export function Hotlines() {
         : [],
     [all, country]
   )
+
+  useEffect(() => {
+    let active = true
+    Promise.all(countries.map(async (name) => [name, await autoTranslateCached(name, lang)] as const))
+      .then((pairs) => active && setCountryLabels(Object.fromEntries(pairs)))
+    return () => { active = false }
+  }, [countries, lang])
 
   return (
     <main className="max-w-4xl mx-auto px-5 py-10">
@@ -86,7 +94,7 @@ export function Hotlines() {
           </option>
           {countries.map((c) => (
             <option key={c} value={c}>
-              {c}
+              {countryLabels[c] || c}
             </option>
           ))}
         </select>
@@ -100,7 +108,7 @@ export function Hotlines() {
       {country && (
         <section className="mb-8">
           <h2 className="text-lg font-semibold text-safe-800 mb-3">
-            {t('hotlines.local_title', { defaultValue: 'Номера в стране' })}: {country}
+            {t('hotlines.local_title', { defaultValue: 'Номера в стране' })}: {countryLabels[country] || country}
           </h2>
           {local.length === 0 ? (
             <p className="text-sm text-slate-500">
@@ -139,9 +147,23 @@ export function Hotlines() {
 function HotlineCard({ h, lang }: { h: AdminHotline; lang: string }) {
   const { t } = useTranslation()
   const title = pickLocalized(h, 'title', lang) || h.title
-  const note = pickLocalized(h, 'note', lang) || h.note
-  const hours = localizeSchedule(pickLocalized(h, 'hours', lang) || h.hours, t)
-  const languages = localizeLanguages(pickLocalized(h, 'languages', lang) || h.languages, t)
+  const rawCountry = pickLocalized(h, 'country', lang) || h.country || ''
+  const rawGeography = pickLocalized(h, 'geography', lang) || h.geography || ''
+  const rawNote = pickLocalized(h, 'note', lang) || h.note || ''
+  const rawHours = pickLocalized(h, 'hours', lang) || h.hours || ''
+  const rawLanguages = pickLocalized(h, 'languages', lang) || h.languages || ''
+  const [translated, setTranslated] = useState({ country: rawCountry, geography: rawGeography, note: rawNote, hours: rawHours, languages: rawLanguages })
+  useEffect(() => {
+    let active = true
+    Promise.all([rawCountry, rawGeography, rawNote, rawHours, rawLanguages].map((value) => autoTranslateCached(value, lang)))
+      .then(([country, geography, note, hours, languages]) => {
+        if (active) setTranslated({ country, geography, note, hours, languages })
+      })
+    return () => { active = false }
+  }, [rawCountry, rawGeography, rawNote, rawHours, rawLanguages, lang])
+  const note = translated.note
+  const hours = localizeSchedule(translated.hours, t)
+  const languages = localizeLanguages(translated.languages, t)
   const websites = (h.website || '').split(/\s+/).filter((url) => /^https?:\/\//i.test(url))
   return (
     <div className="safe-card bg-white">
@@ -151,7 +173,7 @@ function HotlineCard({ h, lang }: { h: AdminHotline; lang: string }) {
           ? t('hotlines.international', { defaultValue: 'Международная' })
           : h.scope === 'eu'
             ? t('hotlines.eu', { defaultValue: 'Работает на территории ЕС' })
-            : h.country}
+            : translated.country}
       </div>
       <a
         href={`tel:${h.phone.replace(/\s/g, '')}`}
@@ -160,10 +182,10 @@ function HotlineCard({ h, lang }: { h: AdminHotline; lang: string }) {
         <Phone size={16} /> {h.phone}
       </a>
       <dl className="mt-2 text-xs text-slate-700 space-y-0.5">
-        {h.geography && (
+        {translated.geography && (
           <div>
             <dt className="inline text-slate-500">{t('card.coverage', { defaultValue: 'География' })}: </dt>
-            <dd className="inline">{h.geography}</dd>
+            <dd className="inline">{translated.geography}</dd>
           </div>
         )}
         {hours && (

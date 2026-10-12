@@ -10,7 +10,7 @@ const LANGUAGES = [
 ]
 
 export function LanguageSwitcher() {
-  const { i18n } = useTranslation()
+  const { t, i18n } = useTranslation()
 
   const current = i18n.language?.split('-')[0] || 'en'
 
@@ -23,13 +23,13 @@ export function LanguageSwitcher() {
 
   return (
     <div className="language-switch relative">
-      <label htmlFor="lang-select" className="sr-only">Language</label>
+      <label htmlFor="lang-select" className="sr-only">{t('common.language')}</label>
       <select
         id="lang-select"
         value={current}
         onChange={(e) => changeLanguage(e.target.value)}
         className="bg-white border border-slate-200 text-sm rounded px-2.5 py-1.5 focus:outline focus:outline-2 focus:outline-teal-700 cursor-pointer"
-        aria-label="Select site language"
+        aria-label={t('common.language')}
       >
         {LANGUAGES.map(l => (
           <option key={l.code} value={l.code}>{l.label}</option>

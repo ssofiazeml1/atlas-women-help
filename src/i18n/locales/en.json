@@ -66,7 +66,15 @@
       "Memorize children’s date of birth + passport data and the emergency number to call.",
       "Plan to inform only childcare or health personnel. Reduce exposure of your location to outsiders."
     ],
-    "escape_no_docs_title": "Escape without documents (aggressor holds them)"
+    "escape_no_docs_title": "Escape without documents (aggressor holds them)",
+    "complete": "{{percent}}% complete",
+    "generated_private": "Generated privately. For your safety only.",
+    "private_copy": "Private copy. Generated for your use only. Keep safe.",
+    "no_identifiers": "This document does not contain any personal identifiers.",
+    "download_txt": "Download .txt",
+    "print_pdf": "Print / Save PDF",
+    "reset": "Reset",
+    "browser_private": "Checkboxes are private to your browser. All data is cleared when you close the tab."
   },
   "footer": "Leave this site safely at any time using the Leave button. This does not erase records held by your network provider or device.",
   "chat": {
@@ -127,7 +135,8 @@
     "f_scope": "Coverage",
     "scope_country": "Country",
     "f_comment": "Comment",
-    "scope_russia": "Works across the Russian Federation"
+    "scope_russia": "Works across the Russian Federation",
+    "scope_eu": "European Union"
   },
   "chatbot": {
     "start": {
@@ -458,7 +467,11 @@
       "adv_plan_kids": "Build a family safety plan: a code word, safe places, contacts, what the children should do in danger. See the checklists.",
       "adv_check_kids": "Reach the children in any safely available way. Make sure the adult with them is trustworthy.",
       "adv_check_kids_urgent": "If you can't reach the children for more than a day — contact the police and social services. Also call a hotline."
-    }
+    },
+    "restart": "Restart",
+    "go_map": "Go to the Help Map",
+    "quick_exit_hint": "Use the Quick Exit button in the top right at any time.",
+    "open_checklists": "Open Safety Checklists"
   },
   "research": {
     "title": "Research Library",
@@ -501,7 +514,9 @@
     "item3_title": "Maps, apps and humanitarian coordination",
     "item3_desc": "How geographic information systems and community reporting improve access to shelters and services.",
     "item4_title": "Cross-border digital cooperation",
-    "item4_desc": "Examples of information sharing and joint response frameworks between states, NGOs and technologists."
+    "item4_desc": "Examples of information sharing and joint response frameworks between states, NGOs and technologists.",
+    "image_placeholder": "IMAGE PLACEHOLDER",
+    "read": "Read"
   },
   "safebridge": {
     "title": "SafeBridge Index",
@@ -597,7 +612,8 @@
     "route_denied": "Location access denied. Please allow it in the browser.",
     "route_error": "Could not build the route.",
     "route_no_coords": "This organisation has no coordinates yet.",
-    "open_full_card": "Open full card"
+    "open_full_card": "Open full card",
+    "show_more": "Show more"
   },
   "categories": {
     "shelter": "Crisis shelter",
@@ -628,7 +644,8 @@
     "btn_call": "Call",
     "btn_website": "Website",
     "full_address": "Full address",
-    "open_in_osm": "Open in OpenStreetMap"
+    "open_in_osm": "Open in OpenStreetMap",
+    "coverage": "Coverage"
   },
   "about": {
     "eyebrow": "About",
@@ -678,7 +695,10 @@
     "local_empty": "No numbers added for this country yet.",
     "intl_empty": "No international numbers yet.",
     "no_countries": "No countries added yet.",
-    "russia": "Works across the Russian Federation"
+    "russia": "Works across the Russian Federation",
+    "eu": "European Union",
+    "safety_title": "Safety information",
+    "safety_notice": "If using this site may put you at risk, use a private device or clear your browsing history."
   },
   "sched": {
     "mon": "Monday",
@@ -719,5 +739,18 @@
     "az": "Azerbaijani",
     "kk": "Kazakh",
     "sign": "sign language"
+  },
+  "common": {
+    "language": "Select site language",
+    "not_found": "Page not found.",
+    "return_home": "Return home",
+    "close": "Close"
+  },
+  "disguised": {
+    "neutral_title": "Local Resource Navigator",
+    "default_title": "Atlas | Global Resource Directory",
+    "hint": "Switch to a generic-looking page for safety in public environments",
+    "normal": "Normal view",
+    "disguised": "Disguised view"
   }
 }

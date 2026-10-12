@@ -88,7 +88,7 @@ export function StoriesView() {
             <div className="text-sm text-slate-600 line-clamp-3">{getText(story.situation)}</div>
             <div className="text-[10px] mt-3 text-teal-700">{t('stories_page.read_full')} →</div>
             {story.tags && <div className="mt-2 flex flex-wrap gap-1">{story.tags.map(tag => (
-              <span key={tag} className="px-1.5 py-0.5 border text-[10px] rounded text-slate-500">{tag}</span>
+              <span key={tag} className="px-1.5 py-0.5 border text-[10px] rounded text-slate-500">{t(`categories.${tag}`, { defaultValue: tag })}</span>
             ))}</div>}
           </div>
         ))}
@@ -150,13 +150,20 @@ export function StoriesView() {
               onSubmit={async (e) => {
                 e.preventDefault()
                 setSubmitting(true)
-                const all = (v: string) => ({ en: v, ru: v, fr: v, ar: v })
+                const privateText = (value: string) => ({
+                  en: value,
+                  ru: value,
+                  es: value,
+                  fr: value,
+                  ar: value,
+                  zh: value,
+                })
                 try {
                   await addPendingCase({
-                    title: all(storyForm.title || t('stories_page.default_title')),
-                    situation: all(storyForm.situation),
-                    actions: all(storyForm.actions),
-                    outcome: all(storyForm.outcome),
+                    title: privateText(storyForm.title || t('stories_page.default_title')),
+                    situation: privateText(storyForm.situation),
+                    actions: privateText(storyForm.actions),
+                    outcome: privateText(storyForm.outcome),
                   })
                 } catch {
                   /* saved locally for moderation */

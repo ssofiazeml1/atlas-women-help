@@ -1,12 +1,12 @@
 import { useTranslation } from 'react-i18next'
 
-function Card({ title, desc }: { title: string; desc: string }) {
+function Card({ title, desc, imageLabel, readLabel }: { title: string; desc: string; imageLabel: string; readLabel: string }) {
   return (
     <div className="safe-card p-5 flex flex-col">
-      <div className="h-28 mb-4 bg-gradient-to-br from-slate-100 to-white rounded flex items-center justify-center text-slate-400 text-xs tracking-widest">IMAGE PLACEHOLDER</div>
+      <div className="h-28 mb-4 bg-gradient-to-br from-slate-100 to-white rounded flex items-center justify-center text-slate-400 text-xs tracking-widest">{imageLabel}</div>
       <div className="font-semibold mb-2 text-lg">{title}</div>
       <p className="text-sm text-slate-600 flex-1">{desc}</p>
-      <button className="mt-4 text-left text-sm underline text-teal-700 self-start">Read</button>
+      <button className="mt-4 text-left text-sm underline text-teal-700 self-start">{readLabel}</button>
     </div>
   )
 }
@@ -32,7 +32,7 @@ export function DigitalDiplomacy() {
 
       <div className="grid md:grid-cols-2 gap-5">
         {items.map((it, idx) => (
-          <Card key={idx} title={it.title} desc={it.desc} />
+          <Card key={idx} title={it.title} desc={it.desc} imageLabel={t('diplomacy.image_placeholder')} readLabel={t('diplomacy.read')} />
         ))}
       </div>
     </div>

@@ -427,7 +427,7 @@ export function Chatbot() {
       <div className="safe-card mb-4 p-5">
         <div className="flex justify-between items-center mb-3">
           <div className="font-semibold">{t('nav.chat')}</div>
-          <button onClick={restart} className="text-xs underline">Restart</button>
+          <button onClick={restart} className="text-xs underline">{t('chatbot.restart')}</button>
         </div>
 
         <div className="min-h-[180px]">
@@ -449,13 +449,13 @@ export function Chatbot() {
           )}
 
           {current.showMapLink && (
-            <div className="mb-2"><a href="/map" className="underline text-sm text-teal-800">Go to the Help Map →</a></div>
+            <div className="mb-2"><a href="/map" className="underline text-sm text-teal-800">{t('chatbot.go_map')} →</a></div>
           )}
           {current.showQuickExit && (
-            <div className="mb-2 text-xs text-rose-600">Use the Quick Exit button in the top right at any time.</div>
+            <div className="mb-2 text-xs text-rose-600">{t('chatbot.quick_exit_hint')}</div>
           )}
           {current.showChecklistsLink && (
-            <div className="mb-2"><a href="/checklists" className="underline text-sm">Open Safety Checklists →</a></div>
+            <div className="mb-2"><a href="/checklists" className="underline text-sm">{t('chatbot.open_checklists')} →</a></div>
           )}
 
           {current.options && current.options.length > 0 && (
