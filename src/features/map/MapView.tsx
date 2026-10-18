@@ -11,7 +11,7 @@ import {
   applySeedTransforms,
   type AdminCenter,
 } from '../../lib/contentStore'
-import { geocodeAddress, pickLocalized } from '../../lib/translate'
+import { autoTranslateCached, geocodeAddress, pickLocalized } from '../../lib/translate'
 import { getSeedCenters } from '../../lib/seeds'
 
 // Fix default marker icons for Leaflet + Vite.
@@ -167,6 +167,8 @@ export function MapView() {
       setFlyTarget({ lat: 51.2, lng: 10.5, zoom: 6 })
     } else if (filterCountry === 'France') {
       setFlyTarget({ lat: 46.5, lng: 2.5, zoom: 5 })
+    } else if (filterCountry === 'Россия') {
+      setFlyTarget({ lat: 61.5, lng: 90, zoom: 3 })
     } else if (!filterCountry) {
       setFlyTarget({ lat: 49, lng: 6, zoom: 4 })
     }
@@ -504,7 +506,18 @@ function CenterCard({
 }) {
   const { t } = useTranslation()
   const rawDescription = pickLocalized(c, 'description', lang) || c.description || ''
-  const description = localizePublicDescription(rawDescription, lang)
+  const staticDescription = localizePublicDescription(rawDescription, lang)
+  const [description, setDescription] = useState(staticDescription)
+  useEffect(() => {
+    let active = true
+    setDescription(staticDescription)
+    if (staticDescription === rawDescription && rawDescription) {
+      void autoTranslateCached(rawDescription, lang).then((value) => {
+        if (active) setDescription(value)
+      })
+    }
+    return () => { active = false }
+  }, [rawDescription, staticDescription, lang])
   const address = pickLocalized(c, 'address', lang) || c.address
   const city = pickLocalized(c, 'city', lang) || c.city
   const country = localizeCountry(pickLocalized(c, 'country', lang) || c.country, lang)
