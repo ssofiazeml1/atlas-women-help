@@ -396,8 +396,8 @@ export function MapView() {
         <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100" style={{ height: 'min(70vh, 640px)' }}>
           <MapContainer center={[46.5, 2.5]} zoom={5} scrollWheelZoom preferCanvas className="h-full w-full">
             <TileLayer
-              attribution='&copy; OpenStreetMap contributors'
-              url="https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png"
+              attribution='&copy; OpenStreetMap contributors &copy; CARTO'
+              url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
             />
             <FlyTo target={flyTarget} />
             <RoutingLayer from={routeFrom} to={routeTo} onInfo={setRouteInfo} />
