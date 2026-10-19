@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { MapContainer, TileLayer, Marker, Popup, CircleMarker, useMap } from 'react-leaflet'
+import { MapContainer, GeoJSON, Marker, Popup, CircleMarker, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import { Search, ExternalLink, Phone } from 'lucide-react'
 import {
@@ -22,6 +22,7 @@ import { CATEGORY_KEYS } from '../../lib/categories'
 import { localizeSchedule, localizeLanguages } from '../../lib/humanize'
 import { localizeCountry } from '../../lib/countries'
 import { localizePublicDescription } from '../../lib/publicLocalization'
+import worldCountries from '../../data/worldCountries.json'
 
 // @ts-ignore
 delete L.Icon.Default.prototype._getIconUrl
@@ -259,11 +260,24 @@ export function MapView() {
 
       {/* Map + list */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr,380px] gap-4">
-        <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100" style={{ height: 'min(70vh, 640px)' }}>
-          <MapContainer center={[46.5, 2.5]} zoom={5} scrollWheelZoom preferCanvas className="h-full w-full">
-            <TileLayer
-              attribution='Tiles &copy; Esri'
-              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
+        <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-sky-50" style={{ height: 'min(70vh, 640px)' }}>
+          <MapContainer
+            center={[46.5, 2.5]}
+            zoom={5}
+            scrollWheelZoom
+            preferCanvas
+            className="h-full w-full"
+            style={{ background: '#e0f2fe' }}
+          >
+            <GeoJSON
+              data={worldCountries as any}
+              interactive={false}
+              style={{
+                color: '#94a3b8',
+                weight: 0.7,
+                fillColor: '#f8fafc',
+                fillOpacity: 1,
+              }}
             />
             <FlyTo target={flyTarget} />
             {filtered
