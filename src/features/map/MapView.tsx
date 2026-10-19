@@ -1,6 +1,6 @@
 import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { MapContainer, GeoJSON, Marker, Popup, CircleMarker, useMap } from 'react-leaflet'
+import { MapContainer, TileLayer, Marker, Popup, CircleMarker, useMap } from 'react-leaflet'
 import L from 'leaflet'
 import { Search, ExternalLink, Phone } from 'lucide-react'
 import {
@@ -22,7 +22,6 @@ import { CATEGORY_KEYS } from '../../lib/categories'
 import { localizeSchedule, localizeLanguages } from '../../lib/humanize'
 import { localizeCountry } from '../../lib/countries'
 import { localizePublicDescription } from '../../lib/publicLocalization'
-import worldCountries from '../../data/worldCountries.json'
 
 // @ts-ignore
 delete L.Icon.Default.prototype._getIconUrl
@@ -109,7 +108,9 @@ export function MapView() {
   const [visibleListCount, setVisibleListCount] = useState(40)
 
   const [selectedId, setSelectedId] = useState<string | null>(null)
+  const [flashId, setFlashId] = useState<string | null>(null)
   const cardRefs = useRef<Record<string, HTMLDivElement | null>>({})
+  const flashTimer = useRef<ReturnType<typeof setTimeout> | null>(null)
 
   // Countries come from the data itself: every newly added center brings its
   // country into the filter automatically (trimmed, case-insensitive unique).
@@ -159,6 +160,28 @@ export function MapView() {
       setFlyTarget({ lat: c.lat, lng: c.lng, zoom: 14 })
     }
   }
+
+  const handleMarkerClick = (c: AdminCenter) => {
+    const index = filtered.findIndex((item) => item.id === c.id)
+    if (index >= 0) setVisibleListCount((count) => Math.max(count, index + 1))
+    handleSelectCard(c)
+    setFlashId(null)
+    requestAnimationFrame(() => setFlashId(c.id))
+  }
+
+  useEffect(() => {
+    if (!flashId) return
+    const frame = requestAnimationFrame(() => {
+      cardRefs.current[flashId]?.scrollIntoView({ behavior: 'smooth', block: 'center' })
+    })
+    if (flashTimer.current) clearTimeout(flashTimer.current)
+    flashTimer.current = setTimeout(() => setFlashId(null), 1800)
+    return () => cancelAnimationFrame(frame)
+  }, [flashId, visibleListCount])
+
+  useEffect(() => () => {
+    if (flashTimer.current) clearTimeout(flashTimer.current)
+  }, [])
 
   const submitSearch = async (e: React.FormEvent) => {
     e.preventDefault()
@@ -266,18 +289,12 @@ export function MapView() {
             zoom={5}
             scrollWheelZoom
             preferCanvas
+            attributionControl={false}
             className="h-full w-full"
             style={{ background: '#e0f2fe' }}
           >
-            <GeoJSON
-              data={worldCountries as any}
-              interactive={false}
-              style={{
-                color: '#94a3b8',
-                weight: 0.7,
-                fillColor: '#f8fafc',
-                fillOpacity: 1,
-              }}
+            <TileLayer
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
             />
             <FlyTo target={flyTarget} />
             {filtered
@@ -293,7 +310,7 @@ export function MapView() {
                     fillOpacity: 0.8,
                     weight: selectedId === c.id ? 2 : 1,
                   }}
-                  eventHandlers={{ click: () => handleSelectCard(c) }}
+                  eventHandlers={{ click: () => handleMarkerClick(c) }}
                 />
               ))}
 
@@ -319,6 +336,7 @@ export function MapView() {
               lang={lang}
               catLabel={catLabel}
               selected
+              flash={flashId === selectedOutsideList.id}
               onSelect={() => handleSelectCard(selectedOutsideList)}
               cardRef={() => {}}
             />
@@ -331,6 +349,7 @@ export function MapView() {
               lang={lang}
               catLabel={catLabel}
               selected={selectedId === c.id}
+              flash={flashId === c.id}
               onSelect={() => handleSelectCard(c)}
               cardRef={(el) => {
                 cardRefs.current[c.id] = el
