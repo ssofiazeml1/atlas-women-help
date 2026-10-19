@@ -310,7 +310,7 @@
     "btn_call": "Appeler",
     "btn_website": "Site officiel",
     "full_address": "Adresse complète",
-    "open_in_osm": "Ouvrir dans OpenStreetMap",
+    "open_in_osm": "Ouvrir le lieu sur la carte",
     "coverage": "Couverture"
   },
   "about": {
