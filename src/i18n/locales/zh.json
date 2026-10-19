@@ -645,7 +645,7 @@
     "btn_call": "拨打",
     "btn_website": "官方网站",
     "full_address": "完整地址",
-    "open_in_osm": "在 OpenStreetMap 中打开",
+    "open_in_osm": "在地图上打开位置",
     "coverage": "覆盖范围"
   },
   "about": {
