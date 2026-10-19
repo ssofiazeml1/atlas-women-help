@@ -645,7 +645,7 @@
     "btn_call": "Llamar",
     "btn_website": "Sitio oficial",
     "full_address": "Dirección completa",
-    "open_in_osm": "Abrir en OpenStreetMap",
+    "open_in_osm": "Abrir ubicación en el mapa",
     "coverage": "Cobertura"
   },
   "about": {
