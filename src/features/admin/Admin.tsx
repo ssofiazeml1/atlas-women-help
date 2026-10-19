@@ -26,7 +26,7 @@ function PointPicker({ onPick }: { onPick: (lat: number, lng: number) => void })
     return null
   }
   return (
-    <MapContainer center={[35, 18]} zoom={2} className="h-56 w-full rounded border" style={{zIndex:1}}>
+    <MapContainer center={[35, 18]} zoom={2} attributionControl={false} className="h-56 w-full rounded border" style={{zIndex:1}}>
       <TileLayer attribution="Tiles &copy; Esri" url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}" />
       <PickControl />
     </MapContainer>
