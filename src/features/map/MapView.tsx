@@ -2,9 +2,7 @@ import { useEffect, useMemo, useRef, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { MapContainer, TileLayer, Marker, Popup, CircleMarker, useMap } from 'react-leaflet'
 import L from 'leaflet'
-import 'leaflet-routing-machine'
-import 'leaflet-routing-machine/dist/leaflet-routing-machine.css'
-import { Search, Navigation, ExternalLink, Phone, X } from 'lucide-react'
+import { Search, ExternalLink, Phone } from 'lucide-react'
 import {
   getCenters,
   subscribeContent,
@@ -51,72 +49,6 @@ function FlyTo({ target }: { target: { lat: number; lng: number; zoom?: number }
   }, [target, map])
   return null
 }
-
-// ---------- Internal routing (Leaflet Routing Machine, no Google) ----------
-type RouteInfo = {
-  from: { lat: number; lng: number }
-  to: { lat: number; lng: number }
-  distanceKm: number
-  walkMin: number
-  carMin: number
-}
-
-function RoutingLayer({
-  from,
-  to,
-  onInfo,
-}: {
-  from: { lat: number; lng: number } | null
-  to: { lat: number; lng: number } | null
-  onInfo: (info: RouteInfo | null) => void
-}) {
-  const map = useMap()
-  const ctrlRef = useRef<any>(null)
-
-  useEffect(() => {
-    if (!from || !to) {
-      if (ctrlRef.current) {
-        try { map.removeControl(ctrlRef.current) } catch { /* noop */ }
-        ctrlRef.current = null
-      }
-      onInfo(null)
-      return
-    }
-    // @ts-ignore - leaflet-routing-machine augments L at runtime
-    const control = L.Routing.control({
-      waypoints: [L.latLng(from.lat, from.lng), L.latLng(to.lat, to.lng)],
-      lineOptions: { styles: [{ color: '#0d9488', weight: 5, opacity: 0.85 }], extendToWaypoints: true, missingRouteTolerance: 0 },
-      addWaypoints: false,
-      fitSelectedRoutes: true,
-      showAlternatives: false,
-      show: false, // hide the built-in text panel; we render our own summary
-      routeWhileDragging: false,
-      createMarker: () => null, // waypoint markers hidden; our markers already show endpoints
-    } as any).addTo(map)
-
-    control.on('routesfound', (e: any) => {
-      const r = e.routes?.[0]
-      if (!r) return
-      const meters = r.summary?.totalDistance ?? 0
-      const km = meters / 1000
-      // Rough independent estimates (OSRM's totalTime is driving-only).
-      // Walking ~5 km/h, driving ~40 km/h average in urban areas.
-      const walkMin = Math.round((km / 5) * 60)
-      const carMin = Math.round((km / 40) * 60)
-      onInfo({ from, to, distanceKm: km, walkMin, carMin })
-    })
-    ctrlRef.current = control
-
-    return () => {
-      try { map.removeControl(control) } catch { /* noop */ }
-      ctrlRef.current = null
-    }
-  }, [from, to, map])
-
-  return null
-}
-
-// --------------------------------------------------------------------------
 
 export function MapView() {
   const { t, i18n } = useTranslation()
@@ -177,12 +109,6 @@ export function MapView() {
 
   const [selectedId, setSelectedId] = useState<string | null>(null)
   const cardRefs = useRef<Record<string, HTMLDivElement | null>>({})
-
-  // ---- Routing state ----
-  const [routeFrom, setRouteFrom] = useState<{ lat: number; lng: number } | null>(null)
-  const [routeTo, setRouteTo] = useState<{ lat: number; lng: number } | null>(null)
-  const [routeInfo, setRouteInfo] = useState<RouteInfo | null>(null)
-  const [routeStatus, setRouteStatus] = useState<string>('')
 
   // Countries come from the data itself: every newly added center brings its
   // country into the filter automatically (trimmed, case-insensitive unique).
@@ -262,41 +188,6 @@ export function MapView() {
     setSearchPin(null)
   }
 
-  const buildRouteTo = (c: AdminCenter) => {
-    if (typeof c.lat !== 'number' || typeof c.lng !== 'number') {
-      setRouteStatus(t('map.route_no_coords'))
-      return
-    }
-    const dest = { lat: c.lat, lng: c.lng }
-    setRouteTo(dest)
-    setRouteInfo(null)
-    setRouteStatus(t('map.route_locating'))
-    if (!navigator.geolocation) {
-      setRouteStatus(t('map.route_denied'))
-      return
-    }
-    // Geolocation is only requested at this moment, on explicit user click.
-    // The coordinates are kept in memory only (never persisted, never sent
-    // to any third-party — routing runs against the public OSRM demo).
-    navigator.geolocation.getCurrentPosition(
-      (pos) => {
-        setRouteFrom({ lat: pos.coords.latitude, lng: pos.coords.longitude })
-        setRouteStatus('')
-      },
-      () => {
-        setRouteStatus(t('map.route_denied'))
-      },
-      { enableHighAccuracy: false, timeout: 10000, maximumAge: 60_000 }
-    )
-  }
-
-  const closeRoute = () => {
-    setRouteFrom(null)
-    setRouteTo(null)
-    setRouteInfo(null)
-    setRouteStatus('')
-  }
-
   return (
     <div className="max-w-screen-2xl mx-auto px-3 md:px-5 py-4 w-full">
       {/* Search + filters */}
@@ -366,42 +257,15 @@ export function MapView() {
         )}
       </form>
 
-      {/* Route summary bar */}
-      {(routeInfo || routeStatus) && (
-        <div className="safe-card bg-white p-3 mb-4 flex flex-wrap items-center gap-4 text-sm">
-          <div className="font-semibold text-safe-800 flex items-center gap-2">
-            <Navigation size={16} /> {t('map.route_title')}
-          </div>
-          {routeInfo ? (
-            <>
-              <div><span className="text-slate-500">{t('map.route_distance')}:</span> <b>{routeInfo.distanceKm.toFixed(1)} km</b></div>
-              <div><span className="text-slate-500">{t('map.route_time_walk')}:</span> <b>~{routeInfo.walkMin} min</b></div>
-              <div><span className="text-slate-500">{t('map.route_time_car')}:</span> <b>~{routeInfo.carMin} min</b></div>
-            </>
-          ) : (
-            <div className="text-slate-600">{routeStatus}</div>
-          )}
-          <button
-            onClick={closeRoute}
-            className="ml-auto inline-flex items-center gap-1 text-xs text-safe-800 hover:underline"
-            aria-label={t('map.route_close')}
-          >
-            <X size={14} /> {t('map.route_close')}
-          </button>
-        </div>
-      )}
-
       {/* Map + list */}
       <div className="grid grid-cols-1 lg:grid-cols-[1fr,380px] gap-4">
         <div className="relative rounded-xl overflow-hidden border border-slate-200 bg-slate-100" style={{ height: 'min(70vh, 640px)' }}>
           <MapContainer center={[46.5, 2.5]} zoom={5} scrollWheelZoom preferCanvas className="h-full w-full">
             <TileLayer
-              attribution='&copy; OpenStreetMap contributors &copy; CARTO'
-              url="https://{s}.basemaps.cartocdn.com/light_all/{z}/{x}/{y}{r}.png"
+              attribution='Tiles &copy; Esri'
+              url="https://server.arcgisonline.com/ArcGIS/rest/services/World_Street_Map/MapServer/tile/{z}/{y}/{x}"
             />
             <FlyTo target={flyTarget} />
-            <RoutingLayer from={routeFrom} to={routeTo} onInfo={setRouteInfo} />
-
             {filtered
               .filter((c) => typeof c.lat === 'number' && typeof c.lng === 'number')
               .map((c) => (
@@ -442,7 +306,6 @@ export function MapView() {
               catLabel={catLabel}
               selected
               onSelect={() => handleSelectCard(selectedOutsideList)}
-              onRoute={() => buildRouteTo(selectedOutsideList)}
               cardRef={() => {}}
             />
           )}
@@ -455,7 +318,6 @@ export function MapView() {
               catLabel={catLabel}
               selected={selectedId === c.id}
               onSelect={() => handleSelectCard(c)}
-              onRoute={() => buildRouteTo(c)}
               cardRef={(el) => {
                 cardRefs.current[c.id] = el
               }}
@@ -491,7 +353,6 @@ function CenterCard({
   flash,
   compact,
   onSelect,
-  onRoute,
   cardRef,
 }: {
   c: AdminCenter
@@ -501,7 +362,6 @@ function CenterCard({
   flash?: boolean
   compact?: boolean
   onSelect: () => void
-  onRoute: () => void
   cardRef: (el: HTMLDivElement | null) => void
 }) {
   const { t } = useTranslation()
@@ -531,8 +391,6 @@ function CenterCard({
     ? t('sched.round_clock', { defaultValue: t('card.open_24_7') })
     : localizeSchedule(pickLocalized(c, 'hours', lang) || c.hours, t)
   const languagesLabel = localizeLanguages(pickLocalized(c, 'languages', lang) || c.languages, t)
-
-  const canRoute = typeof c.lat === 'number' && typeof c.lng === 'number'
 
   return (
     <div
@@ -569,13 +427,13 @@ function CenterCard({
           </div>
           {!compact && typeof c.lat === 'number' && typeof c.lng === 'number' && (
             <a
-              href={`https://www.openstreetmap.org/?mlat=${c.lat}&mlon=${c.lng}#map=17/${c.lat}/${c.lng}`}
+              href={`https://maps.apple.com/?ll=${c.lat},${c.lng}`}
               target="_blank"
               rel="noreferrer"
               onClick={(e) => e.stopPropagation()}
               className="text-[11px] text-teal-700 hover:underline mt-1 inline-block"
             >
-              {t('card.open_in_osm', { defaultValue: 'Открыть на карте OpenStreetMap' })}
+              {t('card.open_in_osm', { defaultValue: 'Открыть точку на карте' })}
             </a>
           )}
         </div>
@@ -621,15 +479,6 @@ function CenterCard({
       )}
 
       <div className="flex flex-wrap gap-2 mt-4">
-        {canRoute && (
-          <button
-            type="button"
-            onClick={(e) => { e.stopPropagation(); onRoute() }}
-            className="inline-flex items-center gap-1.5 bg-safe-800 text-white text-xs rounded-md px-3 py-1.5 hover:opacity-90"
-          >
-            <Navigation size={14} /> {t('card.btn_route')}
-          </button>
-        )}
         {c.contact && (
           <a
             href={`tel:${c.contact}`}
