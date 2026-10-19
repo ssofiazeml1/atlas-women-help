@@ -645,7 +645,7 @@
     "btn_call": "Call",
     "btn_website": "Website",
     "full_address": "Full address",
-    "open_in_osm": "Open in OpenStreetMap",
+    "open_in_osm": "Open location on map",
     "coverage": "Coverage"
   },
   "about": {
