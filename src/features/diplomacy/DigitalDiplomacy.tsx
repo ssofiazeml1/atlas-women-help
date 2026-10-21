@@ -1,7 +1,10 @@
 import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
-import { ExternalLink } from 'lucide-react'
+import { Link, useSearchParams } from 'react-router-dom'
+import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
 import { autoTranslateCached } from '../../lib/translate'
+
+const articleImage = '/images/digital-diplomacy-global-connectivity.jpg'
 
 function LocalizedText({ children, lang }: { children: string; lang: string }) {
   const [text, setText] = useState(children)
@@ -66,11 +69,61 @@ const sources = [
 
 export function DigitalDiplomacy() {
   const { i18n } = useTranslation()
+  const [searchParams] = useSearchParams()
   const lang = (i18n.language || 'ru').split('-')[0]
   const T = ({ children }: { children: string }) => <LocalizedText lang={lang}>{children}</LocalizedText>
 
+  if (searchParams.get('article') !== 'reading-digital-diplomacy') {
+    return (
+      <main className="max-w-6xl mx-auto px-5 py-10">
+        <header className="max-w-3xl mb-8">
+          <h1 className="text-3xl md:text-4xl font-semibold tracking-tight text-safe-900 mb-3">
+            <T>Цифровая дипломатия</T>
+          </h1>
+          <p className="text-lg text-slate-600 leading-relaxed">
+            <T>Материалы о том, как технологии меняют международные отношения, публичную коммуникацию и способы проверки официальных сообщений.</T>
+          </p>
+        </header>
+
+        <div className="grid gap-6 md:grid-cols-2 lg:grid-cols-3">
+          <article className="safe-card overflow-hidden bg-white flex flex-col">
+            <img
+              src={articleImage}
+              alt=""
+              className="w-full aspect-[16/9] object-cover"
+            />
+            <div className="p-5 flex flex-col flex-1">
+              <div className="text-xs uppercase tracking-widest text-teal-700 font-semibold mb-2">
+                <T>Практическое чтение · 6 минут</T>
+              </div>
+              <h2 className="text-xl font-semibold text-safe-900 mb-3">
+                <T>Как читать цифровую дипломатию</T>
+              </h2>
+              <p className="text-slate-600 leading-relaxed mb-5 flex-1">
+                <T>Пять вопросов, которые помогают понять официальный пост и не приписать ему лишнего.</T>
+              </p>
+              <Link
+                to="/diplomacy?article=reading-digital-diplomacy"
+                className="inline-flex items-center gap-2 font-semibold text-teal-700 hover:text-teal-900"
+              >
+                <T>Читать статью</T> <ArrowRight size={17} aria-hidden="true" />
+              </Link>
+            </div>
+          </article>
+        </div>
+
+        <p className="mt-5 text-xs text-slate-500">
+          <T>Изображение: Европейская служба внешних связей, © European Union, 2025.</T>
+        </p>
+      </main>
+    )
+  }
+
   return (
     <main className="max-w-4xl mx-auto px-5 py-10">
+      <Link to="/diplomacy" className="inline-flex items-center gap-2 text-sm font-semibold text-teal-700 hover:text-teal-900 mb-5">
+        <ArrowLeft size={16} aria-hidden="true" /> <T>Все статьи</T>
+      </Link>
       <article className="safe-card bg-white p-6 md:p-10">
         <header className="max-w-3xl mb-9">
           <div className="text-xs uppercase tracking-widest text-teal-700 font-semibold mb-3">
