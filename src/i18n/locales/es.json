@@ -613,7 +613,8 @@
     "route_error": "No se pudo construir la ruta.",
     "route_no_coords": "Esta organización aún no tiene coordenadas.",
     "open_full_card": "Abrir la ficha completa",
-    "show_more": "Mostrar más"
+    "show_more": "Mostrar más",
+    "no_verified_point": "No hay un punto público verificado disponible en el mapa. Contacte con la organización antes de desplazarse."
   },
   "categories": {
     "shelter": "Refugio de crisis",
@@ -674,7 +675,7 @@
     "cancel": "Cancelar",
     "submit": "Enviar de forma anónima para revisión",
     "submitted": "Gracias. Su historia se ha enviado para moderación. No se guarda nada en su dispositivo.",
-    "confidential": "Esta información se trata de forma confidencial. No hay seguimiento.",
+    "confidential": "El texto enviado se guarda en la base de moderación. No incluya nombres, direcciones ni otros datos que permitan identificar a una persona.",
     "read_full": "Leer la historia completa",
     "anon_label": "Historia anónima",
     "situation": "Situación",
@@ -753,5 +754,8 @@
     "hint": "Cambiar a una página de aspecto neutro para mayor seguridad en lugares públicos",
     "normal": "Vista normal",
     "disguised": "Vista discreta"
+  },
+  "privacy": {
+    "analytics_notice": "Atlas Women utiliza un identificador aleatorio de visitante, un identificador de sesión y la ruta de la página para elaborar estadísticas de visitas anonimizadas. Las historias y propuestas de organizaciones se envían a moderación. No incluya nombres, direcciones ni otros datos que permitan identificar a una persona."
   }
 }

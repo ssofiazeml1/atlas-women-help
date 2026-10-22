@@ -404,7 +404,7 @@ function CenterCard({
   useEffect(() => {
     let active = true
     setDescription(staticDescription)
-    if (staticDescription === rawDescription && rawDescription) {
+    if (lang !== 'ru' && staticDescription === rawDescription && rawDescription) {
       void autoTranslateCached(rawDescription, lang).then((value) => {
         if (active) setDescription(value)
       })
@@ -468,6 +468,11 @@ function CenterCard({
             >
               {t('card.open_in_osm', { defaultValue: 'Открыть точку на карте' })}
             </a>
+          )}
+          {!compact && (typeof c.lat !== 'number' || typeof c.lng !== 'number') && (
+            <div className="mt-1 text-[11px] leading-relaxed text-amber-800">
+              {t('map.no_verified_point')}
+            </div>
           )}
         </div>
       )}

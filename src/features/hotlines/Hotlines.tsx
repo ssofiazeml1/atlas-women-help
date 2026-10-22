@@ -148,19 +148,31 @@ function HotlineCard({ h, lang }: { h: AdminHotline; lang: string }) {
   const rawNote = pickLocalized(h, 'note', lang) || h.note || ''
   const rawHours = pickLocalized(h, 'hours', lang) || h.hours || ''
   const rawLanguages = pickLocalized(h, 'languages', lang) || h.languages || ''
-  const [translated, setTranslated] = useState({ country: localizeCountry(rawCountry, lang), geography: rawGeography, hours: rawHours, languages: rawLanguages })
+  const staticTranslated = {
+    country: localizeCountry(rawCountry, lang),
+    geography: localizePublicDescription(rawGeography, lang),
+    hours: localizePublicDescription(rawHours, lang),
+    languages: localizePublicDescription(rawLanguages, lang),
+  }
+  const staticNote = localizePublicDescription(rawNote, lang)
+  const [translated, setTranslated] = useState({ ...staticTranslated, note: staticNote })
   useEffect(() => {
     let active = true
-    Promise.all([rawGeography, rawHours, rawLanguages].map((value) => autoTranslateCached(value, lang)))
-      .then(([geography, hours, languages]) => {
-        if (active) setTranslated({ country: localizeCountry(rawCountry, lang), geography, hours, languages })
-      })
+    setTranslated({ ...staticTranslated, note: staticNote })
+    const sources = [rawGeography, rawHours, rawLanguages, rawNote]
+    const initial = [staticTranslated.geography, staticTranslated.hours, staticTranslated.languages, staticNote]
+    Promise.all(sources.map((value, index) => (
+      lang !== 'ru' && value && initial[index] === value ? autoTranslateCached(value, lang) : Promise.resolve(initial[index])
+    ))).then(([geography, hours, languages, note]) => {
+      if (active) setTranslated({ country: localizeCountry(rawCountry, lang), geography, hours, languages, note })
+    })
     return () => { active = false }
-  }, [rawCountry, rawGeography, rawHours, rawLanguages, lang])
-  const note = localizePublicDescription(rawNote, lang)
+  }, [rawCountry, rawGeography, rawHours, rawLanguages, rawNote, lang, staticTranslated.geography, staticTranslated.hours, staticTranslated.languages, staticNote])
+  const note = translated.note
   const hours = localizeSchedule(translated.hours, t)
   const languages = localizeLanguages(translated.languages, t)
   const websites = (h.website || '').split(/\s+/).filter((url) => /^https?:\/\//i.test(url))
+  const phones = (h.phone || '').split(/\s*;\s*|\n+/).map((phone) => phone.trim()).filter(Boolean)
   return (
     <div className="safe-card bg-white">
       <h3 className="font-semibold text-safe-800 leading-snug">{title}</h3>
@@ -171,12 +183,17 @@ function HotlineCard({ h, lang }: { h: AdminHotline; lang: string }) {
             ? t('hotlines.eu', { defaultValue: 'Работает на территории ЕС' })
             : translated.country}
       </div>
-      <a
-        href={`tel:${h.phone.replace(/\s/g, '')}`}
-        className="mt-3 inline-flex items-center gap-2 text-safe-800 font-semibold break-all"
-      >
-        <Phone size={16} /> {h.phone}
-      </a>
+      <div className="mt-3 flex flex-col items-start gap-1.5">
+        {phones.map((phone) => (
+          <a
+            key={phone}
+            href={`tel:${phone.split(/\b(?:ext\.?|доб\.?)\b/i)[0].replace(/[^+\d]/g, '')}`}
+            className="inline-flex items-center gap-2 text-safe-800 font-semibold break-all"
+          >
+            <Phone size={16} /> {phone}
+          </a>
+        ))}
+      </div>
       <dl className="mt-2 text-xs text-slate-700 space-y-0.5">
         {translated.geography && (
           <div>

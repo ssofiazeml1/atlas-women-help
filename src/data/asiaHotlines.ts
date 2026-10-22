@@ -137,12 +137,12 @@ export const ASIA_HOTLINES: AdminHotline[] = [
     "title": "TPO Cambodia — психосоциальная поддержка",
     "country": "Камбоджа",
     "scope": "country",
-    "phone": "017 222 372; 089 666 325; 097 9111 918",
+    "phone": "016 222 597; 095 777 004",
     "geography": "Только внутри страны",
     "languages": "Кхмерский; другие уточняются",
-    "hours": "Расписание уточняется",
-    "note": "Психологическая и психосоциальная поддержка детям, родителям и лицам, осуществляющим уход.",
-    "website": "https://www.trc.gov.kh/wp-content/uploads/doc/covid-en.pdf",
+    "hours": "Расписание уточняйте у организации",
+    "note": "Контакты лечебного центра TPO Cambodia для психологической и психосоциальной помощи.",
+    "website": "https://tpocambodia.org/",
     "createdAt": 0
   },
   {
@@ -662,7 +662,7 @@ export const ASIA_HOTLINES: AdminHotline[] = [
     "languages": "Английский; другие уточняются",
     "hours": "Круглосуточно",
     "note": "Национальная линия для сообщений о семейном насилии, жестоком обращении и сексуальных домогательствах.",
-    "website": "https://www.msf.gov.sg/docs/default-source/break-the-silence/navh-brochure-el.pdf",
+    "website": "https://www.msf.gov.sg/what-we-do/break-the-silence/resources/useful-contacts",
     "createdAt": 0
   },
   {

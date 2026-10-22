@@ -265,7 +265,7 @@ function Home() {
       )}
 
       <div className="mt-16 pt-8 border-t text-center text-xs text-slate-500">
-        This platform is designed with safety first. We collect no personal data.
+        {t('privacy.analytics_notice')}
       </div>
     </main>
   )

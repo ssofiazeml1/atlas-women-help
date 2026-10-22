@@ -584,7 +584,7 @@ export const EU_HOTLINES: AdminHotline[] = [
     "languages": "Французский; перевод примерно на 200 языков",
     "hours": "Круглосуточно",
     "note": "Поддержка женщин при домашнем и сексуальном насилии, принудительном браке и других формах насилия; направление в профильные организации.",
-    "website": "https://solidaritefemmes.org/qui-sommes-nous-solidarite-femmes/\nhttps://solidaritefemmes.org/wp-content/uploads/2024/07/FNSF-Rapport-dacitivite-2023-web.pdf",
+    "website": "https://www.service-public.fr/particuliers/actualites/A16162",
     "createdAt": 0
   },
   {

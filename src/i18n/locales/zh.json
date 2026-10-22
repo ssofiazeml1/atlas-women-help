@@ -613,7 +613,8 @@
     "route_error": "无法构建路线。",
     "route_no_coords": "该机构暂无坐标。",
     "open_full_card": "打开完整卡片",
-    "show_more": "显示更多"
+    "show_more": "显示更多",
+    "no_verified_point": "地图上暂无经核实的公开地点。前往之前请先联系该机构。"
   },
   "categories": {
     "shelter": "紧急庇护所",
@@ -674,7 +675,7 @@
     "cancel": "取消",
     "submit": "匿名提交审核",
     "submitted": "谢谢。您的故事已提交审核。您的设备上不会保存任何内容。",
-    "confidential": "此信息将被保密处理，不进行任何追踪。",
+    "confidential": "提交的文字会保存到审核数据库。请勿填写姓名、地址或其他可识别个人身份的信息。",
     "read_full": "阅读完整故事",
     "anon_label": "匿名故事",
     "situation": "情况",
@@ -753,5 +754,8 @@
     "hint": "在公共场所切换为中性页面以提高安全性",
     "normal": "普通视图",
     "disguised": "伪装视图"
+  },
+  "privacy": {
+    "analytics_notice": "Atlas Women 使用随机访客标识符、会话标识符和页面路径统计匿名访问数据。故事和机构建议会发送给审核人员。请勿填写姓名、地址或其他可识别个人身份的信息。"
   }
 }

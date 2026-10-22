@@ -613,7 +613,8 @@
     "route_error": "Could not build the route.",
     "route_no_coords": "This organisation has no coordinates yet.",
     "open_full_card": "Open full card",
-    "show_more": "Show more"
+    "show_more": "Show more",
+    "no_verified_point": "No verified public map point is available. Contact the organisation before travelling."
   },
   "categories": {
     "shelter": "Crisis shelter",
@@ -674,7 +675,7 @@
     "cancel": "Cancel",
     "submit": "Submit anonymously for review",
     "submitted": "Thank you. Your story has been submitted for moderation. Nothing is stored on your device.",
-    "confidential": "This information is treated confidentially. No tracking occurs.",
+    "confidential": "Submitted text is sent to the moderation database. Do not include names, addresses or other identifying details.",
     "read_full": "Read the full story",
     "anon_label": "Anonymous story",
     "situation": "Situation",
@@ -753,5 +754,8 @@
     "hint": "Switch to a generic-looking page for safety in public environments",
     "normal": "Normal view",
     "disguised": "Disguised view"
+  },
+  "privacy": {
+    "analytics_notice": "Atlas Women uses a random visitor identifier, session identifier and page path to provide anonymous visit statistics. Story and organisation submissions are sent to moderators. Do not include names, addresses or other identifying details."
   }
 }

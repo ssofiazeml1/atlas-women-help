@@ -397,12 +397,12 @@ export const NORTH_AMERICA_HOTLINES: AdminHotline[] = [
     "title": "Gender Affairs Division — консультационный телефон через министерство",
     "country": "Сент-Винсент и Гренадины",
     "scope": "country",
-    "phone": "+1 784 457 2789",
+    "phone": "+1 784 453 2061; +1 784 456 1111 ext. 3869/3870",
     "geography": "Внутри страны",
     "languages": "Местный, уточняется",
-    "hours": "Расписание уточняется",
-    "note": "Обращения за поддержкой при гендерном насилии и направление в профильную государственную службу.",
-    "website": "https://mobilization.gov.vc/mobilization/index.php/contact-information-1\nhttps://mobilization.gov.vc/mobilization/index.php/gender-affairs",
+    "hours": "Рабочие часы государственного ведомства; круглосуточную помощь уточняйте по телефону",
+    "note": "Gender Affairs Division принимает обращения о гендерном и домашнем насилии и направляет к государственным службам поддержки.",
+    "website": "https://family.gov.vc/family/index.php/gender-affairs/contact-information",
     "createdAt": 0
   },
   {

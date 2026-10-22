@@ -1,24 +1,13 @@
-import { useEffect, useState } from 'react'
 import { useTranslation } from 'react-i18next'
 import { Link, useSearchParams } from 'react-router-dom'
 import { ArrowLeft, ArrowRight, ExternalLink } from 'lucide-react'
-import { autoTranslateCached } from '../../lib/translate'
+import { useStaticLocalizer } from '../../lib/staticLocalization'
 
 const articleImage = '/images/digital-diplomacy-global-connectivity.jpg'
 
 function LocalizedText({ children, lang }: { children: string; lang: string }) {
-  const [text, setText] = useState(children)
-  useEffect(() => {
-    let active = true
-    setText(children)
-    if (lang !== 'ru') {
-      void autoTranslateCached(children, lang).then((translated) => {
-        if (active) setText(translated)
-      })
-    }
-    return () => { active = false }
-  }, [children, lang])
-  return <>{text}</>
+  const localize = useStaticLocalizer(lang)
+  return <>{localize(children)}</>
 }
 
 const questions = [

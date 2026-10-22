@@ -233,7 +233,7 @@ export const AFRICA_HOTLINES: AdminHotline[] = [
     "languages": "Амхарский, Оромо, Тигринья, Английский",
     "hours": "Расписание уточняется",
     "note": "Бесплатная национальная линия информирует о безопасной миграции и рисках торговли людьми и направляет к психологической и бесплатной юридической помощи.",
-    "website": "https://ethiopia.un.org/en/293683-ethiopia-launches-first-national-anti-trafficking-hotline-to-protect-vulnerable-individuals",
+    "website": "https://justice.gov.et/en/news/national-information-and-call-center-8797-for-prevention-of-human-trafficking-and-illegal-border-crossing-officially-begins-service/",
     "createdAt": 0
   },
   {
@@ -597,7 +597,7 @@ export const AFRICA_HOTLINES: AdminHotline[] = [
     "languages": "Киньяруанда, Английский, Французский; уточняется",
     "hours": "Круглосуточно",
     "note": "Бесплатный короткий номер принимает сообщения о гендерном насилии и подключает следственные и защитные службы.",
-    "website": "https://www.rib.gov.rw/index.php?id=176",
+    "website": "https://www.rib.gov.rw/contact-us",
     "createdAt": 0
   },
   {
@@ -634,9 +634,9 @@ export const AFRICA_HOTLINES: AdminHotline[] = [
     "phone": "116",
     "geography": "Только внутри страны",
     "languages": "Французский, Волоф; другие уточняются",
-    "hours": "Расписание уточняется",
+    "hours": "Ежедневно; актуальные часы уточняйте у службы",
     "note": "Национальная линия принимает обращения о насилии и угрозах детям и направляет к службам защиты и социальной помощи.",
-    "website": "https://femme.gouv.sn/wp-content/uploads/2024/03/rapport-Eval-SNEEG-VF.pdf",
+    "website": "https://childhelplineinternational.org/senegal-centre-ginddi-allo-116/",
     "createdAt": 0
   },
   {
