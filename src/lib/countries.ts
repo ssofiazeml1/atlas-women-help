@@ -171,11 +171,26 @@ const COUNTRY_CODES: Record<string, string> = {
   "Япония": "JP",
 }
 
+// Intl.DisplayNames still returns several outdated Russian exonyms in some
+// browsers. Keep the names shown in search filters aligned with the modern
+// official short names used by the countries themselves.
+const RUSSIAN_COUNTRY_NAMES: Partial<Record<string, string>> = {
+  BY: 'Беларусь',
+  KG: 'Кыргызстан',
+  MD: 'Молдова',
+  MK: 'Северная Македония',
+  SZ: 'Эсватини',
+  TL: 'Тимор-Лешти',
+}
+
 export function localizeCountry(name: string | undefined, lang: string): string {
   const raw = (name || '').trim()
   if (!raw) return ''
   const code = COUNTRY_CODES[raw]
   if (!code) return raw
+  if ((lang || '').toLowerCase().startsWith('ru') && RUSSIAN_COUNTRY_NAMES[code]) {
+    return RUSSIAN_COUNTRY_NAMES[code]!
+  }
   try {
     return new Intl.DisplayNames([lang || 'en'], { type: 'region' }).of(code) || raw
   } catch {
