@@ -3,6 +3,7 @@
 // visitor and the admin always see exactly the same options.
 
 export const CATEGORY_KEYS = [
+  'women_support',
   'shelter',
   'domestic',
   'sexual',
@@ -20,6 +21,7 @@ export type CategoryKey = (typeof CATEGORY_KEYS)[number]
 
 // Russian labels used inside the admin panel (the panel itself is in Russian).
 export const CATEGORY_LABELS_RU: Record<CategoryKey, string> = {
+  women_support: 'Информация и поддержка женщин',
   shelter: 'Убежище / шелтер',
   domestic: 'Домашнее насилие',
   sexual: 'Сексуализированное насилие',

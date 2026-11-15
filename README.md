@@ -100,3 +100,19 @@ Prioritize the safety of real survivors above all code decisions.
 
 Built exactly to the product brief with care for survivors, your platform name, neutral iconography + extreme simplicity .
 ```
+
+### Verified Spanish reception points
+
+The map and seed-center admin editor include 503 public women-support reception
+points from `src/data/spanishCenters.json`. Each point carries address-level
+coordinates, published contacts, official source and coordinate-source URLs,
+documentary verification date, and names/descriptions in ES/EN/RU/FR/AR/ZH.
+These are documentary checks, not telephone or on-site checks. General social
+services (SSB), general victim services (SAV), review-queue records and residential
+shelters are excluded from this import. The `women_support` category avoids
+inferring legal/psychological services, price, languages spoken or 24-hour access.
+Published hours are included where known. Existing centers and admin overrides
+remain available; imported IDs are stable (`seed-ES-…`).
+
+Validate this dataset with `node scripts/check-spanish-centers.mjs` and build
+with `npm run build`.

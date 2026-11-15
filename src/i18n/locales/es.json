@@ -628,7 +628,8 @@
     "medical": "Ayuda médica",
     "hotline": "Línea de ayuda",
     "crisis": "Centro de crisis",
-    "immigration": "Apoyo migratorio"
+    "immigration": "Apoyo migratorio",
+    "women_support": "Información y apoyo a mujeres"
   },
   "card": {
     "languages": "Idiomas",
@@ -647,7 +648,9 @@
     "btn_website": "Sitio oficial",
     "full_address": "Dirección completa",
     "open_in_osm": "Abrir ubicación en el mapa",
-    "coverage": "Cobertura"
+    "coverage": "Cobertura",
+    "official_source": "Fuente oficial",
+    "documentary_check": "Comprobación documental"
   },
   "about": {
     "eyebrow": "Sobre el proyecto",

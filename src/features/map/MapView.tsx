@@ -74,6 +74,8 @@ export function MapView() {
       categories: s.categories?.length ? s.categories : s.category ? [s.category] : [],
       open24: s.open24,
       createdAt: 0,
+      translations: s.translations,
+      verification: s.verification,
     }))
     const withOverrides = applySeedTransforms<AdminCenter>('centers', seeds)
     return [...getCenters(), ...withOverrides]
@@ -99,6 +101,8 @@ export function MapView() {
       setFlyTarget({ lat: 51.2, lng: 10.5, zoom: 6 })
     } else if (filterCountry === 'France') {
       setFlyTarget({ lat: 46.5, lng: 2.5, zoom: 5 })
+    } else if (filterCountry === 'Spain') {
+      setFlyTarget({ lat: 39.5, lng: -4, zoom: 5 })
     } else if (filterCountry === 'Россия') {
       setFlyTarget({ lat: 61.5, lng: 90, zoom: 3 })
     } else if (!filterCountry) {
@@ -404,13 +408,13 @@ function CenterCard({
   useEffect(() => {
     let active = true
     setDescription(staticDescription)
-    if (lang !== 'ru' && staticDescription === rawDescription && rawDescription) {
+    if (!c.translations?.description?.[lang] && lang !== 'ru' && staticDescription === rawDescription && rawDescription) {
       void autoTranslateCached(rawDescription, lang).then((value) => {
         if (active) setDescription(value)
       })
     }
     return () => { active = false }
-  }, [rawDescription, staticDescription, lang])
+  }, [rawDescription, staticDescription, lang, c.translations])
   const address = pickLocalized(c, 'address', lang) || c.address
   const city = pickLocalized(c, 'city', lang) || c.city
   const country = localizeCountry(pickLocalized(c, 'country', lang) || c.country, lang)
@@ -513,6 +517,15 @@ function CenterCard({
       {compact && (
         <div className="mt-3 text-xs text-safe-teal font-medium">
           {t('map.open_full_card', { defaultValue: 'Open full card' })} →
+        </div>
+      )}
+
+      {c.verification && (
+        <div className="mt-3 text-xs text-slate-600">
+          <a href={c.verification.sourceUrl} target="_blank" rel="noreferrer" onClick={(e) => e.stopPropagation()} className="text-teal-700 underline">
+            {t('card.official_source')}
+          </a>
+          <span className="block mt-1">{t('card.documentary_check')}: {c.verification.checkedAt.slice(0, 10)}</span>
         </div>
       )}
 

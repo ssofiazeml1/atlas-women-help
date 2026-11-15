@@ -293,7 +293,8 @@
     "medical": "Aide médicale",
     "hotline": "Ligne d’écoute",
     "crisis": "Centre de crise",
-    "immigration": "Soutien à l’immigration"
+    "immigration": "Soutien à l’immigration",
+    "women_support": "Information et soutien aux femmes"
   },
   "card": {
     "languages": "Langues",
@@ -312,7 +313,9 @@
     "btn_website": "Site officiel",
     "full_address": "Adresse complète",
     "open_in_osm": "Ouvrir le lieu sur la carte",
-    "coverage": "Couverture"
+    "coverage": "Couverture",
+    "official_source": "Source officielle",
+    "documentary_check": "Vérification documentaire"
   },
   "about": {
     "eyebrow": "À propos",

@@ -628,7 +628,8 @@
     "medical": "医疗援助",
     "hotline": "热线电话",
     "crisis": "危机中心",
-    "immigration": "移民援助"
+    "immigration": "移民援助",
+    "women_support": "妇女信息与支持"
   },
   "card": {
     "languages": "语言",
@@ -647,7 +648,9 @@
     "btn_website": "官方网站",
     "full_address": "完整地址",
     "open_in_osm": "在地图上打开位置",
-    "coverage": "覆盖范围"
+    "coverage": "覆盖范围",
+    "official_source": "官方来源",
+    "documentary_check": "文献核实"
   },
   "about": {
     "eyebrow": "关于项目",

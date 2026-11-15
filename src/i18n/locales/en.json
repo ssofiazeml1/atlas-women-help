@@ -628,7 +628,8 @@
     "medical": "Medical help",
     "hotline": "Hotline",
     "crisis": "Crisis centre",
-    "immigration": "Immigration support"
+    "immigration": "Immigration support",
+    "women_support": "Women’s information and support"
   },
   "card": {
     "languages": "Languages",
@@ -647,7 +648,9 @@
     "btn_website": "Website",
     "full_address": "Full address",
     "open_in_osm": "Open location on map",
-    "coverage": "Coverage"
+    "coverage": "Coverage",
+    "official_source": "Official source",
+    "documentary_check": "Documentary check"
   },
   "about": {
     "eyebrow": "About",

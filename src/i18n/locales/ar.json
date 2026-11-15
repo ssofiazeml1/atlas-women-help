@@ -293,7 +293,8 @@
     "medical": "مساعدة طبية",
     "hotline": "خط ساخن",
     "crisis": "مركز أزمات",
-    "immigration": "دعم الهجرة"
+    "immigration": "دعم الهجرة",
+    "women_support": "معلومات ودعم للنساء"
   },
   "card": {
     "languages": "اللغات",
@@ -312,7 +313,9 @@
     "btn_website": "الموقع الرسمي",
     "full_address": "العنوان الكامل",
     "open_in_osm": "افتح الموقع على الخريطة",
-    "coverage": "نطاق التغطية"
+    "coverage": "نطاق التغطية",
+    "official_source": "المصدر الرسمي",
+    "documentary_check": "التحقق من الوثائق"
   },
   "about": {
     "eyebrow": "حول المشروع",

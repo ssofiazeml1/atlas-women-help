@@ -1,3 +1,4 @@
+import type { CenterVerification } from './centerVerification'
 import { supabase } from '../integrations/supabase/client'
 
 // Synchronous local cache backed by the shared cloud content table. Existing
@@ -274,6 +275,7 @@ export function subscribeContent(cb: () => void): () => void {
 export type Translations = Record<string, Record<string, string>>
 
 export type AdminCenter = {
+  verification?: CenterVerification
   id: string
   name: string
   city: string
