@@ -614,7 +614,9 @@
     "route_no_coords": "该机构暂无坐标。",
     "open_full_card": "打开完整卡片",
     "show_more": "显示更多",
-    "no_verified_point": "地图上暂无经核实的公开地点。前往之前请先联系该机构。"
+    "no_verified_point": "地图上暂无经核实的公开地点。前往之前请先联系该机构。",
+    "verification_notice_title": "西班牙：已根据官方来源核查",
+    "verification_notice_body": "此为文献核查，未进行电话确认或实地走访。地址、电话号码和开放时间可能已变更。前往之前请联系该中心。"
   },
   "categories": {
     "shelter": "紧急庇护所",

@@ -1,4 +1,10 @@
 const COUNTRY_CODES: Record<string, string> = {
+  "Spain": "ES",
+  "ES": "ES",
+  "España": "ES",
+  "Espagne": "ES",
+  "إسبانيا": "ES",
+  "西班牙": "ES",
   "France": "FR",
   "Germany": "DE",
   "Австралия": "AU",

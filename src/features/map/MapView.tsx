@@ -218,6 +218,10 @@ export function MapView() {
 
   return (
     <div className="max-w-screen-2xl mx-auto px-3 md:px-5 py-4 w-full">
+      <aside role="note" aria-labelledby="map-verification-title" className="mb-4 rounded-xl border border-teal-200 bg-teal-50 px-4 py-3 text-teal-950">
+        <h2 id="map-verification-title" className="text-sm font-semibold">{t('map.verification_notice_title')}</h2>
+        <p className="mt-1 text-sm leading-relaxed">{t('map.verification_notice_body')}</p>
+      </aside>
       {/* Search + filters */}
       <form
         onSubmit={submitSearch}

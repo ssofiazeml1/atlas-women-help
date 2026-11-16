@@ -279,7 +279,9 @@
     "route_no_coords": "Cette organisation n'a pas encore de coordonnées.",
     "open_full_card": "Ouvrir la fiche complète",
     "show_more": "Afficher plus",
-    "no_verified_point": "Aucun emplacement public vérifié n’est disponible sur la carte. Contactez l’organisme avant de vous déplacer."
+    "no_verified_point": "Aucun emplacement public vérifié n’est disponible sur la carte. Contactez l’organisme avant de vous déplacer.",
+    "verification_notice_title": "Espagne : données vérifiées à partir de sources officielles",
+    "verification_notice_body": "Il s’agit d’une vérification documentaire, sans appels ni visites sur place. Les adresses, les numéros de téléphone et les horaires peuvent avoir changé. Contactez le centre avant de vous déplacer."
   },
   "categories": {
     "shelter": "Hébergement d’urgence",
