@@ -4,6 +4,7 @@
 
 import i18n from '../i18n/config'
 import { PUBLISHED_STORIES, type SeedStoryRaw } from '../features/stories/storiesSeed'
+import { getItalianCenters } from '../data/italianCenters'
 import { getSpanishCenters } from '../data/spanishCenters'
 import type { CenterVerification } from './centerVerification'
 import { FRENCH_CENTERS } from '../data/frenchCenters'
@@ -48,7 +49,7 @@ function pickLang(rec: Record<string, string> | undefined, lang: string): string
 }
 
 export function getSeedCenters(): SeedCenter[] {
-  return [...FRENCH_CENTERS, ...GERMAN_CENTERS, ...RUSSIAN_CENTERS, ...RUSSIAN_MAJOR_CITIES_CENTERS, ...getSpanishCenters(i18n.language)]
+  return [...FRENCH_CENTERS, ...GERMAN_CENTERS, ...RUSSIAN_CENTERS, ...RUSSIAN_MAJOR_CITIES_CENTERS, ...getSpanishCenters(i18n.language), ...getItalianCenters(i18n.language)]
 }
 
 // ---------- hotlines -------------------------------------------------------

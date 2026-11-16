@@ -101,6 +101,8 @@ export function MapView() {
       setFlyTarget({ lat: 51.2, lng: 10.5, zoom: 6 })
     } else if (filterCountry === 'France') {
       setFlyTarget({ lat: 46.5, lng: 2.5, zoom: 5 })
+    } else if (filterCountry === 'Italy') {
+      setFlyTarget({ lat: 42.5, lng: 12.5, zoom: 5 })
     } else if (filterCountry === 'Spain') {
       setFlyTarget({ lat: 39.5, lng: -4, zoom: 5 })
     } else if (filterCountry === 'Россия') {

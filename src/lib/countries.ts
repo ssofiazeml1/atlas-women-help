@@ -1,4 +1,10 @@
 const COUNTRY_CODES: Record<string, string> = {
+  "Italy": "IT",
+  "IT": "IT",
+  "Italia": "IT",
+  "Italie": "IT",
+  "إيطاليا": "IT",
+  "意大利": "IT",
   "Spain": "ES",
   "ES": "ES",
   "España": "ES",
