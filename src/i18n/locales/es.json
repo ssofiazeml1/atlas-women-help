@@ -615,8 +615,8 @@
     "open_full_card": "Abrir la ficha completa",
     "show_more": "Mostrar más",
     "no_verified_point": "No hay un punto público verificado disponible en el mapa. Contacte con la organización antes de desplazarse.",
-    "verification_notice_title": "España: datos contrastados con fuentes oficiales",
-    "verification_notice_body": "La comprobación es documental, sin llamadas ni visitas presenciales. La dirección, el teléfono y el horario pueden haber cambiado. Contacta con el centro antes de desplazarte."
+    "verification_notice_title": "Antes de tu visita",
+    "verification_notice_body": "Te recomendamos llamar al centro para confirmar la dirección y el horario de atención."
   },
   "categories": {
     "shelter": "Refugio de crisis",

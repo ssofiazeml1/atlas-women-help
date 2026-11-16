@@ -615,8 +615,8 @@
     "open_full_card": "Open full card",
     "show_more": "Show more",
     "no_verified_point": "No verified public map point is available. Contact the organisation before travelling.",
-    "verification_notice_title": "Spain: checked against official sources",
-    "verification_notice_body": "This is a documentary check, without phone calls or on-site visits. Addresses, phone numbers and opening hours may have changed. Contact the centre before travelling."
+    "verification_notice_title": "Before your visit",
+    "verification_notice_body": "We recommend calling the centre to confirm its address and opening hours."
   },
   "categories": {
     "shelter": "Crisis shelter",
