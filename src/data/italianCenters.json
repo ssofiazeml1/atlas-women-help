@@ -35,7 +35,7 @@
       "status": "verified",
       "sourceId": "IT-683941610543b035",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=248+Via+Tavo&city=Pescara&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -82,7 +82,7 @@
       "status": "verified",
       "sourceId": "IT-9f831ee024d57261",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=8+Piazza+San+Francesco&city=Bologna&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -129,7 +129,7 @@
       "status": "verified",
       "sourceId": "IT-c3821a8a56c01495",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=221b+Via+Saragozza&city=Bologna&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -176,7 +176,7 @@
       "status": "verified",
       "sourceId": "IT-39f0d8b368ee383a",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=12b+Via+Terranuova&city=Ferrara&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -223,7 +223,7 @@
       "status": "verified",
       "sourceId": "IT-9d0f5892b9da6e2a",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=26+Via+Aldini&city=Cesena&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -270,7 +270,7 @@
       "status": "verified",
       "sourceId": "IT-806e3270000ac38e",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=58+Via+Tina+Gori&city=Forl%C3%AC&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -317,7 +317,7 @@
       "status": "verified",
       "sourceId": "IT-cabc93e1729c1459",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=8+Vicolo+Grossardi&city=Parma&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -364,7 +364,7 @@
       "status": "verified",
       "sourceId": "IT-ccd8632b9443e6e9",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=57a+Via+Giuseppe+Mazzini&city=Ravenna&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -411,7 +411,7 @@
       "status": "verified",
       "sourceId": "IT-a8960d1203e5fbe1",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=10+Via+Michelangelo+Buonarroti&city=Grado&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -421,6 +421,805 @@
     },
     "contact_phone": "3391467750",
     "hours": "Lunedì: 09:00-13:00; Martedì: 15:00-18:00; Mercoledì: 09:00-13:00; Giovedì: 09:00-13:00; Venerdì: 09:00-13:00; Sabato: chiuso; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-6033d50a482b5986",
+    "name": "Centro Antiviolenza Mai più ferite",
+    "city": "Frosinone",
+    "country": "Italy",
+    "address": "Corso della Repubblica, 130, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.6401874,
+    "lng": 13.350549,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Mai più ferite",
+        "en": "Centro Antiviolenza Mai più ferite",
+        "ru": "Centro Antiviolenza Mai più ferite",
+        "fr": "Centro Antiviolenza Mai più ferite",
+        "ar": "Centro Antiviolenza Mai più ferite",
+        "zh": "Centro Antiviolenza Mai più ferite"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-6033d50a482b5986",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "800479898",
+    "hours": "Lunedì: 9:00-13:00/14.00-18.30; Martedì: 9:00-13:00/14.00-18.30; Mercoledì: 9:00-13:00/14.00-18.30; Giovedì: 9:00-13:00/14:00-18:30; Venerdì: 9:00-13:00; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-6c009f6075e8decc",
+    "name": "Centro Antiviolenza Il Nido di Ana",
+    "city": "Rieti",
+    "country": "Italy",
+    "address": "Piazza Vittorio Emanuele II 17 B, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 42.40243935,
+    "lng": 12.860464719571,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Il Nido di Ana",
+        "en": "Centro Antiviolenza Il Nido di Ana",
+        "ru": "Centro Antiviolenza Il Nido di Ana",
+        "fr": "Centro Antiviolenza Il Nido di Ana",
+        "ar": "Centro Antiviolenza Il Nido di Ana",
+        "zh": "Centro Antiviolenza Il Nido di Ana"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-6c009f6075e8decc",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "0746280512",
+    "hours": "Lunedì: 10:00-12:00; Martedì: 16:00-18:00; Mercoledì: 10:00-12:00; Giovedì: 16:00-18:00; Venerdì: 10:00-12:00; Sabato: chiuso; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-f7807e5583f36869",
+    "name": "Centro Antiviolenza Piccoli Passi",
+    "city": "Ariccia",
+    "country": "Italy",
+    "address": "Via delle Cerquette, 2, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.7234734,
+    "lng": 12.6757793,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Piccoli Passi",
+        "en": "Centro Antiviolenza Piccoli Passi",
+        "ru": "Centro Antiviolenza Piccoli Passi",
+        "fr": "Centro Antiviolenza Piccoli Passi",
+        "ar": "Centro Antiviolenza Piccoli Passi",
+        "zh": "Centro Antiviolenza Piccoli Passi"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-f7807e5583f36869",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "3791677172",
+    "hours": "Lunedì: 9:00-13:00; Martedì: 9:00-13:00; Mercoledì: 15:00-19:00; Giovedì: 15:00-19:00; Venerdì: 9:00-13:00; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-7375957f855e9666",
+    "name": "Centro Antiviolenza GEA",
+    "city": "Guidonia Montecelio",
+    "country": "Italy",
+    "address": "Via Casal Bianco, 18, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.9490015,
+    "lng": 12.6495127,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza GEA",
+        "en": "Centro Antiviolenza GEA",
+        "ru": "Centro Antiviolenza GEA",
+        "fr": "Centro Antiviolenza GEA",
+        "ar": "Centro Antiviolenza GEA",
+        "zh": "Centro Antiviolenza GEA"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-7375957f855e9666",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "3490798572",
+    "hours": "Lunedì: 9:00-13:00; Martedì: 14:30-18:30; Mercoledì: 9:00-13:00; Giovedì: 9:00-13:00; Venerdì: 14:30-18:30; Sabato: chiuso; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-6ae5a0ed3393ce97",
+    "name": "Centro Antiviolenza Paola Lattes",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Siro Solazzi, 3, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.9510904,
+    "lng": 12.5836693,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Paola Lattes",
+        "en": "Centro Antiviolenza Paola Lattes",
+        "ru": "Centro Antiviolenza Paola Lattes",
+        "fr": "Centro Antiviolenza Paola Lattes",
+        "ar": "Centro Antiviolenza Paola Lattes",
+        "zh": "Centro Antiviolenza Paola Lattes"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-6ae5a0ed3393ce97",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "0685386922",
+    "hours": "Lunedì: 11:00-17:00; Martedì: 11:00-17:00; Mercoledì: 11:00-17:00; Giovedì: 11:00-17:00; Venerdì: 11:00-17:00; Sabato: chiuso; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-c792c82b4d849935",
+    "name": "Centro antiviolenza Maree per donne in difficoltà e vittime di violenza",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Monte delle Capre, 23, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.8445354,
+    "lng": 12.4337378,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro antiviolenza Maree per donne in difficoltà e vittime di violenza",
+        "en": "Centro antiviolenza Maree per donne in difficoltà e vittime di violenza",
+        "ru": "Centro antiviolenza Maree per donne in difficoltà e vittime di violenza",
+        "fr": "Centro antiviolenza Maree per donne in difficoltà e vittime di violenza",
+        "ar": "Centro antiviolenza Maree per donne in difficoltà e vittime di violenza",
+        "zh": "Centro antiviolenza Maree per donne in difficoltà e vittime di violenza"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-c792c82b4d849935",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "066535499",
+    "hours": "Lunedì: 9:00-17:00; Martedì: 9:00-17:00; Mercoledì: 9:00-17:00; Giovedì: 9:00-17:00; Venerdì: 9:00-17:00; Sabato: chiuso; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-b5c84cf7de5ae6b1",
+    "name": "Centro Antiviolenza Sara Di Pietrantonio",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Tommaso Fortifiocca, 71, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.8705033,
+    "lng": 12.5229339,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Sara Di Pietrantonio",
+        "en": "Centro Antiviolenza Sara Di Pietrantonio",
+        "ru": "Centro Antiviolenza Sara Di Pietrantonio",
+        "fr": "Centro Antiviolenza Sara Di Pietrantonio",
+        "ar": "Centro Antiviolenza Sara Di Pietrantonio",
+        "zh": "Centro Antiviolenza Sara Di Pietrantonio"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-b5c84cf7de5ae6b1",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "0669609216",
+    "hours": "Lunedì: 10:00-17:00; Martedì: 10:00-17:00; Mercoledì: 10:00-17.00; Giovedì: 10.00-17.00; Venerdì: 10.00-17.00; Sabato: chiuso; Domenica: chiuso; reperibilità h24"
+  },
+  {
+    "id": "seed-IT-d3dff9d14ff0a9dd",
+    "name": "Centro Antiviolenza Nilde Iotti",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via di Grottaperfetta, 610, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.8314114,
+    "lng": 12.5158437,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Nilde Iotti",
+        "en": "Centro Antiviolenza Nilde Iotti",
+        "ru": "Centro Antiviolenza Nilde Iotti",
+        "fr": "Centro Antiviolenza Nilde Iotti",
+        "ar": "Centro Antiviolenza Nilde Iotti",
+        "zh": "Centro Antiviolenza Nilde Iotti"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-d3dff9d14ff0a9dd",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "0696678236",
+    "hours": "Lunedì: 10:00-18:00; Martedì: 10:00-18:00; Mercoledì: 10:00-18:00; Giovedì: 10:00-18:00; Venerdì: 10:00-18:00; Sabato: chiuso; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-2652dde4ce6e0f7f",
+    "name": "Centro antiviolenza Donatella Colasanti e Rosaria Lopez",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Di Torre Spaccata, 157, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.8641929,
+    "lng": 12.5853045,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro antiviolenza Donatella Colasanti e Rosaria Lopez",
+        "en": "Centro antiviolenza Donatella Colasanti e Rosaria Lopez",
+        "ru": "Centro antiviolenza Donatella Colasanti e Rosaria Lopez",
+        "fr": "Centro antiviolenza Donatella Colasanti e Rosaria Lopez",
+        "ar": "Centro antiviolenza Donatella Colasanti e Rosaria Lopez",
+        "zh": "Centro antiviolenza Donatella Colasanti e Rosaria Lopez"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-2652dde4ce6e0f7f",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "0623269049",
+    "hours": "Lunedì: 10:00-17:00; Martedì: 10:00-17:00; Mercoledì: 10:00-17:00; Giovedì: 10:00-17:00; Venerdì: 10:00-17:00; Sabato: chiuso; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-a6f05dba33d094fd",
+    "name": "Centro Antiviolenza Irma Bandiera",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Cornelio Sisenna, 53, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.8700235,
+    "lng": 12.5756383,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Irma Bandiera",
+        "en": "Centro Antiviolenza Irma Bandiera",
+        "ru": "Centro Antiviolenza Irma Bandiera",
+        "fr": "Centro Antiviolenza Irma Bandiera",
+        "ar": "Centro Antiviolenza Irma Bandiera",
+        "zh": "Centro Antiviolenza Irma Bandiera"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-a6f05dba33d094fd",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "0693567964",
+    "hours": "Lunedì: 9:00-16:00; Martedì: 9:00-16:00; Mercoledì: 9:00-16:00; Giovedì: 9:00-17:00; Venerdì: 9:00-16:00; Sabato: chiuso; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-f26cfd312dbdf80c",
+    "name": "Centro Antiviolenza Alda Merini",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Cassia, 5, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 42.0545812,
+    "lng": 12.3726547,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Alda Merini",
+        "en": "Centro Antiviolenza Alda Merini",
+        "ru": "Centro Antiviolenza Alda Merini",
+        "fr": "Centro Antiviolenza Alda Merini",
+        "ar": "Centro Antiviolenza Alda Merini",
+        "zh": "Centro Antiviolenza Alda Merini"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-f26cfd312dbdf80c",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "3384715860",
+    "hours": "Lunedì: 9:00-16:00; Martedì: 9:00-16:00; Mercoledì: 9:00-16:00; Giovedì: 9:00-16:00; Venerdì: 9:00-16:00; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-f436bd5c031bfac8",
+    "name": "Centro Antiviolenza Franca Rame Telefono Rosa",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Dalmazia, 25, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.9154057,
+    "lng": 12.5057534,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Franca Rame Telefono Rosa",
+        "en": "Centro Antiviolenza Franca Rame Telefono Rosa",
+        "ru": "Centro Antiviolenza Franca Rame Telefono Rosa",
+        "fr": "Centro Antiviolenza Franca Rame Telefono Rosa",
+        "ar": "Centro Antiviolenza Franca Rame Telefono Rosa",
+        "zh": "Centro Antiviolenza Franca Rame Telefono Rosa"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-f436bd5c031bfac8",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "3384715978",
+    "hours": "Lunedì: 10:00-13:00/14:00-18:30; Martedì: 10:00-13:00/14:00-18:30; Mercoledì: 10:00-13:00/14:00-18:30; Giovedì: 10:00-13:00/14:00-18:30; Venerdì: 10:00-13:00/14:00-18:30; Sabato: chiuso; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-c760a1d863f81c5c",
+    "name": "Centro Antiviolenza Elena Gianini Belotti Università Tor Vergata",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Columbia, 1 Macro Area lettere e filosofia, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.8525221,
+    "lng": 12.620883514861,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Elena Gianini Belotti Università Tor Vergata",
+        "en": "Centro Antiviolenza Elena Gianini Belotti Università Tor Vergata",
+        "ru": "Centro Antiviolenza Elena Gianini Belotti Università Tor Vergata",
+        "fr": "Centro Antiviolenza Elena Gianini Belotti Università Tor Vergata",
+        "ar": "Centro Antiviolenza Elena Gianini Belotti Università Tor Vergata",
+        "zh": "Centro Antiviolenza Elena Gianini Belotti Università Tor Vergata"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-c760a1d863f81c5c",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "3478547714",
+    "hours": "Lunedì: 9:00-16:00; Martedì: 9:00-16:00; Mercoledì: 9:00-16:00; Giovedì: 9:00-17:00; Venerdì: 9:00-16:00; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-4b94695c21b33ce4",
+    "name": "Centro Antiviolenza Telefono Rosa",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Viale Mazzini, 73, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.915334634508,
+    "lng": 12.462625482547,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Telefono Rosa",
+        "en": "Centro Antiviolenza Telefono Rosa",
+        "ru": "Centro Antiviolenza Telefono Rosa",
+        "fr": "Centro Antiviolenza Telefono Rosa",
+        "ar": "Centro Antiviolenza Telefono Rosa",
+        "zh": "Centro Antiviolenza Telefono Rosa"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-4b94695c21b33ce4",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "0637518261",
+    "hours": "Lunedì: 10:00-18:00; Martedì: 10:00-18:00; Mercoledì: 10:00-18:00; Giovedì: 10:00-18:00; Venerdì: 10:00-18:00; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-36c237b5891fd7bd",
+    "name": "Centro Antiviolenza Angelina Merlin",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Roberto Lepetit, 176, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.8878739,
+    "lng": 12.5843987,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Angelina Merlin",
+        "en": "Centro Antiviolenza Angelina Merlin",
+        "ru": "Centro Antiviolenza Angelina Merlin",
+        "fr": "Centro Antiviolenza Angelina Merlin",
+        "ar": "Centro Antiviolenza Angelina Merlin",
+        "zh": "Centro Antiviolenza Angelina Merlin"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-36c237b5891fd7bd",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "3666521451",
+    "hours": "Lunedì: 10:00-18:00; Martedì: 10:00-18:00; Mercoledì: 10:00-20:00; Giovedì: 10:00-20:00; Venerdì: 10:00-19:00; Sabato: 10:00-13:00; Domenica: chiuso"
+  },
+  {
+    "id": "seed-IT-e9ff1a47be7391d5",
+    "name": "Centro Antiviolenza Palmina Martinelli",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via dei Gozzadini, 38, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.8957072,
+    "lng": 12.4352696,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Palmina Martinelli",
+        "en": "Centro Antiviolenza Palmina Martinelli",
+        "ru": "Centro Antiviolenza Palmina Martinelli",
+        "fr": "Centro Antiviolenza Palmina Martinelli",
+        "ar": "Centro Antiviolenza Palmina Martinelli",
+        "zh": "Centro Antiviolenza Palmina Martinelli"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-e9ff1a47be7391d5",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "3405931402",
+    "hours": "Lunedì: 9:00-16:00; Martedì: 9:00-16:00; Mercoledì: 9:00-16:00; Giovedì: 9:00-17:00; Venerdì: 9:00-16:00; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-d36b898687549ed9",
+    "name": "Sportello Università Roma 3 Sara di Pietrantonio",
+    "city": "Roma",
+    "country": "Italy",
+    "address": "Via Ostiense, 147, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.8724769,
+    "lng": 12.4800687,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Sportello Università Roma 3 Sara di Pietrantonio",
+        "en": "Sportello Università Roma 3 Sara di Pietrantonio",
+        "ru": "Sportello Università Roma 3 Sara di Pietrantonio",
+        "fr": "Sportello Università Roma 3 Sara di Pietrantonio",
+        "ar": "Sportello Università Roma 3 Sara di Pietrantonio",
+        "zh": "Sportello Università Roma 3 Sara di Pietrantonio"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-d36b898687549ed9",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "0657331522",
+    "hours": "Lunedì: 10:00-17:00; Martedì: 13:00-20:00; Mercoledì: 10:00-17:00; Giovedì: 13:00-20:00; Venerdì: 10:00-17:00; Sabato: h24; Domenica: h24"
   },
   {
     "id": "seed-IT-43aa642eebbe05e8",
@@ -458,7 +1257,7 @@
       "status": "verified",
       "sourceId": "IT-43aa642eebbe05e8",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=11+Via+Lione&city=Tivoli&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -468,6 +1267,100 @@
     },
     "contact_phone": "0774013163",
     "hours": "Lunedì: 9:00-16:00; Martedì: 9:00-16:00; Mercoledì: 9:00-16:00; Giovedì: 9:00-16:00; Venerdì: 9:00-16:00; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-dabf6c1d8b3f3b46",
+    "name": "Centro provinciale di accoglienza e assistenza sociale La Ginestra",
+    "city": "Valmontone",
+    "country": "Italy",
+    "address": "Via Colle Tocciarello, 1, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 41.7745041,
+    "lng": 12.9190465,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro provinciale di accoglienza e assistenza sociale La Ginestra",
+        "en": "Centro provinciale di accoglienza e assistenza sociale La Ginestra",
+        "ru": "Centro provinciale di accoglienza e assistenza sociale La Ginestra",
+        "fr": "Centro provinciale di accoglienza e assistenza sociale La Ginestra",
+        "ar": "Centro provinciale di accoglienza e assistenza sociale La Ginestra",
+        "zh": "Centro provinciale di accoglienza e assistenza sociale La Ginestra"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-dabf6c1d8b3f3b46",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "069591187",
+    "hours": "Lunedì: h24; Martedì: h24; Mercoledì: h24; Giovedì: h24; Venerdì: h24; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-e74b05c8b6a5fa2d",
+    "name": "Centro Antiviolenza Demetra",
+    "city": "Vetralla",
+    "country": "Italy",
+    "address": "Piazza Guglielmo Marconi, 34, Lazio",
+    "description": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+    "lat": 42.31841725,
+    "lng": 12.059462253984,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://www.1522.eu/mappatura-1522/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza Demetra",
+        "en": "Centro Antiviolenza Demetra",
+        "ru": "Centro Antiviolenza Demetra",
+        "fr": "Centro Antiviolenza Demetra",
+        "ar": "Centro Antiviolenza Demetra",
+        "zh": "Centro Antiviolenza Demetra"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, incluido en el directorio oficial 1522 de Italia.",
+        "en": "Centre or reception point supporting women experiencing violence, listed in Italy’s official 1522 directory.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, включённый в официальный каталог 1522 Италии.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, répertorié dans l’annuaire officiel italien 1522.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مُدرج في الدليل الإيطالي الرسمي 1522.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，收录于意大利官方1522目录。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-e74b05c8b6a5fa2d",
+      "sourceUrl": "https://www.1522.eu/mappatura-1522/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://progetti.regione.lazio.it/nonseisola/mappa-centri-antiviolenza/",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lazio_official_public_reception_marker",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "3290093541",
+    "hours": "Lunedì: 14:30-18:30; Martedì: 14:30-18:30; Mercoledì: 9:00-13:00; Giovedì: 9:00-13:00; Venerdì: 9:00-13:00; Sabato: h24; Domenica: h24"
   },
   {
     "id": "seed-IT-271c64bae825d639",
@@ -505,7 +1398,7 @@
       "status": "verified",
       "sourceId": "IT-271c64bae825d639",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=4+Via+Santa+Maria+in+Gradi&city=Viterbo&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -552,7 +1445,7 @@
       "status": "verified",
       "sourceId": "IT-8b6166aa506d0a78",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=3+Via+San+Lazzaro&city=Bergamo&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -599,7 +1492,7 @@
       "status": "verified",
       "sourceId": "IT-863687dfb26cc079",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -647,7 +1540,7 @@
       "status": "verified",
       "sourceId": "IT-f7bf466024be4c51",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -695,7 +1588,7 @@
       "status": "verified",
       "sourceId": "IT-9c22bd599686eae0",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -743,7 +1636,7 @@
       "status": "verified",
       "sourceId": "IT-43b2b701149d4976",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -791,7 +1684,7 @@
       "status": "verified",
       "sourceId": "IT-6dba7c6b45c3ea70",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -839,7 +1732,7 @@
       "status": "verified",
       "sourceId": "IT-8b88dc3171479d99",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=47+Via+Magenta&city=Manerbio&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -886,7 +1779,7 @@
       "status": "verified",
       "sourceId": "IT-69f39abcf214517e",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -934,7 +1827,7 @@
       "status": "verified",
       "sourceId": "IT-87b32500ec8b6a84",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=9+Via+Giuseppe+Ferrari&city=Como&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -981,7 +1874,7 @@
       "status": "verified",
       "sourceId": "IT-8442328060dc8805",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1029,7 +1922,7 @@
       "status": "verified",
       "sourceId": "IT-23d3caea8ee21d07",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1077,7 +1970,7 @@
       "status": "verified",
       "sourceId": "IT-08fe458760028d7d",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1125,7 +2018,7 @@
       "status": "verified",
       "sourceId": "IT-cdfcc96f2679443c",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1173,7 +2066,7 @@
       "status": "verified",
       "sourceId": "IT-26e7f85f08b5295a",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1184,6 +2077,54 @@
     "contact_phone": "0341363484",
     "email": "teldonnalecco@gmail.com",
     "hours": "Lunedì: 10:00-12:00; Martedì: 10:00-12:00/17:00-19:00; Mercoledì: 10:00-12:00/14:30-18:30; Giovedì: 10:00-12:00/14:30-16:30; Venerdì: 09:00-12:00; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-5a08e7cee1ca60cf",
+    "name": "Centro Antiviolenza La Metà di Niente",
+    "city": "Lodi",
+    "country": "Italy",
+    "address": "Via Paolo Gorini, 21, 26900, Lombardia",
+    "description": "Centre or reception point supporting women experiencing violence, with contact details published on its own website.",
+    "lat": 45.311521,
+    "lng": 9.5074,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "https://centroantiviolenzalodi.it/",
+    "translations": {
+      "name": {
+        "es": "Centro Antiviolenza La Metà di Niente",
+        "en": "Centro Antiviolenza La Metà di Niente",
+        "ru": "Centro Antiviolenza La Metà di Niente",
+        "fr": "Centro Antiviolenza La Metà di Niente",
+        "ar": "Centro Antiviolenza La Metà di Niente",
+        "zh": "Centro Antiviolenza La Metà di Niente"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, con datos de contacto publicados en su propio sitio web.",
+        "en": "Centre or reception point supporting women experiencing violence, with contact details published on its own website.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, с контактами на собственном сайте.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, avec des coordonnées publiées sur son propre site.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مع بيانات الاتصال المنشورة على موقعه.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，其官方网站公布了联系方式。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-5a08e7cee1ca60cf",
+      "sourceUrl": "https://centroantiviolenzalodi.it/contatti/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "3313495221",
+    "email": "orsaminoreonlus@gmail.com",
+    "hours": "Lunedì: 09:00-12:00; Martedì: 09:00-12:00; Mercoledì: 09:00-12:00; Giovedì: 09:00-12:00; Venerdì: 09:00-12:00; Sabato: 09:00-20:00; Domenica: chiuso"
   },
   {
     "id": "seed-IT-79e1d30f6bbfd0f2",
@@ -1221,7 +2162,7 @@
       "status": "verified",
       "sourceId": "IT-79e1d30f6bbfd0f2",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1269,7 +2210,7 @@
       "status": "verified",
       "sourceId": "IT-a0ef0db799668185",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1317,7 +2258,7 @@
       "status": "verified",
       "sourceId": "IT-7079c82441fe65b5",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1365,7 +2306,7 @@
       "status": "verified",
       "sourceId": "IT-d40e869b6cb9595b",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1413,7 +2354,7 @@
       "status": "verified",
       "sourceId": "IT-488fa41c63610799",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=9+Via+Verona&city=Milano&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -1461,7 +2402,7 @@
       "status": "verified",
       "sourceId": "IT-7fbf688340f3f4d4",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1509,7 +2450,7 @@
       "status": "verified",
       "sourceId": "IT-41492237c984fbdb",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=4+Via+San+Bernardino&city=Milano&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -1556,7 +2497,7 @@
       "status": "verified",
       "sourceId": "IT-8b92740f47b5d210",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1604,7 +2545,7 @@
       "status": "verified",
       "sourceId": "IT-941b331a8e87cb35",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=12+Via+della+Commenda&city=Milano&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -1652,7 +2593,7 @@
       "status": "verified",
       "sourceId": "IT-b7441aac97260b37",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1700,7 +2641,7 @@
       "status": "verified",
       "sourceId": "IT-a80f70df5f0b2d6f",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=28+Via+Rutilia&city=Milano&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -1747,7 +2688,7 @@
       "status": "verified",
       "sourceId": "IT-c0a2ca098ca9b1e4",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=20+Via+Giovanni+Pacini&city=Milano&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -1795,7 +2736,7 @@
       "status": "verified",
       "sourceId": "IT-e4d298135950a734",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1843,7 +2784,7 @@
       "status": "verified",
       "sourceId": "IT-d40fa6209209de89",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1891,7 +2832,7 @@
       "status": "verified",
       "sourceId": "IT-347febcf217802fb",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1939,7 +2880,7 @@
       "status": "verified",
       "sourceId": "IT-c0d670ef9cfd5450",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -1950,6 +2891,54 @@
     "contact_phone": "3666622300",
     "email": "sportelloantiviolenza@ambitocaratebrianza.it",
     "hours": "Lunedì: 14:30-17:30; Martedì: 14:30-17:30; Mercoledì: 09:30-12:30; Giovedì: 14:30-17:30; Venerdì: 09:30-12:30; Sabato: h24; Domenica: h24"
+  },
+  {
+    "id": "seed-IT-0dd45068eb03f17f",
+    "name": "C.A.DO.M. Centro Aiuto alle Donne Maltrattate – APS",
+    "city": "Monza",
+    "country": "Italy",
+    "address": "Via Donatello, 12, 20900, Lombardia",
+    "description": "Centre or reception point supporting women experiencing violence, with contact details published on its own website.",
+    "lat": 45.5740057,
+    "lng": 9.277759,
+    "category": "women_support",
+    "categories": [
+      "women_support"
+    ],
+    "contact_web": "http://www.cadom.it/",
+    "translations": {
+      "name": {
+        "es": "C.A.DO.M. Centro Aiuto alle Donne Maltrattate – APS",
+        "en": "C.A.DO.M. Centro Aiuto alle Donne Maltrattate – APS",
+        "ru": "C.A.DO.M. Centro Aiuto alle Donne Maltrattate – APS",
+        "fr": "C.A.DO.M. Centro Aiuto alle Donne Maltrattate – APS",
+        "ar": "C.A.DO.M. Centro Aiuto alle Donne Maltrattate – APS",
+        "zh": "C.A.DO.M. Centro Aiuto alle Donne Maltrattate – APS"
+      },
+      "description": {
+        "es": "Centro o punto de apoyo a mujeres que sufren violencia, con datos de contacto publicados en su propio sitio web.",
+        "en": "Centre or reception point supporting women experiencing violence, with contact details published on its own website.",
+        "ru": "Центр или пункт приёма для женщин, пострадавших от насилия, с контактами на собственном сайте.",
+        "fr": "Centre ou point d’accueil pour les femmes victimes de violences, avec des coordonnées publiées sur son propre site.",
+        "ar": "مركز أو نقطة استقبال لدعم النساء المتعرضات للعنف، مع بيانات الاتصال المنشورة على موقعه.",
+        "zh": "为遭受暴力的妇女提供支持的中心或接待点，其官方网站公布了联系方式。"
+      }
+    },
+    "verification": {
+      "status": "verified",
+      "sourceId": "IT-0dd45068eb03f17f",
+      "sourceUrl": "https://cadom.it/contattaci/",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
+      "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=12+Via+Donatello&city=Monza&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
+      "coordinatePrecision": "address",
+      "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
+      "services": [
+        "Ascolto e sostegno alle donne che subiscono violenza — centro o sportello presente nella mappatura 1522"
+      ]
+    },
+    "contact_phone": "0392840006",
+    "email": "info@cadom.it",
+    "hours": "Lunedì: 14:30-17:30; Martedì: 09:30-12:30/14:30-17:30; Mercoledì: 09:30-12:30/14:30-17:30; Giovedì: 09:30-12:30/14:30-17:30; Venerdì: 14:30-17:30; Sabato: 09:00-12:00; Domenica: chiuso"
   },
   {
     "id": "seed-IT-f30442d1a5ec4e54",
@@ -1987,7 +2976,7 @@
       "status": "verified",
       "sourceId": "IT-f30442d1a5ec4e54",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -2035,7 +3024,7 @@
       "status": "verified",
       "sourceId": "IT-e097a7052ddd0c24",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=16+Largo+Pontida&city=Vimercate&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2083,7 +3072,7 @@
       "status": "verified",
       "sourceId": "IT-a798049b59ecbdf6",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -2131,7 +3120,7 @@
       "status": "verified",
       "sourceId": "IT-3d3147eba28769e1",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -2179,7 +3168,7 @@
       "status": "verified",
       "sourceId": "IT-350567ddc10aac8e",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -2227,7 +3216,7 @@
       "status": "verified",
       "sourceId": "IT-ec4b1c1438f6c7f0",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -2275,7 +3264,7 @@
       "status": "verified",
       "sourceId": "IT-0215249a7ce8498a",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -2323,7 +3312,7 @@
       "status": "verified",
       "sourceId": "IT-acbcfb996142ce2c",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -2371,7 +3360,7 @@
       "status": "verified",
       "sourceId": "IT-ae93550a39e65859",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=12+Via+Arona&city=Borgomanero&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2418,7 +3407,7 @@
       "status": "verified",
       "sourceId": "IT-a7483bdfbe2af8ad",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=13a+Via+Assietta&city=Torino&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2465,7 +3454,7 @@
       "status": "verified",
       "sourceId": "IT-512f192784ac78c9",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=12+Via+Fratelli+Garrone&city=Vercelli&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2512,7 +3501,7 @@
       "status": "verified",
       "sourceId": "IT-0bb3f3b79c566ac9",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=49+Via+Sassari&city=Nuoro&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2559,7 +3548,7 @@
       "status": "verified",
       "sourceId": "IT-b1b3c0800d67f2f2",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=8+Via+Tirso&city=Oristano&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2606,7 +3595,7 @@
       "status": "verified",
       "sourceId": "IT-221e640b5d30d68a",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=5+Via+delle+Salicornie&city=Olbia&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2653,7 +3642,7 @@
       "status": "verified",
       "sourceId": "IT-2beba8dc79ad502d",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=61+Via+dei+Mille&city=Sassari&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2700,7 +3689,7 @@
       "status": "verified",
       "sourceId": "IT-83b9c70c0279c1ae",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=21+Via+Giovanni+Pascoli&city=Messina&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2747,7 +3736,7 @@
       "status": "verified",
       "sourceId": "IT-e6f5879d8946a6e7",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=1+Via+del+Mezzetta&city=Firenze&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2794,7 +3783,7 @@
       "status": "verified",
       "sourceId": "IT-f80293b17b6b4a12",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=21+Via+del+Ronco&city=Bolzano&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2841,7 +3830,7 @@
       "status": "verified",
       "sourceId": "IT-171e1e151f9d7d09",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=7+Via+Roma&city=Bressanone&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2888,7 +3877,7 @@
       "status": "verified",
       "sourceId": "IT-7f862a9643515b1d",
       "sourceUrl": "https://www.1522.eu/mappatura-1522/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=20+Via+Roma&city=Treviso&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -2935,7 +3924,7 @@
       "status": "verified",
       "sourceId": "IT-308f62ba6aa28bb1",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -2983,7 +3972,7 @@
       "status": "verified",
       "sourceId": "IT-e9c55f701ddf11e3",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3031,7 +4020,7 @@
       "status": "verified",
       "sourceId": "IT-2e907a9995c9a30d",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3079,7 +4068,7 @@
       "status": "verified",
       "sourceId": "IT-19e9cce557ec9b3d",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3127,7 +4116,7 @@
       "status": "verified",
       "sourceId": "IT-fba2f4515dc38d50",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3175,7 +4164,7 @@
       "status": "verified",
       "sourceId": "IT-fce9cfcf1b882ea1",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3223,7 +4212,7 @@
       "status": "verified",
       "sourceId": "IT-4f9dc0b9abe4dd42",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3271,7 +4260,7 @@
       "status": "verified",
       "sourceId": "IT-454565e177b1e963",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3319,7 +4308,7 @@
       "status": "verified",
       "sourceId": "IT-d0306d9f9bf86772",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3367,7 +4356,7 @@
       "status": "verified",
       "sourceId": "IT-d59006604d4966a5",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3415,7 +4404,7 @@
       "status": "verified",
       "sourceId": "IT-e766c0937236d9a7",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3463,7 +4452,7 @@
       "status": "verified",
       "sourceId": "IT-e85253f4ee744b4f",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3509,7 +4498,7 @@
       "status": "verified",
       "sourceId": "IT-f0881a354276fc81",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3557,7 +4546,7 @@
       "status": "verified",
       "sourceId": "IT-334d2c43e7600a11",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3605,7 +4594,7 @@
       "status": "verified",
       "sourceId": "IT-bf8bfd694f0d76cf",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3653,7 +4642,7 @@
       "status": "verified",
       "sourceId": "IT-c4a5e8f72647ad37",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3701,7 +4690,7 @@
       "status": "verified",
       "sourceId": "IT-38b28808fa5dd380",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3749,7 +4738,7 @@
       "status": "verified",
       "sourceId": "IT-1af28fc060169e26",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3797,7 +4786,7 @@
       "status": "verified",
       "sourceId": "IT-45e4d00fac055a61",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3845,7 +4834,7 @@
       "status": "verified",
       "sourceId": "IT-23c8601a541f495c",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3891,7 +4880,7 @@
       "status": "verified",
       "sourceId": "IT-c9d55373ab611212",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3939,7 +4928,7 @@
       "status": "verified",
       "sourceId": "IT-34479a45ac4623ff",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -3987,7 +4976,7 @@
       "status": "verified",
       "sourceId": "IT-5789a58e5430bf6c",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4035,7 +5024,7 @@
       "status": "verified",
       "sourceId": "IT-1ceda8aa7ce9d933",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4083,7 +5072,7 @@
       "status": "verified",
       "sourceId": "IT-782abd3029e54feb",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4131,7 +5120,7 @@
       "status": "verified",
       "sourceId": "IT-5803f08199bc327c",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4179,7 +5168,7 @@
       "status": "verified",
       "sourceId": "IT-6797847a65e8b844",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4227,7 +5216,7 @@
       "status": "verified",
       "sourceId": "IT-1980db1eb4ba526e",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4275,7 +5264,7 @@
       "status": "verified",
       "sourceId": "IT-befd18222a0a4b48",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4323,7 +5312,7 @@
       "status": "verified",
       "sourceId": "IT-1b2a1db6e35ee15a",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4371,7 +5360,7 @@
       "status": "verified",
       "sourceId": "IT-a89cb31b569db473",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4419,7 +5408,7 @@
       "status": "verified",
       "sourceId": "IT-99d612742f2f6856",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4467,7 +5456,7 @@
       "status": "verified",
       "sourceId": "IT-84901de2fbd2785e",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4515,7 +5504,7 @@
       "status": "verified",
       "sourceId": "IT-99f26efab71aa308",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4563,7 +5552,7 @@
       "status": "verified",
       "sourceId": "IT-dfbbb00151f235ae",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4609,7 +5598,7 @@
       "status": "verified",
       "sourceId": "IT-72b8d395d1f5edeb",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4657,7 +5646,7 @@
       "status": "verified",
       "sourceId": "IT-d2fff99ecc422ce9",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4705,7 +5694,7 @@
       "status": "verified",
       "sourceId": "IT-c65b353b38530e1d",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4753,7 +5742,7 @@
       "status": "verified",
       "sourceId": "IT-4cd2a42a7b276edc",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4801,7 +5790,7 @@
       "status": "verified",
       "sourceId": "IT-50a07f2bbfb9f7d5",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4849,7 +5838,7 @@
       "status": "verified",
       "sourceId": "IT-8954f4788212020d",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4897,7 +5886,7 @@
       "status": "verified",
       "sourceId": "IT-3abac8fc4911ad06",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4945,7 +5934,7 @@
       "status": "verified",
       "sourceId": "IT-b4d45387830f9a6f",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -4993,7 +5982,7 @@
       "status": "verified",
       "sourceId": "IT-a6891cf977bc269b",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -5041,7 +6030,7 @@
       "status": "verified",
       "sourceId": "IT-d9f6219b89c1a441",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -5089,7 +6078,7 @@
       "status": "verified",
       "sourceId": "IT-bc03bcca68f6c7b8",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -5137,7 +6126,7 @@
       "status": "verified",
       "sourceId": "IT-bb55646b559cb2bb",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -5185,7 +6174,7 @@
       "status": "verified",
       "sourceId": "IT-5b25073a11a1f970",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -5233,7 +6222,7 @@
       "status": "verified",
       "sourceId": "IT-96d8b6b29dad3a53",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -5281,7 +6270,7 @@
       "status": "verified",
       "sourceId": "IT-275fa101b1832a56",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -5329,7 +6318,7 @@
       "status": "verified",
       "sourceId": "IT-d59b2dec4aea9b4a",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -5377,7 +6366,7 @@
       "status": "verified",
       "sourceId": "IT-117d069bd93c7aec",
       "sourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://www.dati.lombardia.it/resource/jvq8-53gf.json?$limit=5000",
       "coordinatePrecision": "address",
       "coordinateMethod": "Lombardia_official_public_reception_point_WGS84",
@@ -5425,7 +6414,7 @@
       "status": "verified",
       "sourceId": "IT-59131fe319f90d64",
       "sourceUrl": "https://www.direcontrolaviolenza.it/?page_id=394",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=6+Strada+Vaciglio+Nord&city=Modena&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -5472,7 +6461,7 @@
       "status": "verified",
       "sourceId": "IT-766db12e0024e5bc",
       "sourceUrl": "https://www.direcontrolaviolenza.it/?page_id=546",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=1+Via+Benedetto+Cairoli&city=Pordenone&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -5519,7 +6508,7 @@
       "status": "verified",
       "sourceId": "IT-63f432fa7917b094",
       "sourceUrl": "https://www.direcontrolaviolenza.it/?page_id=546",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=5+Via+San+Silvestro&city=Trieste&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -5566,7 +6555,7 @@
       "status": "verified",
       "sourceId": "IT-d41f5e9d31afabb7",
       "sourceUrl": "https://www.direcontrolaviolenza.it/?page_id=544",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=1+Via+Dogana&city=Trento&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -5613,7 +6602,7 @@
       "status": "verified",
       "sourceId": "IT-2e7fd80afa47d278",
       "sourceUrl": "https://www.direcontrolaviolenza.it/i-centri-antiviolenza/veneto/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=3+Via+Tripoli&city=Padova&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
@@ -5660,7 +6649,7 @@
       "status": "verified",
       "sourceId": "IT-d0d5dcaeaaea948a",
       "sourceUrl": "https://www.direcontrolaviolenza.it/i-centri-antiviolenza/veneto/",
-      "checkedAt": "2026-11-16T13:33:33+00:00",
+      "checkedAt": "2026-11-16T13:39:42+00:00",
       "coordinateSourceUrl": "https://nominatim.openstreetmap.org/search?street=14+Via+Bissagola&city=Mestre&country=Italia&countrycodes=it&format=jsonv2&addressdetails=1&limit=5&accept-language=it",
       "coordinatePrecision": "address",
       "coordinateMethod": "OSM_Nominatim_exact_municipality_street_house",
